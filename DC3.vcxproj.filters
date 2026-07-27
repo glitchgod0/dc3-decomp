@@ -200,6 +200,13 @@
     <ClCompile Include="src\system\rnddx9\Tex.cpp" />
     <ClCompile Include="src\system\rnddx9\TexMgr.cpp" />
     <ClCompile Include="src\system\rnddx9\Utl.cpp" />
+    <ClCompile Include="src\system\midi\DataEventList.cpp" />
+    <ClCompile Include="src\system\midi\DisplayEvents.cpp" />
+    <ClCompile Include="src\system\midi\MidiParser.cpp" />
+    <ClCompile Include="src\system\midi\MidiParserMgr.cpp" />
+    <ClCompile Include="src\system\midi\MidiReader.cpp" />
+    <ClCompile Include="src\system\midi\MidiReceiver.cpp" />
+    <ClCompile Include="src\system\midi\MidiVarLen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\types.h" />
@@ -529,6 +536,13 @@
     <ClInclude Include="src\system\rnddx9\tex.h" />
     <ClInclude Include="src\system\rnddx9\TexMgr.h" />
     <ClInclude Include="src\system\rnddx9\TexRenderer.h" />
+    <ClInclude Include="src\system\midi\MidiVarLen.h" />
+    <ClInclude Include="src\system\midi\dataeventlist.h" />
+    <ClInclude Include="src\system\midi\DisplayEvents.h" />
+    <ClInclude Include="src\system\midi\midi.h" />
+    <ClInclude Include="src\system\midi\MidiConstants.h" />
+    <ClInclude Include="src\system\midi\midiparser.h" />
+    <ClInclude Include="src\system\midi\midiparsermgr.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />
