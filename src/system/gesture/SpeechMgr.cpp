@@ -18,6 +18,9 @@
 #include <string>
 #include <cstdlib>
 
+//stupid
+#define E_SPEECH_UNINITIALIZED          (long)0x80045001
+
 SpeechMgr *TheSpeechMgr;
 ULONG gGrammarID;
 
