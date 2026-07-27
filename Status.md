@@ -174,6 +174,42 @@ src/
     ├── synth/
     ├── synth360/
     ├── ui/
+    │   ├── CheatProvider.cpp
+    │   ├── InlineHelp.cpp
+    │   ├── LabelNumberTicker.cpp
+    │   ├── LabelShrinkWrapper.cpp
+    │   ├── LocalePanel.cpp
+    │   ├── PanelDir.cpp
+    │   ├── ResourceDirPtr.cpp
+    │   ├── Screenshot.cpp
+    │   ├── ScrollSelect.cpp
+    │   ├── UI.cpp
+    │   ├── UIButton.cpp
+    │   ├── UIColor.cpp
+    │   ├── UIComponent.cpp
+    │   ├── UIFontImporter.cpp
+    │   ├── UIGuide.cpp
+    │   ├── UILabel.cpp
+    │   ├── UILabelDir.cpp
+    │   ├── UIList.cpp
+    │   ├── UIListArrow.cpp
+    │   ├── UIListCustom.cpp
+    │   ├── UIListDir.cpp
+    │   ├── UIListHighlight.cpp
+    │   ├── UIListLabel.cpp
+    │   ├── UIListMesh.cpp
+    │   ├── UIListProvider.cpp
+    │   ├── UIListSlot.cpp
+    │   ├── UIListState.cpp
+    │   ├── UIListSubList.cpp
+    │   ├── UIListWidget.cpp
+    │   ├── UIPanel.cpp
+    │   ├── UIPicture.cpp
+    │   ├── UIScreen.cpp
+    │   ├── UISlider.cpp
+    │   ├── UITransitionHandler.cpp
+    │   ├── UITrigger.cpp
+    │   └── Utl.cpp
     ├── utl/
     │   ├── AllocInfo.cpp  (Fails)
     │   ├── BeatMap.cpp
