@@ -6,14 +6,6 @@
 #include "os/PlatformMgr.h"
 #include <xtl.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/errhandlingapi.h"
-#include "xdk/xapilibi/fileapi.h"
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/minwinbase.h"
-#include "xdk/xapilibi/timezoneapi.h"
-#include "xdk/xapilibi/xbase.h"
-#include "xdk/xapilibi/xbox.h"
-
 MemcardXbox TheMC;
 
 namespace {

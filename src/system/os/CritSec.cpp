@@ -1,5 +1,5 @@
 #include "os/CritSec.h"
-#include "xdk/XBOXKRNL.h"
+#include <xtl.h>
 
 CriticalSection::CriticalSection() : mEntryCount(0) {
     RtlInitializeCriticalSection(&mCritSec);

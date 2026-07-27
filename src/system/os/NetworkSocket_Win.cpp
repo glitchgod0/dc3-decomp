@@ -1,10 +1,8 @@
 #include "os/NetworkSocket_Win.h"
 #include "os/Debug.h"
 #include "os/NetworkSocket.h"
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/synchapi.h"
+#include <xtl.h>
 #include "xdk/xbdm/xbdm.h"
-#include "xdk/xnet/winsockx.h"
 
 bool WinSockSocket::sInit = false;
 

@@ -17,8 +17,7 @@
 #include "utl/Option.h"
 #include "utl/Symbol.h"
 #include "utl/TextFileStream.h"
-#include "xdk/xapilibi/fileapi.h"
-#include "xdk/xapilibi/minwinbase.h"
+#include <xtl.h>
 #include <cstdio>
 #include <list>
 

@@ -19,14 +19,11 @@
 #include "utl/MemMgr.h"
 #include "utl/Symbol.h"
 #include <xtl.h>
-#include "xdk/XMP.h"
-#include "xdk/XNET.h"
-#include "xdk/XONLINE.h"
-#include "xdk/XPARTY.h"
+#include <xmp.h>
+#include <xparty.h>
 #include <nuiapi.h>
-#include "xdk/XBC.h"
+#include <xbc.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/xbox.h"
 #include <algorithm>
 #include <cstdlib>
 #include <cwchar>

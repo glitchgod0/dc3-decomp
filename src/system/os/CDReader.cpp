@@ -3,8 +3,6 @@
 #include "os/File.h"
 #include "os/PlatformMgr.h"
 #include "os/System.h"
-#include "xdk/xapilibi/errhandlingapi.h"
-#include "xdk/xapilibi/fileapi.h"
 #include <vector>
 #include <xtl.h>
 

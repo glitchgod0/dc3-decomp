@@ -99,6 +99,59 @@ src/
     ├── obj/
     ├── oggvorbis/
     ├── os/
+    │   ├── AppChild.cpp
+    │   ├── Archive.cpp
+    │   ├── ArkFile.cpp
+    │   ├── AsyncFile.cpp
+    │   ├── AsyncFileHolmes.cpp
+    │   ├── AsyncFile_Win.cpp
+    │   ├── AsyncTask.cpp
+    │   ├── BlockMgr.cpp
+    │   ├── CDReader.cpp
+    │   ├── ContentMgr.cpp
+    │   ├── ContentMgr_Xbox.cpp
+    │   ├── CritSec.cpp
+    │   ├── DateTime.cpp
+    │   ├── Debug.cpp  (Fails (xbdm include))
+    │   ├── File.cpp (Fails)
+    │   ├── FileCache.cpp
+    │   ├── File_Win.cpp
+    │   ├── HDCache.cpp
+    │   ├── HolmesClient.cpp
+    │   ├── HolmesClient_NetSocket.cpp
+    │   ├── HolmesKeyboard.cpp
+    │   ├── HolmesUtl.cpp  (Fails (xbdm include))
+    │   ├── Joypad.cpp
+    │   ├── JoypadClient.cpp
+    │   ├── JoypadMsgs.cpp
+    │   ├── Joypad_Xbox.cpp
+    │   ├── Joypad_Xinput.cpp
+    │   ├── Keyboard.cpp
+    │   ├── KeyboardJoypadAdapter.cpp
+    │   ├── Keyboard_Xbox.cpp
+    │   ├── MapFile_Xbox.cpp (Fails)
+    │   ├── Memcard.cpp
+    │   ├── Memcard_Xbox.cpp
+    │   ├── Memory_Xbox.cpp
+    │   ├── NetStream.cpp
+    │   ├── NetworkSocket.cpp
+    │   ├── NetworkSocket_Win.cpp  (Fails (xbdm include))
+    │   ├── OnlineID.cpp
+    │   ├── PlatformMgr.cpp
+    │   ├── PlatformMgr_Xbox.cpp (Fails (afaik Smartglass))
+    │   ├── SynchronizationEvent.cpp
+    │   ├── System.cpp
+    │   ├── System_Xbox.cpp  (Fails (xbdm include))
+    │   ├── ThreadCall_Win.cpp  (Fails (in xdk libs))
+    │   ├── Timer.cpp
+    │   ├── UsbMidiGuitar.cpp
+    │   ├── UsbMidiGuitarMsgs.cpp
+    │   ├── UsbMidiKeyboard.cpp
+    │   ├── UsbMidiKeyboardMsgs.cpp
+    │   ├── User.cpp
+    │   ├── UserMgr.cpp
+    │   ├── VirtualKeyboard.cpp
+    │   └── VirtualKeyboard_Xbox.cpp
     ├── rnddx9/
     │   ├── Cam.cpp 
     │   ├── CubeTex.cpp
