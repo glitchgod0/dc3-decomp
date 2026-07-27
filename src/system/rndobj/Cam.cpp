@@ -179,23 +179,23 @@ void RndCam::Init() {
     DataRegisterFunc("cam_get_max_far_near_ratio", OnGetMaxFarNearPlaneRatio);
 }
 
-void RndCam::SetFrustum(float near, float far, float yfov, float f4) {
-    if (far - 0.0001f > sMaxFarNearPlaneRatio * near) {
+void RndCam::SetFrustum(float near_, float far_, float yfov, float f4) {
+    if (far_ - 0.0001f > sMaxFarNearPlaneRatio * near_) {
         MILO_NOTIFY_ONCE(
             "%s: %f/%f plane ratio exceeds %d",
             Name(),
-            far,
-            near,
+            far_,
+            near_,
             (int)sMaxFarNearPlaneRatio
         );
-        if (far == mFarPlane) {
-            near = far / sMaxFarNearPlaneRatio;
+        if (far_ == mFarPlane) {
+            near_ = far_ / sMaxFarNearPlaneRatio;
         } else {
-            far = sMaxFarNearPlaneRatio * near;
+            far_ = sMaxFarNearPlaneRatio * near_;
         }
     }
-    mNearPlane = near;
-    mFarPlane = far;
+    mNearPlane = near_;
+    mFarPlane = far_;
     mYFov = yfov;
     unk2cc = f4;
     UpdateLocal();
