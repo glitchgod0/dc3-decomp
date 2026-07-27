@@ -27,6 +27,42 @@ src/
     │       └── filterdesign.cpp
     ├── flow/
     ├── gesture/
+    │   ├── ArcDetector.cpp  (Fails (in xdk libs))
+    │   ├── ArchiveSkeleton.cpp  (Fails (in xdk libs))
+    │   ├── BaseSkeleton.cpp
+    │   ├── CameraInput.cpp
+    │   ├── CameraTilt.cpp (Fails)
+    │   ├── DepthBuffer3D.cpp
+    │   ├── DirectionGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── DrawUtl.cpp
+    │   ├── FitnessFilter.cpp
+    │   ├── FreestyleMotionFilter.cpp  (Fails (in xdk libs))
+    │   ├── Gesture.cpp  (Fails (in xdk libs))
+    │   ├── GestureMgr.cpp
+    │   ├── HandHeightGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── HandInvokeGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── HandRaisedGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── HandsUpGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── HighFiveGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── IdentityInfo.cpp
+    │   ├── JointUtl.cpp  (Fails (in xdk libs))
+    │   ├── LiveCameraInput.cpp (Fails)
+    │   ├── NavigationSkeletonDir.cpp  (Fails (in xdk libs))
+    │   ├── Skeleton.cpp  (Fails (in xdk libs))
+    │   ├── SkeletonClip.cpp
+    │   ├── SkeletonDir.cpp  (Fails (in xdk libs))
+    │   ├── SkeletonExtentTracker.cpp
+    │   ├── SkeletonHistory.cpp  (Fails (in xdk libs))
+    │   ├── SkeletonQualityFilter.cpp  (Fails (in xdk libs))
+    │   ├── SkeletonRecoverer.cpp
+    │   ├── SkeletonUpdate.cpp
+    │   ├── SkeletonViz.cpp
+    │   ├── SpeechMgr.cpp (Fails ('E_SPEECH_UNINITIALIZED'))
+    │   ├── StandingStillGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── StreamRecorder.cpp
+    │   ├── StreamRenderer.cpp
+    │   ├── StubCameraInput.cpp
+    │   └── WaveToTurnOnLight.cpp
     ├── hamobj/
     ├── jpeg/
     ├── math/
@@ -97,6 +133,23 @@ src/
     ├── moviebink/
     ├── net/
     ├── obj/
+    │   ├── DataArray.cpp  (Fails (in xdk libs))
+    │   ├── DataFile.cpp  (Fails (in xdk libs))
+    │   ├── DataFlex.c  (Fails)
+    │   ├── DataFunc.cpp
+    │   ├── DataNode.cpp
+    │   ├── DataUtl.cpp  (Fails (in xdk libs))
+    │   ├── Dir.cpp
+    │   ├── DirLoader.cpp
+    │   ├── DirUnloader.cpp
+    │   ├── MessageTimer.cpp
+    │   ├── Msg.cpp
+    │   ├── Object.cpp
+    │   ├── PropSync.cpp  (Fails)
+    │   ├── Task.cpp
+    │   ├── TextFile.cpp
+    │   ├── TypeProps.cpp
+    │   └── Utl.cpp
     ├── oggvorbis/
     ├── os/
     │   ├── AppChild.cpp

@@ -21,9 +21,7 @@
 #include "utl/Std.h"
 #include <nuiapi.h>
 #include <xtl.h>
-#include "xdk/nui/nuiskeleton.h"
 #include <d3dx9.h>
-#include "xdk/xapilibi/synchapi.h"
 
 CriticalSection SkeletonUpdateHandle::sCritSec;
 static const float sFloat = 2.0f;

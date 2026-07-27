@@ -25,16 +25,12 @@
 #include "utl/MemTrack.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
-#include "xdk/nui/nuiapi.h"
-#include "xdk/nui/nuiaudio.h"
-#include "xdk/nui/nuidetroit.h"
-#include "xdk/nui/nuiskeleton.h"
+#include <xtl.h>
+#include <nuiapi.h>
+#include <NuiAudio.h>
+//#include "xdk/nui/nuidetroit.h"
+#include <NuiSkeleton.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/winerror.h"
-#include "xdk/xapilibi/xbox.h"
 #include <cstring>
 
 int g_colorBufferUpdate1;

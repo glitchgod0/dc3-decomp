@@ -13,10 +13,8 @@
 #include "utl/UTF8.h"
 #include <nuiapi.h>
 #include <xtl.h>
-#include "xdk/nui/nuispeech.h"
+#include <nuispeech.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/winerror.h"
-#include "xdk/xapilibi/xbase.h"
 #include <string>
 #include <cstdlib>
 

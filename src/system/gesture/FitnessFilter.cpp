@@ -8,7 +8,7 @@
 #include "os/Debug.h"
 #include "rndobj/Overlay.h"
 #include "utl/Symbol.h"
-#include "xdk/nui/nuifitnesslib.h"
+#include <nuiapi.h>
 #include <d3dx9.h>
 
 #pragma region FitnessFilter

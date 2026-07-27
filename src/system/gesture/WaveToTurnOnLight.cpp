@@ -6,7 +6,7 @@
 #include "obj/Object.h"
 #include "os/Debug.h"
 #include <nuiapi.h>
-#include "xdk/xapilibi/winerror.h"
+#include <xtl.h>
 
 WaveToTurnOnLight *TheWaveToTurnOnLight;
 

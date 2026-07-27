@@ -9,7 +9,6 @@
 #include <nuiapi.h>
 #include <xtl.h>
 #include "xdk/nui/nuidetroit.h"
-#include "xdk/xapilibi/winerror.h"
 
 CameraTilt *TheCameraTilt;
 
