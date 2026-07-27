@@ -1,4 +1,5 @@
 #pragma once
+#include <xtl.h>
 #include <d3dx9.h>
 
 extern DWORD gMainThreadID;

@@ -31,6 +31,7 @@ Symbol gFile;
 static std::list<bool> gConditional;
 static std::map<String, DataNode> gReadFiles;
 // bool gCompressCached;
+extern void yyrestart(FILE *file YY_LAST_ARG);
 
 #pragma region DataLoader
 

@@ -2,8 +2,8 @@
 #include "meta/StoreEnumeration.h"
 #include "types.h"
 #include "utl/Str.h"
-#include <d3dx9.h>
 #include <xtl.h>
+#include <d3dx9.h>
 #include <list>
 
 typedef unsigned __int64 QWORD; //hack

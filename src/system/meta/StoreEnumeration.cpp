@@ -2,9 +2,8 @@
 #include "macros.h"
 #include "os/Debug.h"
 #include "utl/MemMgr.h"
-#include <d3dx9.h>
 #include <xtl.h>
-#include "xdk/xonline/xonline.h"
+#include <d3dx9.h>
 #include <cstring>
 
 XboxEnumeration::XboxEnumeration(int i, std::vector<QWORD> *offerIDs)

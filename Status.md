@@ -257,7 +257,7 @@ src/
     │   ├── Achievements_Xbox.cpp
     │   ├── ButtonHolder.cpp
     │   ├── ConnectionStatusPanel.cpp
-    │   ├── CreditsPanel.cpp  (Fails (in xdk libs))
+    │   ├── CreditsPanel.cpp
     │   ├── DataArraySongInfo.cpp
     │   ├── DeJitterPanel.cpp
     │   ├── FixedSizeSaveable.cpp
@@ -316,12 +316,12 @@ src/
     │   ├── WebSvcMgr.cpp
     │   ├── WebSvcMgrCurl.cpp
     │   ├── WebSvcReq.cpp
-    │   ├── XLSPConnection.cpp  (Fails (in xdk libs))
+    │   ├── XLSPConnection.cpp  (Fails)
     │   ├── curl/
     │   └── json-c/
     ├── obj/
-    │   ├── DataArray.cpp  (Fails (in xdk libs))
-    │   ├── DataFile.cpp  (Fails (in xdk libs))
+    │   ├── DataArray.cpp
+    │   ├── DataFile.cpp
     │   ├── DataFlex.c
     │   ├── DataFunc.cpp
     │   ├── DataNode.cpp
@@ -382,7 +382,7 @@ src/
     │   ├── SynchronizationEvent.cpp
     │   ├── System.cpp
     │   ├── System_Xbox.cpp  (Fails (xbdm include))
-    │   ├── ThreadCall_Win.cpp  (Fails (in xdk libs))
+    │   ├── ThreadCall_Win.cpp
     │   ├── Timer.cpp
     │   ├── UsbMidiGuitar.cpp
     │   ├── UsbMidiGuitarMsgs.cpp
