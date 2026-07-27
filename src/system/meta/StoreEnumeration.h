@@ -6,6 +6,8 @@
 #include <xtl.h>
 #include <list>
 
+typedef unsigned __int64 QWORD; //hack
+
 enum StoreError {
     kStoreErrorSuccess = 0,
     kStoreErrorNoContent = 1,

@@ -280,7 +280,7 @@ src/
     │   ├── Sorting.cpp
     │   ├── StoreEnumeration.cpp  (Fails (in xdk libs))
     │   ├── StoreOffer.cpp
-    │   ├── StorePanel.cpp  (Fails)
+    │   ├── StorePanel.cpp
     │   ├── StorePreviewMgr.cpp
     │   ├── StorePurchaser.cpp
     │   └── StreamPlayer.cpp
@@ -310,7 +310,7 @@ src/
     │   ├── HttpGet.cpp
     │   ├── HttpReq.cpp
     │   ├── HttpReqCurl.cpp
-    │   ├── JsonMemory.cpp (Fails)
+    │   ├── JsonMemory.cpp
     │   ├── JsonUtils.cpp
     │   ├── SessionJobs_Xbox.cpp
     │   ├── WebSvcMgr.cpp
@@ -322,7 +322,7 @@ src/
     ├── obj/
     │   ├── DataArray.cpp  (Fails (in xdk libs))
     │   ├── DataFile.cpp  (Fails (in xdk libs))
-    │   ├── DataFlex.c  (Fails)
+    │   ├── DataFlex.c
     │   ├── DataFunc.cpp
     │   ├── DataNode.cpp
     │   ├── DataUtl.cpp  (Fails (in xdk libs))
