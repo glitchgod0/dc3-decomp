@@ -1,7 +1,7 @@
 # Status
 ```text
 src/
-├── App.cpp (Fails)
+├── App.cpp
 ├── ChecksumData_xbox.cpp
 ├── keygen_xbox.cpp
 ├── Main.cpp

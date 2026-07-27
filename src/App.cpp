@@ -60,12 +60,9 @@
 #include "utl/Option.h"
 #include "utl/Symbol.h"
 #include "world/World.h"
-#include "xdk/nui/nuiskeleton.h"
+#include <nuiapi.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/processthreadsapi.h"
-#include "xdk/xapilibi/synchapi.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 #include <cctype>
 #include <cstring>
 
