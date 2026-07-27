@@ -573,6 +573,29 @@
     <ClCompile Include="src\system\utl\UTF8.cpp" />
     <ClCompile Include="src\system\utl\VarTimer.cpp" />
     <ClCompile Include="src\system\utl\WaveFile.cpp" />
+    <ClCompile Include="src\system\world\BeatClock.cpp" />
+    <ClCompile Include="src\system\world\CameraManager.cpp" />
+    <ClCompile Include="src\system\world\CameraShot.cpp" />
+    <ClCompile Include="src\system\world\ColorPalette.cpp" />
+    <ClCompile Include="src\system\world\Crowd.cpp" />
+    <ClCompile Include="src\system\world\Crowd3DCharHandle.cpp" />
+    <ClCompile Include="src\system\world\DefaultPhysicsManager.cpp" />
+    <ClCompile Include="src\system\world\Dir.cpp" />
+    <ClCompile Include="src\system\world\FreeCamera.cpp" />
+    <ClCompile Include="src\system\world\Instance.cpp" />
+    <ClCompile Include="src\system\world\LightHue.cpp" />
+    <ClCompile Include="src\system\world\LightPreset.cpp" />
+    <ClCompile Include="src\system\world\LightPresetManager.cpp" />
+    <ClCompile Include="src\system\world\PhysicsManager.cpp" />
+    <ClCompile Include="src\system\world\PhysicsVolume.cpp" />
+    <ClCompile Include="src\system\world\PostProcer.cpp" />
+    <ClCompile Include="src\system\world\Reflection.cpp" />
+    <ClCompile Include="src\system\world\Spotlight.cpp" />
+    <ClCompile Include="src\system\world\SpotlightDrawer.cpp" />
+    <ClCompile Include="src\system\world\SpotlightDrawer_NG.cpp" />
+    <ClCompile Include="src\system\world\SpotlightEnder.cpp" />
+    <ClCompile Include="src\system\world\ThreeDSoundManager.cpp" />
+    <ClCompile Include="src\system\world\World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
@@ -1040,6 +1063,29 @@
     <ClInclude Include="src\system\utl\UTF8.h" />
     <ClInclude Include="src\system\utl\vartimer.h" />
     <ClInclude Include="src\system\utl\WaveFile.h" />
+    <ClInclude Include="src\system\world\BeatClock.h" />
+    <ClInclude Include="src\system\world\cameramanager.h" />
+    <ClInclude Include="src\system\world\camerashot.h" />
+    <ClInclude Include="src\system\world\ColorPalette.h" />
+    <ClInclude Include="src\system\world\crowd.h" />
+    <ClInclude Include="src\system\world\Crowd3DCharHandle.h" />
+    <ClInclude Include="src\system\world\DefaultPhysicsManager.h" />
+    <ClInclude Include="src\system\world\dir.h" />
+    <ClInclude Include="src\system\world\freecamera.h" />
+    <ClInclude Include="src\system\world\Instance.h" />
+    <ClInclude Include="src\system\world\lighthue.h" />
+    <ClInclude Include="src\system\world\lightpreset.h" />
+    <ClInclude Include="src\system\world\lightpresetmanager.h" />
+    <ClInclude Include="src\system\world\physicsmanager.h" />
+    <ClInclude Include="src\system\world\physicsvolume.h" />
+    <ClInclude Include="src\system\world\PostProcer.h" />
+    <ClInclude Include="src\system\world\Reflection.h" />
+    <ClInclude Include="src\system\world\spotlight.h" />
+    <ClInclude Include="src\system\world\spotlightdrawer.h" />
+    <ClInclude Include="src\system\world\SpotlightDrawer_NG.h" />
+    <ClInclude Include="src\system\world\SpotlightEnder.h" />
+    <ClInclude Include="src\system\world\threedsoundmanager.h" />
+    <ClInclude Include="src\system\world\world.h" />
     <ClInclude Include="src\types.h" />
   </ItemGroup>
   <ItemGroup>
