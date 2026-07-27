@@ -60,9 +60,9 @@ void LightPreset::EnvironmentEntry::Animate(
         Interp(mFogStart, entry.mFogStart, f2, mFogStart);
         Interp(mFogEnd, entry.mFogEnd, f2, mFogEnd);
     } else {
-        float far = RndCam::Current() ? RndCam::Current()->FarPlane() : FLT_MAX;
-        Interp(mFogStart, far, f2, mFogStart);
-        Interp(mFogEnd, far, f2, mFogEnd);
+        float far_ = RndCam::Current() ? RndCam::Current()->FarPlane() : FLT_MAX;
+        Interp(mFogStart, far_, f2, mFogStart);
+        Interp(mFogEnd, far_, f2, mFogEnd);
     }
     if (f2 == 1) {
         mFogEnable = entry.mFogEnable;
