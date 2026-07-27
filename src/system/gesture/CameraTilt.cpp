@@ -7,7 +7,7 @@
 #include "os/System.h"
 #include "ui/UI.h"
 #include <nuiapi.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/nui/nuidetroit.h"
 #include "xdk/xapilibi/winerror.h"
 

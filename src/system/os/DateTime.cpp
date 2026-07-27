@@ -3,7 +3,7 @@
 #include "os/System.h"
 #include "utl/Locale.h"
 #include "utl/LocaleOrdinal.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 void GetDateAndTime(DateTime &dt) {
     SYSTEMTIME time;

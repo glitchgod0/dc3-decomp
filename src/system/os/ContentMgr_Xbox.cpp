@@ -8,7 +8,7 @@
 #include "os/Debug.h"
 #include "os/PlatformMgr.h"
 #include "os/System.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 std::vector<String> gIgnoredContent;
 XboxContentMgr gContentMgr;

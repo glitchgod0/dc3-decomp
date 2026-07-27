@@ -127,7 +127,7 @@ inline ldiv_t div(long __x, long __y) { return ::ldiv(__x, __y); }
 #  undef _STLP_RESTORE_FUNCTION_INTRINSIC
 #endif
 
-#if defined (_STLP_LONG_LONG)
+#if defined (_STLP_LONG_LONG) && !defined(_MSC_VER)
 #  if !defined (_STLP_NO_VENDOR_STDLIB_L)
 #    if !defined(__sun)
 inline _STLP_LONG_LONG  abs(_STLP_LONG_LONG __x) { return _STLP_VENDOR_CSTD::llabs(__x); }

@@ -3,7 +3,7 @@
 #include "obj/Object.h"
 #include "utl/MemMgr.h"
 #include "utl/Str.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 enum AccessType {
     kAccessRead = 0,

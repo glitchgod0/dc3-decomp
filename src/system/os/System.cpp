@@ -43,7 +43,7 @@
 #include "utl/Str.h"
 #include "utl/Symbol.h"
 #include "utl/TimeConversion.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include <cstdarg>
 #include <cstdio>
 #include <cstring>

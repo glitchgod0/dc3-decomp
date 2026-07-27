@@ -4,7 +4,7 @@
 #include "os/MapFile_Xbox.h"
 #include "os/PlatformMgr.h"
 #include "os/System.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XBDM.h"
 #include "os/Memory.h"
 

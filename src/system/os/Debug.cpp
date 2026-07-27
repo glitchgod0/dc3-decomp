@@ -19,7 +19,7 @@
 #include "xdk/xapilibi/errhandlingapi.h"
 #include "xdk/xbdm/xbdm.h"
 #include <vector>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "utl/Std.h"
 
 const char *kAssertStr = "File: %s Line: %d Error: %s\n";

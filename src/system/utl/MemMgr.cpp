@@ -10,7 +10,7 @@
 #include "utl/Option.h"
 #include "utl/PoolAlloc.h"
 #include "utl/TextStream.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/xapilibi/processthreadsapi.h"
 #include "xdk/xapilibi/winbase.h"
 #include <cstdlib>

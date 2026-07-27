@@ -10,7 +10,7 @@
 #include "utl/Cache_Xbox.h"
 #include "utl/Symbol.h"
 #include "utl/UTF8.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include <d3dx9.h>
 #include "xdk/xapilibi/xbase.h"
 #include "xdk/xapilibi/xbox.h"

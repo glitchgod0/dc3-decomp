@@ -4,7 +4,7 @@
 #include "obj/Object.h"
 #include "rndobj/Tex.h"
 #include "ui/UIPanel.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XSOCIAL.h"
 
 class KinectSharePanel : public UIPanel {

@@ -6,7 +6,7 @@
 #include "os/Friend.h"
 #include "os/User.h"
 #include "utl/JobMgr.h"
-#include "xdk/XSOCIAL.h"
+//#include "xdk/XSOCIAL.h"
 #include <vector>
 
 enum DiskError {

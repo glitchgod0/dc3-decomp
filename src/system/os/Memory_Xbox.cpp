@@ -6,7 +6,7 @@
 #include "utl/MemTracker.h"
 #include "utl/Symbol.h"
 #include "utl/TextStream.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include <cstdio>
 
 XALLOC_ATTRIBUTES Attr(DWORD dw) { return *reinterpret_cast<XALLOC_ATTRIBUTES *>(&dw); }

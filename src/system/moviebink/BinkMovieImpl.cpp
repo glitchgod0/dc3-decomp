@@ -28,7 +28,7 @@
 #include "utl/FilePath.h"
 #include "utl/Loader.h"
 #include "utl/MemMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 std::vector<BinkMovieImpl *> BinkMovieImpl::sActiveMovies;
 

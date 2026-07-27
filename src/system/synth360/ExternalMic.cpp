@@ -1,7 +1,7 @@
 #include "synth360/ExternalMic.h"
 #include "os/Debug.h"
 #include "synth360/Mic.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XMIC.h"
 #include "xdk/xmic/xmic.h"
 

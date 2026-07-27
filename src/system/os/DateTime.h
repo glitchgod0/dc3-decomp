@@ -1,7 +1,7 @@
 #pragma once
 #include "utl/Str.h"
 #include "utl/BinStream.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 enum DateFormat {
     kMDY = 0, // month day year (USA/Canada)

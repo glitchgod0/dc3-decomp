@@ -3,7 +3,7 @@
 #include "utl/Str.h"
 #include "utl/Symbol.h"
 #include "utl/UTF8.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 namespace {
     bool gCheckOverlappedIoComplete;

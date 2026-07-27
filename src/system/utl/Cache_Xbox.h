@@ -4,7 +4,7 @@
 #include "utl/Cache.h"
 #include "utl/Str.h"
 #include <cstring>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 class CacheIDXbox : public CacheID {
 public:

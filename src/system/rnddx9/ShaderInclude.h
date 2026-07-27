@@ -5,7 +5,7 @@
 #include "rndobj/ShaderProgram.h"
 #include "utl/MemMgr.h"
 #include "xdk/D3DX9.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/d3dx9/d3dx9mesh.h"
 
 // Basically a wrapper around an ID3DXBuffer.

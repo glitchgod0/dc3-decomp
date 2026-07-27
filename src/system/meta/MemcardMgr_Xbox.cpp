@@ -11,7 +11,7 @@
 #include "os/ThreadCall.h"
 #include "ui/UI.h"
 #include "utl/Locale.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 namespace {
     const char *kSaveFilename = "save.dat";

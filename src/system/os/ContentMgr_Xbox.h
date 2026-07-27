@@ -3,7 +3,7 @@
 #include "os/ContentMgr.h"
 #include "os/PlatformMgr.h"
 #include "utl/UTF8.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 class XboxContent : public Content {
 public:

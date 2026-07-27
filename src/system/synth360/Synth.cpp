@@ -40,7 +40,7 @@
 #include "synth360/Voice.h"
 #include "utl/Std.h"
 #include "utl/Str.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XAUDIO2.h"
 #include "xdk/XBOXKRNL.h"
 #include <d3dx9.h>

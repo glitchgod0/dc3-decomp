@@ -6,7 +6,7 @@
 #include "obj/Object.h"
 #include "utl/Str.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 #include <list>
 #include <utility>
 #include <map>

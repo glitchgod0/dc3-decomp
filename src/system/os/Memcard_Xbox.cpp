@@ -4,7 +4,7 @@
 #include "os/DateTime.h"
 #include "os/Debug.h"
 #include "os/PlatformMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include <d3dx9.h>
 #include "xdk/xapilibi/errhandlingapi.h"
 #include "xdk/xapilibi/fileapi.h"

@@ -20,7 +20,7 @@
 #include "utl/MemMgr.h"
 #include "utl/Symbol.h"
 #include "utl/UTF8.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include <d3dx9.h>
 #include "xdk/xapilibi/synchapi.h"
 #include "xdk/xapilibi/winerror.h"

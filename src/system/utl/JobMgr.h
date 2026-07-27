@@ -5,7 +5,9 @@
 #include "utl/MemMgr.h"
 #include "utl/Str.h"
 #include <d3dx9.h>
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
+
+typedef unsigned __int64 QWORD; //hack
 
 class Job {
 public:

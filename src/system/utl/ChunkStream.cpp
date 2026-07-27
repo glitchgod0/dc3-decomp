@@ -10,7 +10,7 @@
 #include "os/System.h"
 #include "utl/BinStream.h"
 #include "utl/MemMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 namespace {
     HANDLE mThreadHandle[1];

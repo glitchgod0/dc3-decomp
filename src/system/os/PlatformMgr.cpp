@@ -10,7 +10,7 @@
 #include "utl/Option.h"
 #include "utl/UTF8.h"
 #include "utl/Str.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 PlatformMgr ThePlatformMgr;
 

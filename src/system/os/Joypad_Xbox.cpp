@@ -5,7 +5,7 @@
 #include "os/Joypad.h"
 #include "os/Joypad_Xinput.h"
 #include "os/System.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 namespace {
     static XINPUT_STATE tXInputStates[kNumJoypads] = { 0 };

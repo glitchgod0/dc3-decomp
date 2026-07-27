@@ -6,7 +6,7 @@
 #include "synth360/EnvelopeGenerator.h"
 #include "synth360/Synth.h"
 #include <d3dx9.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/xapilibi/handleapi.h"
 #include "xdk/xapilibi/synchapi.h"
 #include "xdk/xaudio2/xaudio2.h"

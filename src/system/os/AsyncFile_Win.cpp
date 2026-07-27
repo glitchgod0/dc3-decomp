@@ -4,7 +4,7 @@
 #include "os/File.h"
 #include "os/PlatformMgr.h"
 #include "os/System.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include <io.h>
 
 void ReadError(const char *cc) {

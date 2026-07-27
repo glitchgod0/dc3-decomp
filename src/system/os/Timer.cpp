@@ -5,7 +5,7 @@
 #include "os/System.h"
 #include "ppcintrinsics.h"
 #include "utl/TextStream.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "math/Utl.h"
 #include "utl/Std.h"
 

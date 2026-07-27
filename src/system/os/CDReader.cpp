@@ -6,7 +6,7 @@
 #include "xdk/xapilibi/errhandlingapi.h"
 #include "xdk/xapilibi/fileapi.h"
 #include <vector>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 namespace {
     OVERLAPPED gOverlapped;

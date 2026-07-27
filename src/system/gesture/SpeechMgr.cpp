@@ -12,7 +12,7 @@
 #include "utl/Symbol.h"
 #include "utl/UTF8.h"
 #include <nuiapi.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/nui/nuispeech.h"
 #include <d3dx9.h>
 #include "xdk/xapilibi/winerror.h"

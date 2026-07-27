@@ -3,7 +3,7 @@
 #include "os/Debug.h"
 #include "utl/MemMgr.h"
 #include <d3dx9.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/xonline/xonline.h"
 #include <cstring>
 

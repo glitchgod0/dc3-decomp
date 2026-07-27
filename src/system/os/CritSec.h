@@ -1,6 +1,6 @@
 #pragma once
 #include "utl/MemMgr.h"
-#include "xdk/XBOXKRNL.h"
+#include <xtl.h>
 
 // size 0x20
 class CriticalSection {

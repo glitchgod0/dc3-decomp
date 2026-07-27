@@ -16,7 +16,7 @@
 #include "xdk/xapilibi/xbase.h"
 #include "xdk/xapilibi/xbox.h"
 #include <cstring>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 #pragma region CacheIDXbox
 

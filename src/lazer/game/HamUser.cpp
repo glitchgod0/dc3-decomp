@@ -3,7 +3,7 @@
 #include "obj/Object.h"
 #include "os/OnlineID.h"
 #include "os/User.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 HamUser::HamUser(int i) : unk4(0), unk8(i) {}
 

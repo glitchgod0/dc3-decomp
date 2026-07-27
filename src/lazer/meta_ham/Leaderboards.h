@@ -9,7 +9,7 @@
 #include "ui/UIListProvider.h"
 #include "utl/Str.h"
 #include "types.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 class Leaderboards : public Hmx::Object, public UIListProvider {
 public:

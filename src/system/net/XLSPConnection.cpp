@@ -1,6 +1,6 @@
 #include "net/XLSPConnection.h"
 #include "utl/MemMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XNET.h"
 #include "xdk/XONLINE.h"
 #include <utility>

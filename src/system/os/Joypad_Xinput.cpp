@@ -5,7 +5,7 @@
 #include "os/Joypad_Xbox.h"
 #include "os/UsbMidiKeyboard.h"
 #include "os/UserMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 namespace {
     XINPUT_CAPABILITIES gCaps[kNumJoypads];

@@ -6,7 +6,7 @@
 #include "rndobj/Mat.h"
 #include "rndobj/Tex.h"
 #include <nuiapi.h>
-#include "xdk/nui/nuidetroit.h"
+//#include "xdk/nui/nuidetroit.h"
 
 struct CamTexClip {
     void StoreTextureClip(RndTex *, float, float, float, float);

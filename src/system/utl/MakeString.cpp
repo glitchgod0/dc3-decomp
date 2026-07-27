@@ -6,7 +6,7 @@
 #include "os/OSFuncs.h"
 #include "utl/MemMgr.h"
 #include "utl/Str.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/xapilibi/handleapi.h"
 #include "xdk/xapilibi/processthreadsapi.h"
 

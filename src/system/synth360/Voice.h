@@ -3,7 +3,7 @@
 #include "types.h"
 #include "utl/PoolAlloc.h"
 #include <d3dx9.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XAUDIO2.h"
 
 // size 0x24

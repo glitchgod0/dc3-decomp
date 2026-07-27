@@ -3,7 +3,7 @@
 #include "obj/Object.h"
 #include "rndobj/Overlay.h"
 #include <nuiapi.h>
-#include "xdk/nui/nuispeech.h"
+//#include "xdk/nui/nuispeech.h"
 
 class SpeechMgr : public Hmx::Object {
 public:

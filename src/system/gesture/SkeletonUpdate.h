@@ -4,7 +4,7 @@
 #include "gesture/SkeletonHistory.h"
 #include "obj/Object.h"
 #include "os/CritSec.h"
-#include "xdk/nui/nuiskeleton.h"
+#include <nuiapi.h>
 
 class SkeletonUpdate;
 

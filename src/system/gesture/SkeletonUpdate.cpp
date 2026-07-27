@@ -20,7 +20,7 @@
 #include "utl/MemMgr.h"
 #include "utl/Std.h"
 #include <nuiapi.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/nui/nuiskeleton.h"
 #include <d3dx9.h>
 #include "xdk/xapilibi/synchapi.h"

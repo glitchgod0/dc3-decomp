@@ -15,7 +15,7 @@
 #include "os/PlatformMgr.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/xapilibi/winerror.h"
 #include "xdk/xapilibi/xbox.h"
 #include <cstring>

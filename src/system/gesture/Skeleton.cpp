@@ -13,7 +13,7 @@
 #include "os/System.h"
 #include "utl/Std.h"
 #include <nuiapi.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/nui/nuiidentity.h"
 #include <d3dx9.h>
 #include "xdk/xapilibi/winerror.h"

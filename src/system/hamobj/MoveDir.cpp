@@ -64,7 +64,7 @@
 #include "utl/Symbol.h"
 #include "utl/TimeConversion.h"
 #include "world/Dir.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 std::vector<FilterVersion *> MoveDir::sFilterVersions;
 static float sFloat = 0.0f;

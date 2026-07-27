@@ -10,7 +10,7 @@
 #include "obj/Object.h"
 #include "rndobj/Dir.h"
 #include "rndobj/Tex.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 DECLARE_MESSAGE(KinectHardwareStatusMsg, "kinect_status_changed")
 KinectHardwareStatusMsg(int i) : Message(Type(), i) {}

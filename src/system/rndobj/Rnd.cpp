@@ -83,7 +83,7 @@
 #include "utl/MemMgr.h"
 #include "utl/Option.h"
 #include "utl/TextStream.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/xapilibi/synchapi.h"
 #include "xdk/xapilibi/xbox.h"
 

@@ -10,7 +10,7 @@
 #include "os/PlatformMgr.h"
 #include "os/System.h"
 #include "utl/DataPointMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 DingoSvrXbox gDingoSvrXbox;
 DingoServer &TheServer = gDingoSvrXbox;

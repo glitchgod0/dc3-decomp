@@ -18,7 +18,7 @@
 #include "utl/Locale.h"
 #include "utl/MemMgr.h"
 #include "utl/Symbol.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XMP.h"
 #include "xdk/XNET.h"
 #include "xdk/XONLINE.h"

@@ -1,7 +1,7 @@
 #include "dsp/Common_Xbox.h"
 #include "os/Debug.h"
 #include "utl/MemMgr.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 void DspClearBuffer(float *&f, int sizeSamps) { XMemSet(f, 0, sizeSamps << 2); }
 

@@ -3,7 +3,7 @@
 #include "utl/BinStream.h"
 #include "utl/MemMgr.h"
 #include "utl/Str.h"
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 
 // size 0x18
 class OnlineID {

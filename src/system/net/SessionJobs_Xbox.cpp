@@ -2,7 +2,7 @@
 #include "net/DingoSvr.h"
 #include "obj/Object.h"
 #include <d3dx9.h>
-#include "xdk/XAPILIB.h"
+#include <xtl.h>
 #include "xdk/XNET.h"
 #include "xdk/xapilibi/winerror.h"
 
