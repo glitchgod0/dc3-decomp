@@ -5,7 +5,7 @@
 #include "obj/Msg.h"
 #include "obj/Object.h"
 #include "os/Debug.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 #include "xdk/xapilibi/winerror.h"
 
 WaveToTurnOnLight *TheWaveToTurnOnLight;

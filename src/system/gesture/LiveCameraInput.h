@@ -5,7 +5,7 @@
 #include "rnddx9/Tex.h"
 #include "rndobj/Mat.h"
 #include "rndobj/Tex.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 #include "xdk/nui/nuidetroit.h"
 
 struct CamTexClip {

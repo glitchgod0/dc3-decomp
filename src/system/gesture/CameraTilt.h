@@ -3,7 +3,7 @@
 #include "os/Timer.h"
 #include "ui/UI.h"
 #include "xdk/XAPILIB.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 
 class CameraTilt : public Hmx::Object {
 public:

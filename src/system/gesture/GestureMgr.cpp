@@ -17,7 +17,7 @@
 #include "os/PlatformMgr.h"
 #include "os/System.h"
 #include "rndobj/Dir.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 
 float GestureMgr::sMaxRecoveryDistance = 0.3;
 float GestureMgr::sMinRecoveryTime = 0.7;

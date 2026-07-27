@@ -12,7 +12,7 @@
 #include "os/Debug.h"
 #include "os/System.h"
 #include "utl/Std.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/nui/nuiidentity.h"
 #include <d3dx9.h>

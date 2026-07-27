@@ -19,7 +19,7 @@
 #include "os/Timer.h"
 #include "utl/MemMgr.h"
 #include "utl/Std.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/nui/nuiskeleton.h"
 #include <d3dx9.h>

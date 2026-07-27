@@ -23,7 +23,7 @@
 #include "xdk/XNET.h"
 #include "xdk/XONLINE.h"
 #include "xdk/XPARTY.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 #include "xdk/XBC.h"
 #include <d3dx9.h>
 #include "xdk/xapilibi/xbox.h"

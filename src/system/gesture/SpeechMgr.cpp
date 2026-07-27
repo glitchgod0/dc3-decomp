@@ -11,7 +11,7 @@
 #include "utl/MemMgr.h"
 #include "utl/Symbol.h"
 #include "utl/UTF8.h"
-#include "xdk/NUI.h"
+#include <nuiapi.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/nui/nuispeech.h"
 #include <d3dx9.h>
