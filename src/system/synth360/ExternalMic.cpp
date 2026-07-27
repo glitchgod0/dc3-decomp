@@ -2,8 +2,7 @@
 #include "os/Debug.h"
 #include "synth360/Mic.h"
 #include <xtl.h>
-#include "xdk/XMIC.h"
-#include "xdk/xmic/xmic.h"
+#include <xmic.h>
 
 namespace {
     DWORD ExternalMicThreadEntry(void *v) {

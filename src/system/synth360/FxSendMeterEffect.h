@@ -4,7 +4,7 @@
 #include "synth/FxSend.h"
 #include "synth/FxSendMeterEffect.h"
 #include "synth360/MeterEffect.h"
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 
 class FxSendMeterEffect360 : public FxSendMeterEffect, public FxSend360 {
 public:
