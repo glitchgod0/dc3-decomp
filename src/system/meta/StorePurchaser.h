@@ -5,7 +5,7 @@
 #include "ui/UI.h"
 #include "utl/Symbol.h"
 #include <d3dx9.h>
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 
 const int XMARKETPLACE_MAX_OFFERIDS = 6;
 

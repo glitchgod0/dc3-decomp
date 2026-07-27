@@ -7,8 +7,7 @@
 #include "ui/UI.h"
 #include "utl/Symbol.h"
 #include <d3dx9.h>
-#include "xdk/xapilibi/xbase.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 #include <cstring>
 
 #pragma region XboxPurchaser

@@ -38,6 +38,37 @@ src/
     │   ├── Trig.cpp
     │   └── vec.cpp
     ├── meta/
+    │   ├── Achievements.cpp
+    │   ├── Achievements_Xbox.cpp
+    │   ├── ButtonHolder.cpp
+    │   ├── ConnectionStatusPanel.cpp
+    │   ├── CreditsPanel.cpp
+    │   ├── DataArraySongInfo.cpp
+    │   ├── DeJitterPanel.cpp
+    │   ├── FixedSizeSaveable.cpp
+    │   ├── FixedSizeSaveableStream.cpp
+    │   ├── HAQManager.cpp
+    │   ├── HeldButtonPanel.cpp
+    │   ├── Jukebox.cpp
+    │   ├── MemcardAction.cpp
+    │   ├── MemcardMgr.cpp
+    │   ├── MemcardMgr_Xbox.cpp
+    │   ├── Meta.cpp
+    │   ├── MetaMusicManager.cpp
+    │   ├── MetaMusicScene.cpp
+    │   ├── MoviePanel.cpp
+    │   ├── PreloadPanel.cpp
+    │   ├── Profile.cpp
+    │   ├── SongMetadata.cpp
+    │   ├── SongMgr.cpp
+    │   ├── SongPreview.cpp
+    │   ├── Sorting.cpp
+    │   ├── StoreEnumeration.cpp  (Fails (in xdk libs))
+    │   ├── StoreOffer.cpp
+    │   ├── StorePanel.cpp  (Fails)
+    │   ├── StorePreviewMgr.cpp
+    │   ├── StorePurchaser.cpp  (Fails)
+    │   └── StreamPlayer.cpp
     ├── midi/
     │   ├── DataEventList.cpp
     │   ├── DisplayEvents.cpp

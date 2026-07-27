@@ -24,7 +24,7 @@
 #include "utl/NetCacheMgr.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 #include <list>
 
 StorePanel::StorePanel()
