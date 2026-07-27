@@ -3,7 +3,7 @@
 #include "dsp/FlangerEffect.h"
 #include "dsp/StandardEffect.h"
 #include "synth/Utl.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 FxSendFlanger360::FxSendFlanger360() : FxSend360(this) {}
 

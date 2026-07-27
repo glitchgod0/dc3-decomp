@@ -9,7 +9,7 @@
 #include "types.h"
 #include "utl/MemStream.h"
 #include "utl/Symbol.h"
-#include "xdk/XHV2.h"
+#include <xhv2.h>
 
 // size 0x58
 class ChatReceiver {

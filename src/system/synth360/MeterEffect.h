@@ -1,5 +1,5 @@
 #pragma once
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 struct MeterEffectParams {
     void *unk0;

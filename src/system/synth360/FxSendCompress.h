@@ -2,7 +2,7 @@
 #include "FxSend.h"
 #include "obj/Object.h"
 #include "synth/FxSendCompress.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 class FxSendCompress360 : public FxSendCompress, public FxSend360 {
 public:

@@ -2,7 +2,7 @@
 #include "FxSend.h"
 #include "dsp/EQEffect.h"
 #include "dsp/StandardEffect.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 FxSendEQ360::FxSendEQ360() : FxSend360(this) {}
 

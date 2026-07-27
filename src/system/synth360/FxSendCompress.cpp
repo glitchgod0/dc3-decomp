@@ -3,7 +3,7 @@
 #include "dsp/CompressionEffect.h"
 #include "dsp/StandardEffect.h"
 #include "xdk/xapilibi/xbase.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 FxSendCompress360::FxSendCompress360() : FxSend360(this) {}
 

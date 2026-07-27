@@ -41,11 +41,11 @@
 #include "utl/Std.h"
 #include "utl/Str.h"
 #include <xtl.h>
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 #include "xdk/XBOXKRNL.h"
 #include <d3dx9.h>
 #include "xdk/xaudio2/xapo.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 #include "xdk/xaudio2/xaudio2fx.h"
 
 Synth360 *TheXboxSynth;

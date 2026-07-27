@@ -1,6 +1,6 @@
 #pragma once
 #include "synth360/HeadsetXferEffect.h"
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 // size 0x1
 struct HeadsetPlaybackEffectParams {

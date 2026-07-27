@@ -282,7 +282,7 @@ src/
     │   ├── StoreOffer.cpp
     │   ├── StorePanel.cpp  (Fails)
     │   ├── StorePreviewMgr.cpp
-    │   ├── StorePurchaser.cpp  (Fails)
+    │   ├── StorePurchaser.cpp
     │   └── StreamPlayer.cpp
     ├── midi/
     │   ├── DataEventList.cpp

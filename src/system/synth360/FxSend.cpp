@@ -5,7 +5,7 @@
 #include "synth/FxSend.h"
 #include "synth/Synth.h"
 #include <d3dx9.h>
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 FxSend360::FxSend360(FxSend *fx) : mOutputVoice(0), mThis(fx), unk30(true) {
     TheXboxSynth->AddFxSend(this);

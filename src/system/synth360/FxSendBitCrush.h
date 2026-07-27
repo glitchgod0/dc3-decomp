@@ -2,7 +2,7 @@
 #include "FxSend.h"
 #include "obj/Object.h"
 #include "synth/FxSendBitCrush.h"
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 
 class FxSendBitCrush360 : public FxSendBitCrush, public FxSend360 {
 public:

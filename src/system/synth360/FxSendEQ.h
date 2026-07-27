@@ -3,9 +3,7 @@
 #include "obj/Object.h"
 #include "synth/FxSend.h"
 #include "synth/FxSendEQ.h"
-#include "xdk/xapilibi/xbase.h"
-#include "xdk/xaudio2/xaudio2.h"
-
+#include <xtl.h>
 class FxSendEQ360 : public FxSendEQ, public FxSend360 {
 public:
     FxSendEQ360();

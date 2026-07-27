@@ -2,7 +2,7 @@
 #include "FxSend.h"
 #include "dsp/DistortionEffect.h"
 #include "dsp/StandardEffect.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 FxSendDistortion360::FxSendDistortion360() : FxSend360(this) {}
 

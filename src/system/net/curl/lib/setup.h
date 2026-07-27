@@ -234,7 +234,7 @@ Error Compilation_aborted_SIZEOF_CURL_OFF_T_shall_not_be_defined
 // #endif
 // #else
 // #ifdef HAVE_WINSOCK_H
-#include <xdk/xnet/winsockx.h>
+#include <xtl.h>
 // #endif
 // #endif
 // #endif

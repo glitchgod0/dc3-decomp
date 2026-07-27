@@ -7,8 +7,6 @@
 #include <d3dx9.h>
 #include <xtl.h>
 
-const int XMARKETPLACE_MAX_OFFERIDS = 6;
-
 enum PurchaseState { // just know the val of kSuccess
     purchasestate0 = 0,
     purchasestate1 = 1,
