@@ -39,7 +39,19 @@ src/
     │   └── vec.cpp
     ├── meta/
     ├── midi/
+    │   ├── DataEventList.cpp
+    │   ├── DisplayEvents.cpp
+    │   ├── MidiParser.cpp
+    │   ├── MidiParserMgr.cpp
+    │   ├── MidiReader.cpp
+    │   ├── MidiReceiver.cpp
+    │   └── MidiVarLen.cpp
     ├── movie/
+    │   ├── Movie.cpp
+    │   ├── MovieImpl.cpp
+    │   ├── MovieSys.cpp
+    │   ├── Splash.cpp
+    │   └── TexMovie.cpp
     ├── moviebink/
     ├── net/
     ├── obj/

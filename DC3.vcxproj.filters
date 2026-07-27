@@ -207,6 +207,11 @@
     <ClCompile Include="src\system\midi\MidiReader.cpp" />
     <ClCompile Include="src\system\midi\MidiReceiver.cpp" />
     <ClCompile Include="src\system\midi\MidiVarLen.cpp" />
+    <ClCompile Include="src\system\movie\Movie.cpp" />
+    <ClCompile Include="src\system\movie\MovieImpl.cpp" />
+    <ClCompile Include="src\system\movie\MovieSys.cpp" />
+    <ClCompile Include="src\system\movie\Splash.cpp" />
+    <ClCompile Include="src\system\movie\TexMovie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\types.h" />
@@ -543,6 +548,11 @@
     <ClInclude Include="src\system\midi\MidiConstants.h" />
     <ClInclude Include="src\system\midi\midiparser.h" />
     <ClInclude Include="src\system\midi\midiparsermgr.h" />
+    <ClInclude Include="src\system\movie\texmovie.h" />
+    <ClInclude Include="src\system\movie\movie.h" />
+    <ClInclude Include="src\system\movie\movieimpl_p.h" />
+    <ClInclude Include="src\system\movie\moviesys.h" />
+    <ClInclude Include="src\system\movie\splash.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />

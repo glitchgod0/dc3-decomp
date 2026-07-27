@@ -17,8 +17,7 @@
 #include "rndobj/Rnd_NG.h"
 #include "rndobj/Utl.h"
 #include "utl/FilePath.h"
-#include "xdk/xapilibi/processthreadsapi.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 bool gSplashing = false;
 Splash *TheSplasher;
