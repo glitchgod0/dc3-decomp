@@ -2,8 +2,6 @@
 #include "Utl.h"
 #include "rnddx9/Rnd.h"
 #include <xtl.h>
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
 #include <cstring>
 
 D3DVertexBuffer *MakeVertexBuffer(int num, uint size, uint, bool) {

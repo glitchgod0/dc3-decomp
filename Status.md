@@ -22,7 +22,7 @@ src/
     │   ├── Color.cpp
     │   ├── Decibels.cpp
     │   ├── DoubleExoponentialSmoother.cpp
-    │   ├── Easing.cpp  (Fails)
+    │   ├── Easing.cpp
     │   ├── FileChecksum.cpp
     │   ├── Geo.cpp
     │   ├── Interp.cpp
@@ -46,22 +46,22 @@ src/
     ├── oggvorbis/
     ├── os/
     ├── rnddx9/
-    │   ├── Cam.cpp  (Fails (Easing.h))
+    │   ├── Cam.cpp 
     │   ├── CubeTex.cpp
     │   ├── Env.cpp
     │   ├── Lit.cpp
     │   ├── Mat.cpp
-    │   ├── Mesh.cpp  (Fails (Easing.h))
-    │   ├── Movie.cpp  (Fails (Easing.h))
-    │   ├── MultiMesh.cpp  (Fails (Easing.h))
-    │   ├── Part.cpp  (Fails (Easing.h))
-    │   ├── RenderState.cpp  (Fails (Easing.h))
-    │   ├── Rnd.cpp  (Fails (Easing.h))
-    │   ├── Rnd_Xbox.cpp  (Fails (Easing.h))
-    │   ├── ShaderMgr.cpp  (Fails (Easing.h))
-    │   ├── Tex.cpp  (Fails (Easing.h))
-    │   ├── TexMgr.cpp  (Fails (Easing.h))
-    │   └── Utl.cpp  (Fails (Easing.h))
+    │   ├── Mesh.cpp 
+    │   ├── Movie.cpp 
+    │   ├── MultiMesh.cpp 
+    │   ├── Part.cpp 
+    │   ├── RenderState.cpp 
+    │   ├── Rnd.cpp 
+    │   ├── Rnd_Xbox.cpp 
+    │   ├── ShaderMgr.cpp 
+    │   ├── Tex.cpp
+    │   ├── TexMgr.cpp
+    │   └── Utl.cpp
     ├── rndobj/
     ├── stlport/
     ├── synth/
@@ -120,7 +120,7 @@ src/
     │   ├── Pool.cpp
     │   ├── PoolAlloc.cpp
     │   ├── Profiler.cpp
-    │   ├── Song.cpp  (Fails (Easing.h))
+    │   ├── Song.cpp 
     │   ├── SongInfoAudioType.cpp
     │   ├── SongInfoCopy.cpp
     │   ├── Spew.cpp

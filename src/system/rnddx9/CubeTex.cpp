@@ -8,7 +8,7 @@
 #include <xtl.h>
 #include <xgraphics.h>
 #include "xdk/d3d9i/d3d9types.h"
-#include "xdk/xgraphics/xgraphics.h"
+#include <xgraphics.h>
 
 DxCubeTex::DxCubeTex() : mTex(0) {}
 DxCubeTex::~DxCubeTex() { Reset(); }

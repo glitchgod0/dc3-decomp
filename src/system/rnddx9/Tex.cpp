@@ -16,11 +16,7 @@
 #include "rndobj/Tex.h"
 #include "utl/MemMgr.h"
 #include <xtl.h>
-#include "xdk/D3DX9.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
-#include "xdk/d3dx9/d3dx9tex.h"
-#include "xdk/xgraphics/xgraphics.h"
+#include <xgraphics.h>
 
 std::vector<DxTex *> gAllTextures;
 

@@ -143,7 +143,7 @@ inline float EaseElasticIn(float t, float power, float f3) {
             f7 = (asinf(1.0f / power)) * f3 * 0.15915494f;
         }
         float sub6 = t - 1;
-        float powed = pow(2.0, sub6 * 10.0f);
+        float powed = powf(2.0, sub6 * 10.0f);
         float sined = FastSin(((sub6 - f7) / f3) * 2 * PI);
         return -(sined * powed * f3);
     } else {
