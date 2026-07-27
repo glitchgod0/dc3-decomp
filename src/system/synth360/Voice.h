@@ -4,7 +4,7 @@
 #include "utl/PoolAlloc.h"
 #include <d3dx9.h>
 #include <xtl.h>
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 // size 0x24
 struct PoolVoice {

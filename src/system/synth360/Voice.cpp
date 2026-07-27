@@ -7,9 +7,7 @@
 #include "synth360/Synth.h"
 #include <d3dx9.h>
 #include <xtl.h>
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/synchapi.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 #include <list>
 #include <deque>
 

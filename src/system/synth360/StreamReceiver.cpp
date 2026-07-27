@@ -6,7 +6,7 @@
 #include "synth360/FxSend.h"
 #include "utl/MemMgr.h"
 #include "utl/Std.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 StreamReceiver *New360Receiver(int i1, int i2, bool b3, int i4) {
     return new StreamReceiver360(i2, i1, b3);

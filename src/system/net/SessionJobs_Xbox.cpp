@@ -3,8 +3,6 @@
 #include "obj/Object.h"
 #include <d3dx9.h>
 #include <xtl.h>
-#include "xdk/XNET.h"
-#include "xdk/xapilibi/winerror.h"
 
 XboxSessionJob::XboxSessionJob(void *v) : mSession(v), mSuccess(true) {
     memset(&mXOverlapped, 0, sizeof(XOVERLAPPED));

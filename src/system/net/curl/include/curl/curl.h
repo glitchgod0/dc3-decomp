@@ -62,7 +62,7 @@
 // #include <ws2tcpip.h>
 #endif
 #endif
-#include <xdk/xnet/winsockx.h>
+#include <xtl.h>
 /* HP-UX systems version 9, 10 and 11 lack sys/select.h and so does oldish
    libc5-based Linux systems. Only include it on systems that are known to
    require it! */

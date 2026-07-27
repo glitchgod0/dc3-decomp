@@ -2,7 +2,7 @@
 #include "Synth.h"
 #include "synth/FxSend.h"
 #include "synth360/Voice.h"
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 class FxSend360 {
 public:

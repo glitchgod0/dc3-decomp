@@ -303,6 +303,22 @@ src/
     │   ├── BinkMovieSys.cpp
     │   └── BinkMovieSys_Xbox.cpp  (Fails)
     ├── net/
+    │   ├── DingoAuthJob.cpp (Fails (in xdk libs))
+    │   ├── DingoJob.cpp (Fails (in xdk libs))
+    │   ├── DingoSvr.cpp (Fails (in xdk libs))
+    │   ├── DingoSvr_Xbox.cpp (Fails (in xdk libs))
+    │   ├── HttpGet.cpp
+    │   ├── HttpReq.cpp
+    │   ├── HttpReqCurl.cpp
+    │   ├── JsonMemory.cpp (Fails)
+    │   ├── JsonUtils.cpp
+    │   ├── SessionJobs_Xbox.cpp
+    │   ├── WebSvcMgr.cpp
+    │   ├── WebSvcMgrCurl.cpp
+    │   ├── WebSvcReq.cpp
+    │   ├── XLSPConnection.cpp  (Fails (in xdk libs))
+    │   ├── curl/
+    │   └── json-c/
     ├── obj/
     │   ├── DataArray.cpp  (Fails (in xdk libs))
     │   ├── DataFile.cpp  (Fails (in xdk libs))
@@ -527,11 +543,65 @@ src/
     │   ├── SynthSample.cpp
     │   ├── ThreeDSound.cpp
     │   ├── Utl.cpp (Fails)
-    │   ├── VorbisReader.cpp (Fails)
+    │   ├── VorbisReader.cpp
     │   ├── WavMgr.cpp
     │   ├── WavReader.cpp
-        └── tomcrypt
+    │   └── tomcrypt/
     ├── synth360/
+    │   ├── EnvelopeGenerator.cpp (Fails (ATG))
+    │   ├── ExternalMic.cpp (Fails (ATG))
+    │   ├── FxSend.cpp
+    │   ├── FxSendBitCrush.cpp (Fails (ATG))
+    │   ├── FxSendChorus.cpp (Fails (ATG))
+    │   ├── FxSendCompress.cpp (Fails (ATG))
+    │   ├── FxSendDelay.cpp (Fails (ATG))
+    │   ├── FxSendDistortion.cpp (Fails (ATG))
+    │   ├── FxSendEQ.cpp (Fails (ATG))
+    │   ├── FxSendFlanger.cpp (Fails (ATG))
+    │   ├── FxSendMeterEffect.cpp (Fails (ATG))
+    │   ├── FxSendPitchShift.cpp (Fails (ATG))
+    │   ├── FxSendReverb.cpp (Fails (ATG))
+    │   ├── FxSendSynapse.cpp (Fails (ATG))
+    │   ├── FxSendWah.cpp (Fails (ATG))
+    │   ├── GainEffect.cpp (Fails (ATG))
+    │   ├── HeadsetPlaybackEffect.cpp (Fails (ATG))
+    │   ├── HeadsetXferEffect.cpp (Fails (ATG))
+    │   ├── MeterEffect.cpp (Fails (ATG))
+    │   ├── Mic.cpp (Fails (ATG))
+    │   ├── PitchShiftEffect.cpp (Fails (ATG))
+    │   ├── SampleInst.cpp (Fails (ATG))
+    │   ├── StreamReceiver.cpp (Fails (ATG))
+    │   ├── Synth.cpp (Fails (ATG))
+    │   ├── SynthSample.cpp (Fails (ATG))
+    │   ├── Voice.cpp (Fails (ATG))
+    │   │
+    │   ├── soundtouch/
+    │   │   ├── 3dnow_win.cpp
+    │   │   ├── AAFilter.cpp
+    │   │   ├── BPMDetect.cpp
+    │   │   ├── cpu_detect_x86_gcc.cpp
+    │   │   ├── cpu_detect_x86_win.cpp
+    │   │   ├── FIFOSampleBuffer.cpp
+    │   │   ├── FIRFilter.cpp
+    │   │   ├── mmx_optimized.cpp
+    │   │   ├── PeakFinder.cpp
+    │   │   ├── RateTransposer.cpp
+    │   │   ├── SoundTouch.cpp
+    │   │   ├── sse_optimized.cpp
+    │   │   └── TDStretch.cpp
+    │   │
+    │   └── synapse_apo/
+    │       ├── Biquad.cpp
+    │       ├── FFT.cpp
+    │       ├── FftIpp.cpp
+    │       ├── GranularSynth.cpp
+    │       ├── IPP_basicmath_xbox.cpp
+    │       ├── PeakDetector.cpp
+    │       ├── PitchCorrectedVoice.cpp
+    │       ├── PitchDetector.cpp
+    │       ├── SpectralAnalysis.cpp
+    │       ├── SynapseAPO.cpp
+    │       └── Synapse_dsp.cpp
     ├── ui/
     │   ├── CheatProvider.cpp
     │   ├── InlineHelp.cpp
