@@ -1,7 +1,7 @@
 #include "dsp/FlangerEffect.h"
 #include "Common_Xbox.h"
 #include "math/Rot.h"
-#include "xdk/xaudio2/xaudio2.h"
+#include <xaudio2.h>
 
 FlangerEffect::FlangerEffect(IXAudioBatchAllocator *ix)
     : unk10(0), unk14(100), unk18(0), unk1c(0), unk20(0.5f), unk24(0), unk28(0), unk2c(0),

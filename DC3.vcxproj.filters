@@ -243,6 +243,16 @@
     <ClCompile Include="src\system\meta\StorePreviewMgr.cpp" />
     <ClCompile Include="src\system\meta\StorePurchaser.cpp" />
     <ClCompile Include="src\system\meta\StreamPlayer.cpp" />
+    <ClCompile Include="src\system\dsp\BitCrushEffect.cpp" />
+    <ClCompile Include="src\system\dsp\Common_Xbox.cpp" />
+    <ClCompile Include="src\system\dsp\CompressionEffect.cpp" />
+    <ClCompile Include="src\system\dsp\DelayEffect.cpp" />
+    <ClCompile Include="src\system\dsp\DistortionEffect.cpp" />
+    <ClCompile Include="src\system\dsp\EQEffect.cpp" />
+    <ClCompile Include="src\system\dsp\FlangerEffect.cpp" />
+    <ClCompile Include="src\system\dsp\WahEffect.cpp" />
+    <ClCompile Include="src\system\dsp\mkfilter\complex.cpp" />
+    <ClCompile Include="src\system\dsp\mkfilter\filterdesign.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\types.h" />
@@ -613,6 +623,17 @@
     <ClInclude Include="src\system\meta\StorePanel.h" />
     <ClInclude Include="src\system\meta\StorePreviewMgr.h" />
     <ClInclude Include="src\system\meta\StorePurchaser.h" />
+    <ClInclude Include="src\system\dsp\WahEffect.h" />
+    <ClInclude Include="src\system\dsp\BitCrushEffect.h" />
+    <ClInclude Include="src\system\dsp\Common_Xbox.h" />
+    <ClInclude Include="src\system\dsp\CompressionEffect.h" />
+    <ClInclude Include="src\system\dsp\DelayEffect.h" />
+    <ClInclude Include="src\system\dsp\DistortionEffect.h" />
+    <ClInclude Include="src\system\dsp\EQEffect.h" />
+    <ClInclude Include="src\system\dsp\FlangerEffect.h" />
+    <ClInclude Include="src\system\dsp\StandardEffect.h" />
+    <ClInclude Include="src\system\dsp\mkfilter\complex.h" />
+    <ClInclude Include="src\system\dsp\mkfilter\filterdesign.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />

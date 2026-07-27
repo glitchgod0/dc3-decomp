@@ -1,5 +1,5 @@
 #pragma once
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 DEFINE_CLSID(EQEffect, 0E0F3600, B28E, 4434, 81, 0D, 21, B8, BE, 74, 06, 19);
 

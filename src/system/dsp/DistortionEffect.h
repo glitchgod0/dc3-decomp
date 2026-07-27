@@ -1,5 +1,5 @@
 #pragma once
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 DEFINE_CLSID(DistortionEffect, A46688F1, A161, 452F, AF, 1C, 3E, 63, 80, 45, 6B, DA);
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 void DspClearBuffer(float *&, int);
 void DspFree(float *&);

@@ -14,6 +14,17 @@ src/
     ├── beatmatch/
     ├── char/
     ├── dsp/
+    │   ├── BitCrushEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── Common_Xbox.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── CompressionEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── DelayEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── DistortionEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── EQEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── FlangerEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── WahEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   └── mkfilter/
+    │       ├── complex.cpp
+    │       └── filterdesign.cpp
     ├── flow/
     ├── gesture/
     ├── hamobj/
@@ -42,7 +53,7 @@ src/
     │   ├── Achievements_Xbox.cpp
     │   ├── ButtonHolder.cpp
     │   ├── ConnectionStatusPanel.cpp
-    │   ├── CreditsPanel.cpp
+    │   ├── CreditsPanel.cpp  (Fails (in xdk libs))
     │   ├── DataArraySongInfo.cpp
     │   ├── DeJitterPanel.cpp
     │   ├── FixedSizeSaveable.cpp

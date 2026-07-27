@@ -1,5 +1,5 @@
 #pragma once
-#include "xdk/XAUDIO2.h"
+#include <xaudio2.h>
 
 DEFINE_CLSID(DelayEffect, 24BE678A, C537, 4C1C, A8, 2F, 16, 4C, FB, 06, E7, A6);
 
