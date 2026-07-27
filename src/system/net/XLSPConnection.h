@@ -2,7 +2,7 @@
 #include "os/ThreadCall.h"
 #include "os/Timer.h"
 #include "utl/Str.h"
-#include "xdk/XNET.h"
+#include <xtl.h>
 
 class XLSPConnection : public ThreadCallback {
 public:

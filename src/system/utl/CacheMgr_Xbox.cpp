@@ -12,8 +12,6 @@
 #include "utl/UTF8.h"
 #include <xtl.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/xbase.h"
-#include "xdk/xapilibi/xbox.h"
 
 bool IsDeviceConnected(DWORD deviceID) {
     return XContentGetDeviceState(deviceID, nullptr) == 0;

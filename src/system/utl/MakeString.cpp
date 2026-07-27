@@ -7,8 +7,8 @@
 #include "utl/MemMgr.h"
 #include "utl/Str.h"
 #include <xtl.h>
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/processthreadsapi.h"
+//#include "xdk/xapilibi/handleapi.h"
+//#include "xdk/xapilibi/processthreadsapi.h"
 
 #define MAX_BUF_THREADS 6
 #define MAX_BUF_SIZE 0x1000

@@ -4,7 +4,7 @@
 #include "utl/CacheMgr.h"
 #include "utl/Cache_Xbox.h"
 #include <d3dx9.h>
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 
 // size 0x18c
 class CacheMgrXbox : public CacheMgr {

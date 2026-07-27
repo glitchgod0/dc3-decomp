@@ -9,13 +9,8 @@
 #include "utl/MakeString.h"
 #include "utl/Str.h"
 #include "utl/Symbol.h"
-#include <d3dx9.h>
-#include "xdk/xapilibi/errhandlingapi.h"
-#include "xdk/xapilibi/fileapi.h"
-#include "xdk/xapilibi/handleapi.h"
-#include "xdk/xapilibi/xbase.h"
-#include "xdk/xapilibi/xbox.h"
 #include <cstring>
+#include <d3dx9.h>
 #include <xtl.h>
 
 #pragma region CacheIDXbox
