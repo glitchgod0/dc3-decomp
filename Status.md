@@ -53,6 +53,23 @@ src/
     ├── oggvorbis/
     ├── os/
     ├── rnddx9/
+    │   ├── Cam.cpp    
+    │   ├── CubeText.cpp    
+    │   ├── Env.cpp    
+    │   ├── Lit.cpp    
+    │   ├── Mat.cpp    
+    │   ├── Mesh.cpp    
+    │   ├── Movie.cpp    
+    │   ├── MultiMesh.cpp    
+    │   ├── Part.cpp    
+    │   ├── RenderState.cpp    
+    │   ├── Rnd.cpp    
+    │   ├── Rnd_Xbox.cpp    
+    │   ├── Shader.cpp    
+    │   ├── ShaderMgr.cpp    
+    │   ├── Tex.cpp    
+    │   ├── TexMgr.cpp    
+    │   └── Utl.cpp    
     ├── rndobj/
     ├── stlport/
     ├── synth/
