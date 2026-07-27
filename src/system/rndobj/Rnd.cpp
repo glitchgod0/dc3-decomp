@@ -84,8 +84,6 @@
 #include "utl/Option.h"
 #include "utl/TextStream.h"
 #include <xtl.h>
-#include "xdk/xapilibi/synchapi.h"
-#include "xdk/xapilibi/xbox.h"
 
 int Rnd::sPostProcPanelCount = 0;
 static DxTex *sTexture = nullptr;

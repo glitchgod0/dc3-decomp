@@ -299,6 +299,9 @@ src/
     │   ├── Splash.cpp
     │   └── TexMovie.cpp
     ├── moviebink/
+    │   ├── BinkMovieImpl.cpp  (Fails)
+    │   ├── BinkMovieSys.cpp
+    │   └── BinkMovieSys_Xbox.cpp  (Fails)
     ├── net/
     ├── obj/
     │   ├── DataArray.cpp  (Fails (in xdk libs))
@@ -391,6 +394,90 @@ src/
     │   ├── TexMgr.cpp
     │   └── Utl.cpp
     ├── rndobj/
+    │   ├── AmbientOcclusion.cpp
+    │   ├── Anim.cpp
+    │   ├── AnimFilter.cpp
+    │   ├── BaseMaterial.cpp
+    │   ├── Bitmap.cpp
+    │   ├── BoxMap.cpp
+    │   ├── Cam.cpp (Fails)
+    │   ├── CamAnim.cpp
+    │   ├── ColorXfm.cpp
+    │   ├── Console.cpp
+    │   ├── CubeTex.cpp
+    │   ├── Dir.cpp
+    │   ├── DOFProc.cpp
+    │   ├── DOFProc_NG.cpp
+    │   ├── Draw.cpp
+    │   ├── Enter.cpp
+    │   ├── Env.cpp
+    │   ├── Env_NG.cpp
+    │   ├── EventTrigger.cpp
+    │   ├── Flare.cpp
+    │   ├── Font.cpp
+    │   ├── Font3d.cpp
+    │   ├── Fur.cpp
+    │   ├── Fur_NG.cpp
+    │   ├── Gen.cpp
+    │   ├── Graph.cpp
+    │   ├── Group.cpp
+    │   ├── HiResScreen.cpp
+    │   ├── Line.cpp
+    │   ├── Lit.cpp
+    │   ├── LitAnim.cpp
+    │   ├── Lit_NG.cpp
+    │   ├── Mat.cpp
+    │   ├── MatAnim.cpp
+    │   ├── Mat_NG.cpp
+    │   ├── Mesh.cpp
+    │   ├── MeshAnim.cpp
+    │   ├── MeshDeform.cpp
+    │   ├── MetaMaterial.cpp
+    │   ├── Morph.cpp
+    │   ├── MotionBlur.cpp
+    │   ├── Movie.cpp
+    │   ├── MultiMesh.cpp
+    │   ├── MultiMeshProxy.cpp
+    │   ├── Overlay.cpp
+    │   ├── Part.cpp
+    │   ├── PartAnim.cpp
+    │   ├── PartLauncher.cpp
+    │   ├── Poll.cpp
+    │   ├── PollAnim.cpp
+    │   ├── PostProc.cpp
+    │   ├── PostProcMgr.cpp
+    │   ├── PostProc_NG.cpp
+    │   ├── PropAnim.cpp
+    │   ├── PropKeys.cpp
+    │   ├── Ribbon.cpp
+    │   ├── Rnd.cpp
+    │   ├── Rnd_NG.cpp
+    │   ├── ScreenMask.cpp
+    │   ├── Set.cpp
+    │   ├── Shader.cpp
+    │   ├── ShaderMgr.cpp
+    │   ├── ShaderOptions.cpp
+    │   ├── ShaderProgram.cpp
+    │   ├── ShadowMap.cpp
+    │   ├── Shockwave.cpp
+    │   ├── SIVideo.cpp
+    │   ├── SoftParticleBuffer.cpp
+    │   ├── SoftParticles.cpp
+    │   ├── Spline.cpp
+    │   ├── Tex.cpp
+    │   ├── TexBlendController.cpp
+    │   ├── TexBlender.cpp
+    │   ├── TexProc.cpp
+    │   ├── TexRenderer.cpp
+    │   ├── Text.cpp
+    │   ├── Trans.cpp
+    │   ├── TransAnim.cpp
+    │   ├── TransProxy.cpp
+    │   ├── Utl.cpp
+    │   ├── VelocityBuffer.cpp
+    │   ├── Watcher.cpp
+    │   ├── Wind.cpp
+    │   └── wordwrap.cpp
     ├── stlport/
     ├── synth/
     ├── synth360/
