@@ -12,14 +12,13 @@
 #include "os/Debug.h"
 #include "os/System.h"
 #include "utl/Std.h"
-#include <nuiapi.h>
-#include <xtl.h>
-#include "xdk/nui/nuiidentity.h"
-#include <d3dx9.h>
-#include "xdk/xapilibi/winerror.h"
 #include <cmath>
 #include <cstddef>
 #include <cstring>
+#include <xtl.h>
+#include <d3dx9.h>
+#include <nuiapi.h>
+#include <nuiIdentity.h>
 
 Vector3DESmoother SkeletonFrame::sUpVectorSmoother;
 

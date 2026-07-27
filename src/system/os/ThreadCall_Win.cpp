@@ -1,7 +1,8 @@
+#include <xtl.h>
 #include "ThreadCall.h"
 #include "os/CritSec.h"
 #include "os/Debug.h"
-#include <xtl.h>
+
 #include <process.h>
 
 namespace {
@@ -64,7 +65,7 @@ void ThreadCallInit() {
         MILO_LOG("CreateSemaphore() failed.(%d)\n", gThreadSema);
     } else {
         gThreadHandle =
-            _beginthreadex(nullptr, 0x10000, MyThreadFunc, nullptr, 0, nullptr);
+            (HANDLE)_beginthreadex(nullptr, 0x10000, MyThreadFunc, nullptr, 0, nullptr);
         if (!gThreadSema) {
             MILO_LOG("_beginthreadex() failed.(%d)\n", gThreadHandle);
         }

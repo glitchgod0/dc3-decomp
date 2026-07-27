@@ -116,38 +116,38 @@ src/
     │   ├── PropertyEventListener.cpp
     │   └── PropertyEventProvider.cpp
     ├── gesture/
-    │   ├── ArcDetector.cpp  (Fails (in xdk libs))
-    │   ├── ArchiveSkeleton.cpp  (Fails (in xdk libs))
+    │   ├── ArcDetector.cpp
+    │   ├── ArchiveSkeleton.cpp
     │   ├── BaseSkeleton.cpp
     │   ├── CameraInput.cpp
     │   ├── CameraTilt.cpp (Fails)
     │   ├── DepthBuffer3D.cpp
-    │   ├── DirectionGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── DirectionGestureFilter.cpp
     │   ├── DrawUtl.cpp
     │   ├── FitnessFilter.cpp
-    │   ├── FreestyleMotionFilter.cpp  (Fails (in xdk libs))
-    │   ├── Gesture.cpp  (Fails (in xdk libs))
+    │   ├── FreestyleMotionFilter.cpp
+    │   ├── Gesture.cpp
     │   ├── GestureMgr.cpp
-    │   ├── HandHeightGestureFilter.cpp  (Fails (in xdk libs))
-    │   ├── HandInvokeGestureFilter.cpp  (Fails (in xdk libs))
-    │   ├── HandRaisedGestureFilter.cpp  (Fails (in xdk libs))
-    │   ├── HandsUpGestureFilter.cpp  (Fails (in xdk libs))
-    │   ├── HighFiveGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── HandHeightGestureFilter.cpp 
+    │   ├── HandInvokeGestureFilter.cpp 
+    │   ├── HandRaisedGestureFilter.cpp 
+    │   ├── HandsUpGestureFilter.cpp 
+    │   ├── HighFiveGestureFilter.cpp 
     │   ├── IdentityInfo.cpp
-    │   ├── JointUtl.cpp  (Fails (in xdk libs))
+    │   ├── JointUtl.cpp 
     │   ├── LiveCameraInput.cpp (Fails)
-    │   ├── NavigationSkeletonDir.cpp  (Fails (in xdk libs))
-    │   ├── Skeleton.cpp  (Fails (in xdk libs))
+    │   ├── NavigationSkeletonDir.cpp 
+    │   ├── Skeleton.cpp 
     │   ├── SkeletonClip.cpp
-    │   ├── SkeletonDir.cpp  (Fails (in xdk libs))
+    │   ├── SkeletonDir.cpp 
     │   ├── SkeletonExtentTracker.cpp
-    │   ├── SkeletonHistory.cpp  (Fails (in xdk libs))
-    │   ├── SkeletonQualityFilter.cpp  (Fails (in xdk libs))
+    │   ├── SkeletonHistory.cpp 
+    │   ├── SkeletonQualityFilter.cpp 
     │   ├── SkeletonRecoverer.cpp
     │   ├── SkeletonUpdate.cpp
     │   ├── SkeletonViz.cpp
-    │   ├── SpeechMgr.cpp (Fails ('E_SPEECH_UNINITIALIZED'))
-    │   ├── StandingStillGestureFilter.cpp  (Fails (in xdk libs))
+    │   ├── SpeechMgr.cpp
+    │   ├── StandingStillGestureFilter.cpp 
     │   ├── StreamRecorder.cpp
     │   ├── StreamRenderer.cpp
     │   ├── StubCameraInput.cpp
@@ -165,17 +165,17 @@ src/
     │   ├── DetectFrame.cpp
     │   ├── Difficulty.cpp
     │   ├── ErrorNode.cpp
-    │   ├── FilterQueue.cpp  (Fails (in xdk libs))
+    │   ├── FilterQueue.cpp
     │   ├── FilterVersion.cpp
     │   ├── FreestyleMove.cpp
-    │   ├── FreestyleMoveRecorder.cpp  (Fails (in xdk libs))
+    │   ├── FreestyleMoveRecorder.cpp
     │   ├── Ham.cpp
     │   ├── HamAudio.cpp
     │   ├── HamBattleData.cpp
     │   ├── HamCamShot.cpp
     │   ├── HamCamTransform.cpp
     │   ├── HamCharacter.cpp
-    │   ├── HamDirector.cpp  (Fails (in xdk libs))
+    │   ├── HamDirector.cpp
     │   ├── HamDriver.cpp
     │   ├── HamGameData.cpp
     │   ├── HamIconMan.cpp
@@ -201,7 +201,7 @@ src/
     │   ├── HamSong.cpp
     │   ├── HamSongData.cpp
     │   ├── HamSupereasyData.cpp
-    │   ├── HamVisDir.cpp  (Fails (in xdk libs))
+    │   ├── HamVisDir.cpp
     │   ├── HamWardrobe.cpp
     │   ├── HollaBackMinigame.cpp
     │   ├── MeterDisplay.cpp
@@ -216,11 +216,11 @@ src/
     │   ├── MoveVariant.cpp
     │   ├── OriginalChoreoRemixer.cpp
     │   ├── PhotoSpotlightPositioner.cpp
-    │   ├── Pose.cpp  (Fails (in xdk libs))
-    │   ├── PoseFatalities.cpp  (Fails (in xdk libs))
+    │   ├── Pose.cpp
+    │   ├── PoseFatalities.cpp
     │   ├── PracticeOptionsProvider.cpp
     │   ├── PracticeSection.cpp
-    │   ├── RhythmBattle.cpp  (Fails (in xdk libs))
+    │   ├── RhythmBattle.cpp
     │   ├── RhythmBattlePlayer.cpp
     │   ├── RhythmDetector.cpp
     │   ├── RhythmDetectorGroup.cpp

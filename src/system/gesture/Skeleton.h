@@ -1,6 +1,7 @@
 #pragma once
 #include "gesture/BaseSkeleton.h"
 #include "math/DoubleExponentialSmoother.h"
+#include <xtl.h>
 #include <nuiapi.h>
 
 // TrackedJoint size: 0x74
