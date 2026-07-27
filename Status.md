@@ -530,7 +530,7 @@ src/
     │   ├── SampleData.cpp
     │   ├── SampleInst.cpp
     │   ├── SampleZone.cpp
-    │   ├── Sequence.cpp (Fails)
+    │   ├── Sequence.cpp
     │   ├── Sfx.cpp
     │   ├── SfxMap.cpp
     │   ├── Sound.cpp
@@ -642,7 +642,7 @@ src/
     ├── utl/
     │   ├── AllocInfo.cpp  (Fails)
     │   ├── BeatMap.cpp
-    │   ├── BinkIntegration.cpp  (Fails)
+    │   ├── BinkIntegration.cpp  (Fails (in xdk libs))
     │   ├── BinStream.cpp
     │   ├── BufStream.cpp
     │   ├── Cache.cpp
@@ -670,13 +670,13 @@ src/
     │   ├── KnownIssues.cpp
     │   ├── Licenses.cpp
     │   ├── Loader.cpp
-    │   ├── Locale.cpp  (Fails)
+    │   ├── Locale.cpp  (Fails (in xdk libs))
     │   ├── LocaleOrdinal.cpp
-    │   ├── Magnu.cpp  (Fails)
+    │   ├── Magnu.cpp  (Fails (in xdk libs))
     │   ├── MakeString.cpp
     │   ├── MBT.cpp
     │   ├── MemHeap.cpp
-    │   ├── MemMgr.cpp  (Fails)
+    │   ├── MemMgr.cpp
     │   ├── MemPoint.cpp
     │   ├── MemStats.cpp
     │   ├── MemStream.cpp

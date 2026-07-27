@@ -11,8 +11,6 @@
 #include "utl/PoolAlloc.h"
 #include "utl/TextStream.h"
 #include <xtl.h>
-#include "xdk/xapilibi/processthreadsapi.h"
-#include "xdk/xapilibi/winbase.h"
 #include <cstdlib>
 
 #define MAX_HEAPS 16

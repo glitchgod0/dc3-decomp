@@ -4,6 +4,8 @@
 #include "obj/Object.h"
 #include "obj/Task.h"
 
+#include <functional>
+
 bool sForceSerialSequences;
 
 namespace {
