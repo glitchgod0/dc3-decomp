@@ -12,7 +12,7 @@ src/
 │   └── net_ham/
 └── system/
     ├── beatmatch/
-├── char/
+    ├── char/
     │   ├── Char.cpp
     │   ├── Character.cpp
     │   ├── CharacterTest.cpp
@@ -85,6 +85,36 @@ src/
     │       ├── complex.cpp
     │       └── filterdesign.cpp
     ├── flow/
+    │   ├── DrivenPropertyEntry.cpp
+    │   ├── DrivenPropertyMathOps.cpp
+    │   ├── Flow.cpp
+    │   ├── FlowAnimate.cpp
+    │   ├── FlowCommand.cpp
+    │   ├── FlowDistance.cpp
+    │   ├── FlowEventListener.cpp
+    │   ├── FlowIf.cpp
+    │   ├── FlowLabel.cpp
+    │   ├── FlowManager.cpp
+    │   ├── FlowMultiSetProperty.cpp
+    │   ├── FlowNode.cpp
+    │   ├── FlowOnStop.cpp
+    │   ├── FlowOutPort.cpp
+    │   ├── FlowPickOne.cpp
+    │   ├── FlowPtr.cpp
+    │   ├── FlowQueueable.cpp
+    │   ├── FlowRun.cpp
+    │   ├── FlowSequence.cpp
+    │   ├── FlowSetProperty.cpp
+    │   ├── FlowSlider.cpp
+    │   ├── FlowSound.cpp
+    │   ├── FlowSwitch.cpp
+    │   ├── FlowSwitchCase.cpp
+    │   ├── FlowTimer.cpp
+    │   ├── FlowTrigger.cpp
+    │   ├── FlowValueCase.cpp
+    │   ├── FlowWhile.cpp
+    │   ├── PropertyEventListener.cpp
+    │   └── PropertyEventProvider.cpp
     ├── gesture/
     │   ├── ArcDetector.cpp  (Fails (in xdk libs))
     │   ├── ArchiveSkeleton.cpp  (Fails (in xdk libs))
