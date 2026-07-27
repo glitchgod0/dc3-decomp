@@ -113,7 +113,7 @@ extern int yyleng;
 #endif
 
 extern int yylex(YY_ONLY_ARG);
-extern void yyrestart(FILE *file YY_LAST_ARG);
+//extern void yyrestart(FILE *file YY_LAST_ARG);
 
 extern char *yyget_text(YY_ONLY_ARG);
 extern int yyget_leng(YY_ONLY_ARG);
