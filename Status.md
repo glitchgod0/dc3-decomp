@@ -696,7 +696,7 @@ src/
     │   ├── SongInfoAudioType.cpp
     │   ├── SongInfoCopy.cpp
     │   ├── Spew.cpp
-    │   ├── Str.cpp  (Fails)
+    │   ├── Str.cpp
     │   ├── StringTable.cpp
     │   ├── Symbol.cpp
     │   ├── TempoMap.cpp
@@ -720,7 +720,7 @@ src/
     │   ├── FreeCamera.cpp
     │   ├── Instance.cpp
     │   ├── LightHue.cpp
-    │   ├── LightPreset.cpp  (Fails)
+    │   ├── LightPreset.cpp
     │   ├── LightPresetManager.cpp
     │   ├── PhysicsManager.cpp
     │   ├── PhysicsVolume.cpp
