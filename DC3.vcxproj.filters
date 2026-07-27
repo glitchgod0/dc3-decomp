@@ -868,6 +868,21 @@
     <ClCompile Include="src\system\synth\VorbisReader.cpp" />
     <ClCompile Include="src\system\synth\WavMgr.cpp" />
     <ClCompile Include="src\system\synth\WavReader.cpp" />
+    <ClCompile Include="src\system\zlib\adler32.c" />
+    <ClCompile Include="src\system\zlib\compress.c" />
+    <ClCompile Include="src\system\zlib\crc32.c" />
+    <ClCompile Include="src\system\zlib\deflate.c" />
+    <ClCompile Include="src\system\zlib\example.c" />
+    <ClCompile Include="src\system\zlib\gzio.c" />
+    <ClCompile Include="src\system\zlib\infback.c" />
+    <ClCompile Include="src\system\zlib\inffast.c" />
+    <ClCompile Include="src\system\zlib\inflate.c" />
+    <ClCompile Include="src\system\zlib\inftrees.c" />
+    <ClCompile Include="src\system\zlib\minigzip.c" />
+    <ClCompile Include="src\system\zlib\trees.c" />
+    <ClCompile Include="src\system\zlib\uncompr.c" />
+    <ClCompile Include="src\system\zlib\ZlibLicense.cpp" />
+    <ClCompile Include="src\system\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\types.h" />
@@ -1857,6 +1872,17 @@
     <ClInclude Include="src\system\synth\VorbisReader.h" />
     <ClInclude Include="src\system\synth\WavMgr.h" />
     <ClInclude Include="src\system\synth\WavReader.h" />
+    <ClInclude Include="src\system\zlib\crc32.h" />
+    <ClInclude Include="src\system\zlib\deflate.h" />
+    <ClInclude Include="src\system\zlib\inffast.h" />
+    <ClInclude Include="src\system\zlib\inffixed.h" />
+    <ClInclude Include="src\system\zlib\inflate.h" />
+    <ClInclude Include="src\system\zlib\inftrees.h" />
+    <ClInclude Include="src\system\zlib\trees.h" />
+    <ClInclude Include="src\system\zlib\zconf.h" />
+    <ClInclude Include="src\system\zlib\zconf.in.h" />
+    <ClInclude Include="src\system\zlib\zlib.h" />
+    <ClInclude Include="src\system\zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />

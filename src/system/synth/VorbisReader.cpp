@@ -12,9 +12,7 @@
 #include "synth/Synth.h"
 #include "utl/BufStream.h"
 #include <d3dx9.h>
-#include "xdk/xapilibi/processthreadsapi.h"
-#include "xdk/xapilibi/synchapi.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 namespace {
     unsigned char gKey[256];

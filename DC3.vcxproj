@@ -80,27 +80,27 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\synth\tomcrypt;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include\curl;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <ClCompile>
@@ -1104,6 +1104,21 @@
     <ClCompile Include="src\system\world\SpotlightEnder.cpp" />
     <ClCompile Include="src\system\world\ThreeDSoundManager.cpp" />
     <ClCompile Include="src\system\world\World.cpp" />
+    <ClCompile Include="src\system\zlib\adler32.c" />
+    <ClCompile Include="src\system\zlib\compress.c" />
+    <ClCompile Include="src\system\zlib\crc32.c" />
+    <ClCompile Include="src\system\zlib\deflate.c" />
+    <ClCompile Include="src\system\zlib\example.c" />
+    <ClCompile Include="src\system\zlib\gzio.c" />
+    <ClCompile Include="src\system\zlib\infback.c" />
+    <ClCompile Include="src\system\zlib\inffast.c" />
+    <ClCompile Include="src\system\zlib\inflate.c" />
+    <ClCompile Include="src\system\zlib\inftrees.c" />
+    <ClCompile Include="src\system\zlib\minigzip.c" />
+    <ClCompile Include="src\system\zlib\trees.c" />
+    <ClCompile Include="src\system\zlib\uncompr.c" />
+    <ClCompile Include="src\system\zlib\ZlibLicense.cpp" />
+    <ClCompile Include="src\system\zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
@@ -2092,6 +2107,17 @@
     <ClInclude Include="src\system\world\SpotlightEnder.h" />
     <ClInclude Include="src\system\world\threedsoundmanager.h" />
     <ClInclude Include="src\system\world\world.h" />
+    <ClInclude Include="src\system\zlib\crc32.h" />
+    <ClInclude Include="src\system\zlib\deflate.h" />
+    <ClInclude Include="src\system\zlib\inffast.h" />
+    <ClInclude Include="src\system\zlib\inffixed.h" />
+    <ClInclude Include="src\system\zlib\inflate.h" />
+    <ClInclude Include="src\system\zlib\inftrees.h" />
+    <ClInclude Include="src\system\zlib\trees.h" />
+    <ClInclude Include="src\system\zlib\zconf.h" />
+    <ClInclude Include="src\system\zlib\zconf.in.h" />
+    <ClInclude Include="src\system\zlib\zlib.h" />
+    <ClInclude Include="src\system\zlib\zutil.h" />
     <ClInclude Include="src\types.h" />
   </ItemGroup>
   <ItemGroup>

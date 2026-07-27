@@ -480,6 +480,57 @@ src/
     │   └── wordwrap.cpp
     ├── stlport/
     ├── synth/
+    │   ├── ADSR.cpp
+    │   ├── AudioDucker.cpp
+    │   ├── BinkReader.cpp
+    │   ├── ByteGrinder.cpp
+    │   ├── Emitter.cpp
+    │   ├── Faders.cpp
+    │   ├── FxSend.cpp
+    │   ├── FxSendBitCrush.cpp
+    │   ├── FxSendChorus.cpp
+    │   ├── FxSendCompress.cpp
+    │   ├── FxSendDelay.cpp
+    │   ├── FxSendDistortion.cpp
+    │   ├── FxSendEQ.cpp
+    │   ├── FxSendFlanger.cpp
+    │   ├── FxSendMeterEffect.cpp
+    │   ├── FxSendPitchShift.cpp
+    │   ├── FxSendReverb.cpp
+    │   ├── FxSendSynapse.cpp
+    │   ├── FxSendWah.cpp
+    │   ├── MetaMusic.cpp
+    │   ├── MeterEffectMonitor.cpp
+    │   ├── Mic.cpp
+    │   ├── MicClientMapper.cpp
+    │   ├── MicNull.cpp
+    │   ├── MidiChannel.cpp
+    │   ├── MidiInstrument.cpp
+    │   ├── MidiSynth.cpp
+    │   ├── MoggClip.cpp
+    │   ├── MoggClipMap.cpp
+    │   ├── OggMap.cpp
+    │   ├── Pollable.cpp
+    │   ├── SampleData.cpp
+    │   ├── SampleInst.cpp
+    │   ├── SampleZone.cpp
+    │   ├── Sequence.cpp (Fails)
+    │   ├── Sfx.cpp
+    │   ├── SfxMap.cpp
+    │   ├── Sound.cpp
+    │   ├── StandardStream.cpp
+    │   ├── Stream.cpp
+    │   ├── StreamNull.cpp
+    │   ├── StreamReceiver.cpp
+    │   ├── StreamReceiverFile.cpp
+    │   ├── Synth.cpp
+    │   ├── SynthSample.cpp
+    │   ├── ThreeDSound.cpp
+    │   ├── Utl.cpp (Fails)
+    │   ├── VorbisReader.cpp (Fails)
+    │   ├── WavMgr.cpp
+    │   ├── WavReader.cpp
+        └── tomcrypt
     ├── synth360/
     ├── ui/
     │   ├── CheatProvider.cpp
