@@ -1,7 +1,7 @@
 # Status
 ```text
 src/
-├── App.cpp (Fails)
+├── App.cpp
 ├── ChecksumData_xbox.cpp
 ├── keygen_xbox.cpp
 ├── Main.cpp
@@ -13,6 +13,65 @@ src/
 └── system/
     ├── beatmatch/
     ├── char/
+    │   ├── Char.cpp
+    │   ├── Character.cpp
+    │   ├── CharacterTest.cpp
+    │   ├── CharBlendBone.cpp
+    │   ├── CharBone.cpp
+    │   ├── CharBoneDir.cpp
+    │   ├── CharBoneOffset.cpp
+    │   ├── CharBones.cpp
+    │   ├── CharBonesBlender.cpp
+    │   ├── CharBonesMeshes.cpp
+    │   ├── CharBonesSamples.cpp
+    │   ├── CharBoneTwist.cpp
+    │   ├── CharClip.cpp
+    │   ├── CharClipDisplay.cpp
+    │   ├── CharClipDriver.cpp
+    │   ├── CharClipGroup.cpp
+    │   ├── CharClipSet.cpp
+    │   ├── CharCollide.cpp
+    │   ├── CharCuff.cpp
+    │   ├── CharDriver.cpp
+    │   ├── CharDriverMidi.cpp
+    │   ├── CharEyeDartRuleset.cpp
+    │   ├── CharEyes.cpp
+    │   ├── CharFaceServo.cpp
+    │   ├── CharForeTwist.cpp
+    │   ├── CharGuitarString.cpp
+    │   ├── CharHair.cpp
+    │   ├── CharIKFingers.cpp
+    │   ├── CharIKFoot.cpp
+    │   ├── CharIKHand.cpp
+    │   ├── CharIKHead.cpp
+    │   ├── CharIKMidi.cpp
+    │   ├── CharIKRod.cpp
+    │   ├── CharIKScale.cpp
+    │   ├── CharIKSliderMidi.cpp
+    │   ├── CharInterest.cpp
+    │   ├── CharLipSync.cpp
+    │   ├── CharLipSyncDriver.cpp
+    │   ├── CharLookAt.cpp
+    │   ├── CharMeshHide.cpp
+    │   ├── CharMirror.cpp
+    │   ├── CharNeckTwist.cpp
+    │   ├── CharPollGroup.cpp
+    │   ├── CharPosConstraint.cpp
+    │   ├── CharServoBone.cpp
+    │   ├── CharSignalApplier.cpp
+    │   ├── CharSleeve.cpp
+    │   ├── CharTaskMgr.cpp
+    │   ├── CharTransDraw.cpp
+    │   ├── CharUpperTwist.cpp
+    │   ├── CharUtl.cpp
+    │   ├── CharWeightable.cpp
+    │   ├── CharWeightSetter.cpp
+    │   ├── ClipCollide.cpp
+    │   ├── ClipDistMap.cpp
+    │   ├── ClipGraphGen.cpp
+    │   ├── FileMerger.cpp
+    │   ├── FileMergerOrganizer.cpp
+    │   └── Waypoint.cpp
     ├── dsp/
     ├── flow/
     ├── gesture/
