@@ -153,6 +153,85 @@ src/
     │   ├── StubCameraInput.cpp
     │   └── WaveToTurnOnLight.cpp
     ├── hamobj/
+    │   ├── BustAMoveData.cpp
+    │   ├── CamShotCatVO.cpp
+    │   ├── CharCameraInput.cpp
+    │   ├── CharFeedback.cpp
+    │   ├── ClipPlayer.cpp
+    │   ├── CrazeHollaback.cpp
+    │   ├── DanceRemixer.cpp
+    │   ├── DancerSequence.cpp
+    │   ├── DancerSkeleton.cpp
+    │   ├── DetectFrame.cpp
+    │   ├── Difficulty.cpp
+    │   ├── ErrorNode.cpp
+    │   ├── FilterQueue.cpp  (Fails (in xdk libs))
+    │   ├── FilterVersion.cpp
+    │   ├── FreestyleMove.cpp
+    │   ├── FreestyleMoveRecorder.cpp  (Fails (in xdk libs))
+    │   ├── Ham.cpp
+    │   ├── HamAudio.cpp
+    │   ├── HamBattleData.cpp
+    │   ├── HamCamShot.cpp
+    │   ├── HamCamTransform.cpp
+    │   ├── HamCharacter.cpp
+    │   ├── HamDirector.cpp  (Fails (in xdk libs))
+    │   ├── HamDriver.cpp
+    │   ├── HamGameData.cpp
+    │   ├── HamIconMan.cpp
+    │   ├── HamIKEffector.cpp
+    │   ├── HamIKSkeleton.cpp
+    │   ├── HamLabel.cpp
+    │   ├── HamList.cpp
+    │   ├── HamListRibbon.cpp
+    │   ├── HamMaster.cpp
+    │   ├── HamMove.cpp
+    │   ├── HamNavList.cpp
+    │   ├── HamNavProvider.cpp
+    │   ├── HamPartyJumpData.cpp
+    │   ├── HamPhotoDisplay.cpp
+    │   ├── HamPhraseMeter.cpp
+    │   ├── HamPlayerData.cpp
+    │   ├── HamProviderPrinter.cpp
+    │   ├── HamRegulate.cpp
+    │   ├── HamRibbon.cpp
+    │   ├── HamScrollBehavior.cpp
+    │   ├── HamScrollSpeedIndicator.cpp
+    │   ├── HamSkeletonConverter.cpp
+    │   ├── HamSong.cpp
+    │   ├── HamSongData.cpp
+    │   ├── HamSupereasyData.cpp
+    │   ├── HamVisDir.cpp  (Fails (in xdk libs))
+    │   ├── HamWardrobe.cpp
+    │   ├── HollaBackMinigame.cpp
+    │   ├── MeterDisplay.cpp
+    │   ├── MiniGameMgr.cpp
+    │   ├── MiniLeaderboardDisplay.cpp
+    │   ├── MocapSkeletonIterator.cpp
+    │   ├── MoveAsyncDetector.cpp
+    │   ├── MoveDir.cpp
+    │   ├── MoveGraph.cpp
+    │   ├── MoveMgr.cpp
+    │   ├── MoveParent.cpp
+    │   ├── MoveVariant.cpp
+    │   ├── OriginalChoreoRemixer.cpp
+    │   ├── PhotoSpotlightPositioner.cpp
+    │   ├── Pose.cpp  (Fails (in xdk libs))
+    │   ├── PoseFatalities.cpp  (Fails (in xdk libs))
+    │   ├── PracticeOptionsProvider.cpp
+    │   ├── PracticeSection.cpp
+    │   ├── RhythmBattle.cpp  (Fails (in xdk libs))
+    │   ├── RhythmBattlePlayer.cpp
+    │   ├── RhythmDetector.cpp
+    │   ├── RhythmDetectorGroup.cpp
+    │   ├── ScoreUtl.cpp
+    │   ├── SongCollision.cpp
+    │   ├── SongDifficultyDisplay.cpp
+    │   ├── SongLayout.cpp
+    │   ├── SongUtl.cpp
+    │   ├── StarsDisplay.cpp
+    │   ├── SuperEasyRemixer.cpp
+    │   └── TransConstraint.cpp
     ├── jpeg/
     ├── math/
     │   ├── Color.cpp
