@@ -61,7 +61,7 @@
 #include "utl/Symbol.h"
 #include "world/World.h"
 #include "xdk/nui/nuiskeleton.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/handleapi.h"
 #include "xdk/xapilibi/processthreadsapi.h"
 #include "xdk/xapilibi/synchapi.h"

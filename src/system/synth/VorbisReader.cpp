@@ -11,7 +11,7 @@
 #include "os/Timer.h"
 #include "synth/Synth.h"
 #include "utl/BufStream.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/processthreadsapi.h"
 #include "xdk/xapilibi/synchapi.h"
 #include "xdk/xapilibi/xbox.h"

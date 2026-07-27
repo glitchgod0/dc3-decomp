@@ -13,7 +13,7 @@
 #include "os/Debug.h"
 #include "ui/UIPanel.h"
 #include "utl/Symbol.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 SongSelectPlaylistCustomizePanel::SongSelectPlaylistCustomizePanel()
     : m_pPlaylistSongProvider(), m_pPlaylist() {}

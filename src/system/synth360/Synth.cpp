@@ -43,7 +43,7 @@
 #include "xdk/XAPILIB.h"
 #include "xdk/XAUDIO2.h"
 #include "xdk/XBOXKRNL.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xaudio2/xapo.h"
 #include "xdk/xaudio2/xaudio2.h"
 #include "xdk/xaudio2/xaudio2fx.h"

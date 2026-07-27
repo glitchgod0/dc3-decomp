@@ -9,7 +9,7 @@
 #include "rndobj/Overlay.h"
 #include "utl/Symbol.h"
 #include "xdk/nui/nuifitnesslib.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 #pragma region FitnessFilter
 

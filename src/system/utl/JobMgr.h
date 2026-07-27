@@ -4,7 +4,7 @@
 #include "stdlib.h"
 #include "utl/MemMgr.h"
 #include "utl/Str.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/xbase.h"
 
 class Job {

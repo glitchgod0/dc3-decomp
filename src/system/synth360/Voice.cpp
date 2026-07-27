@@ -5,7 +5,7 @@
 #include "synth/FxSend.h"
 #include "synth360/EnvelopeGenerator.h"
 #include "synth360/Synth.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/xapilibi/handleapi.h"
 #include "xdk/xapilibi/synchapi.h"

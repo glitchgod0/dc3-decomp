@@ -7,7 +7,7 @@
 #include "utl/BinStream.h"
 #include "utl/Loader.h"
 #include "utl/Str.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 // size 0xC0
 struct MovieInternalBuffers {

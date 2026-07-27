@@ -15,7 +15,7 @@
 #include "synth360/Voice.h"
 #include "utl/MemStream.h"
 #include "utl/Symbol.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/XHV2.h"
 #include <cstring>
 

@@ -15,7 +15,7 @@
 #include "utl/MemMgr.h"
 #include "utl/Option.h"
 #include "utl/TextFileStream.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/errhandlingapi.h"
 #include "xdk/xbdm/xbdm.h"
 #include <vector>

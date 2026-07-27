@@ -10,7 +10,7 @@
 #include "rndobj/ShaderOptions.h"
 #include "rndobj/Stats_NG.h"
 #include "xdk/d3d9i/d3d9types.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include <cstddef>
 
 DxParticleSys::DxParticleSys() {}

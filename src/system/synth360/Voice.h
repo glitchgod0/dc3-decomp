@@ -2,7 +2,7 @@
 #include "synth360/EnvelopeGenerator.h"
 #include "types.h"
 #include "utl/PoolAlloc.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/XAUDIO2.h"
 

@@ -25,7 +25,7 @@
 #include "xdk/XGRAPHICS.h"
 #include "xdk/d3dx9/d3dx9mesh.h"
 #include "xdk/d3dx9/d3dx9shader.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xgraphics/xgraphics.h"
 
 DxShaderMgr TheDxShaderMgr;

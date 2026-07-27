@@ -11,7 +11,7 @@
 #include "utl/MakeString.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include <cstring>
 #include <stdlib.h>
 

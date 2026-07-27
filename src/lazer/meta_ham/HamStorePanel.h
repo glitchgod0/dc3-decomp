@@ -18,7 +18,7 @@
 #include "utl/NetLoader.h"
 #include "utl/Str.h"
 #include "utl/Symbol.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include <list>
 
 struct HamSpecialOffer {

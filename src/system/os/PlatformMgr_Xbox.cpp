@@ -25,7 +25,7 @@
 #include "xdk/XPARTY.h"
 #include "xdk/NUI.h"
 #include "xdk/XBC.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/xbox.h"
 #include <algorithm>
 #include <cstdlib>

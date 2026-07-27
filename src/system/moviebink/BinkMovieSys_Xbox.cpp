@@ -1,7 +1,7 @@
 #include "bink.h"
 #include "moviebink/BinkMovieSys.h"
 #include "synth360/Synth.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 void BinkMovieSys::PlatformInit() {
     if (TheXboxSynth) {

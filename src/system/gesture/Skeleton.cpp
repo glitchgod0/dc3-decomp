@@ -15,7 +15,7 @@
 #include "xdk/NUI.h"
 #include "xdk/XAPILIB.h"
 #include "xdk/nui/nuiidentity.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/winerror.h"
 #include <cmath>
 #include <cstddef>

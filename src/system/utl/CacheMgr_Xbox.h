@@ -3,7 +3,7 @@
 #include "utl/Cache.h"
 #include "utl/CacheMgr.h"
 #include "utl/Cache_Xbox.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/xbase.h"
 
 // size 0x18c

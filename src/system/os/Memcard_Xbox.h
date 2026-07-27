@@ -1,6 +1,6 @@
 #pragma once
 #include "os/Memcard.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 class MCContainerXbox;
 

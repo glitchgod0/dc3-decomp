@@ -5,7 +5,7 @@
 #include "os/DateTime.h"
 #include "types.h"
 #include "utl/Symbol.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 class StorePurchaseable : public Hmx::Object {
 public:

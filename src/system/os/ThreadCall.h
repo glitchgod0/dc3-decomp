@@ -1,5 +1,5 @@
 #pragma once
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 extern DWORD gMainThreadID;
 

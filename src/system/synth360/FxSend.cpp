@@ -4,7 +4,7 @@
 #include "os/Timer.h"
 #include "synth/FxSend.h"
 #include "synth/Synth.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xaudio2/xaudio2.h"
 
 FxSend360::FxSend360(FxSend *fx) : mOutputVoice(0), mThis(fx), unk30(true) {

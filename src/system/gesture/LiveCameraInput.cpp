@@ -31,7 +31,7 @@
 #include "xdk/nui/nuiaudio.h"
 #include "xdk/nui/nuidetroit.h"
 #include "xdk/nui/nuiskeleton.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xapilibi/handleapi.h"
 #include "xdk/xapilibi/winerror.h"
 #include "xdk/xapilibi/xbox.h"

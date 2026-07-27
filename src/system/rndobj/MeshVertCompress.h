@@ -4,7 +4,7 @@
 #include "math/Vec.h"
 #include "utl/BinStream.h"
 #include "xdk/D3D9.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 
 // size 0x24
 struct CompressedVertex_Xbox {

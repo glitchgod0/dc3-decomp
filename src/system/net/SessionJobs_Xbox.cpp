@@ -1,7 +1,7 @@
 #include "net/SessionJobs_Xbox.h"
 #include "net/DingoSvr.h"
 #include "obj/Object.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/XNET.h"
 #include "xdk/xapilibi/winerror.h"

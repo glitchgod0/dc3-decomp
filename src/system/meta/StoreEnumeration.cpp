@@ -2,7 +2,7 @@
 #include "macros.h"
 #include "os/Debug.h"
 #include "utl/MemMgr.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/XAPILIB.h"
 #include "xdk/xonline/xonline.h"
 #include <cstring>

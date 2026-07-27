@@ -3,7 +3,7 @@
 #include "synth/FxSend.h"
 #include "synth360/SynthSample.h"
 #include "synth360/FxSend.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include "xdk/xaudio2/xaudio2.h"
 
 SampleInst360::SampleInst360(SynthSample360 *sample, bool loop, int loopStart, int loopEnd)

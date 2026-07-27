@@ -3,7 +3,7 @@
 #include "utl/FileStream.h"
 #include "utl/MemStream.h"
 #include "utl/Str.h"
-#include "xdk/win_types.h"
+#include <d3dx9.h>
 #include <vector>
 
 class HDCache {
