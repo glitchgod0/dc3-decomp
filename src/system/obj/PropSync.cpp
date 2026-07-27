@@ -241,12 +241,12 @@ bool PropSync(Box &box, DataNode &node, DataArray *prop, int i, PropOp op) {
         return true;
     else {
         Symbol sym = prop->Sym(i);
-        static Symbol min("min");
-        if (sym == min) {
+        static Symbol min_("min");
+        if (sym == min_) {
             return PropSync(box.mMin, node, prop, i + 1, op);
         }
-        static Symbol max("max");
-        if (sym == max) {
+        static Symbol max_("max");
+        if (sym == max_) {
             return PropSync(box.mMax, node, prop, i + 1, op);
         }
     }

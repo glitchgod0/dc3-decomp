@@ -332,7 +332,7 @@ src/
     │   ├── MessageTimer.cpp
     │   ├── Msg.cpp
     │   ├── Object.cpp
-    │   ├── PropSync.cpp  (Fails)
+    │   ├── PropSync.cpp
     │   ├── Task.cpp
     │   ├── TextFile.cpp
     │   ├── TypeProps.cpp
@@ -416,7 +416,7 @@ src/
     │   ├── BaseMaterial.cpp
     │   ├── Bitmap.cpp
     │   ├── BoxMap.cpp
-    │   ├── Cam.cpp (Fails)
+    │   ├── Cam.cpp
     │   ├── CamAnim.cpp
     │   ├── ColorXfm.cpp
     │   ├── Console.cpp
