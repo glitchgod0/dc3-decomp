@@ -46,6 +46,22 @@ src/
     ├── oggvorbis/
     ├── os/
     ├── rnddx9/
+    │   ├── Cam.cpp  (Fails (Easing.h))
+    │   ├── CubeTex.cpp
+    │   ├── Env.cpp
+    │   ├── Lit.cpp
+    │   ├── Mat.cpp
+    │   ├── Mesh.cpp  (Fails (Easing.h))
+    │   ├── Movie.cpp  (Fails (Easing.h))
+    │   ├── MultiMesh.cpp  (Fails (Easing.h))
+    │   ├── Part.cpp  (Fails (Easing.h))
+    │   ├── RenderState.cpp  (Fails (Easing.h))
+    │   ├── Rnd.cpp  (Fails (Easing.h))
+    │   ├── Rnd_Xbox.cpp  (Fails (Easing.h))
+    │   ├── ShaderMgr.cpp  (Fails (Easing.h))
+    │   ├── Tex.cpp  (Fails (Easing.h))
+    │   ├── TexMgr.cpp  (Fails (Easing.h))
+    │   └── Utl.cpp  (Fails (Easing.h))
     ├── rndobj/
     ├── stlport/
     ├── synth/

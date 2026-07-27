@@ -1,6 +1,6 @@
 #include "rndobj/RenderState.h"
 #include "rnddx9/Rnd.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 
 RndRenderState TheRenderState;
 

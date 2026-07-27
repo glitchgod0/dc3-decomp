@@ -42,14 +42,8 @@
 #include "utl/MemTrack.h"
 #include "utl/Option.h"
 #include "vectorintrinsics.h"
-#include "xdk/D3D9.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9caps.h"
-#include "xdk/d3d9i/d3d9types.h"
+#include <xtl.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/processthreadsapi.h"
-#include "xdk/xapilibi/xbase.h"
-#include "xdk/xapilibi/xbox.h"
 
 void CreateBackBuffers(
     int,

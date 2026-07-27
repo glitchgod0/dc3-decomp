@@ -3,7 +3,7 @@
 #include "rndobj/Mesh.h"
 #include "math/Vec.h"
 #include "utl/BinStream.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 #include <d3dx9.h>
 
 // size 0x24

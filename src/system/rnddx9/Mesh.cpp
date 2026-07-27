@@ -21,9 +21,7 @@
 #include "rndobj/VelocityBuffer.h"
 #include "rndobj/Wind.h"
 #include "utl/Std.h"
-#include "xdk/D3D9.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
+#include <xtl.h>
 #include <cstddef>
 
 void DxMesh::VertexBufferData::SetData(D3DVertexBuffer *buffer, unsigned int size) {

@@ -1,7 +1,7 @@
 #pragma once
 #include "rndobj/ShaderMgr.h"
 #include "rndobj/ShaderProgram.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 
 // An DX9 node in a RndShaderMgr::ShaderTree.
 // Contains vertex and pixel shaders.

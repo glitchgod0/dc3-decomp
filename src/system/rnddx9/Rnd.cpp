@@ -17,9 +17,7 @@
 #include "rndobj/Trans.h"
 #include "rndobj/Utl.h"
 #include "utl/MemTrack.h"
-#include "xdk/D3D9.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
+#include <xtl.h>
 
 DxRnd TheDxRnd;
 Rnd &TheRnd = TheDxRnd;

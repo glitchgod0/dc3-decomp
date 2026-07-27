@@ -2,10 +2,7 @@
 #include "os/Debug.h"
 #include "rnddx9/Rnd.h"
 #include "rndobj/OcclusionQueryMgr.h"
-#include "xdk/D3D9.h"
 #include <xtl.h>
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
 
 // size 0x2010
 class DxRndOcclusionQueryMgr : public RndOcclusionQueryMgr {

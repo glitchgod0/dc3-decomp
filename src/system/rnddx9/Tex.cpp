@@ -15,7 +15,7 @@
 #include "rndobj/ShaderOptions.h"
 #include "rndobj/Tex.h"
 #include "utl/MemMgr.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 #include "xdk/D3DX9.h"
 #include "xdk/d3d9i/d3d9.h"
 #include "xdk/d3d9i/d3d9types.h"

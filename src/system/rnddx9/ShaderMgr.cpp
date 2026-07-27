@@ -21,12 +21,9 @@
 #include "rndobj/Utl.h"
 #include "utl/FileStream.h"
 #include "utl/MemTrack.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/XGRAPHICS.h"
-#include "xdk/d3dx9/d3dx9mesh.h"
-#include "xdk/d3dx9/d3dx9shader.h"
+#include <xgraphics.h>
+#include <xtl.h>
 #include <d3dx9.h>
-#include "xdk/xgraphics/xgraphics.h"
 
 DxShaderMgr TheDxShaderMgr;
 RndShaderMgr &TheShaderMgr = TheDxShaderMgr;

@@ -5,8 +5,8 @@
 #include "rnddx9/Rnd.h"
 #include "rndobj/Bitmap.h"
 #include "rndobj/Mat_NG.h"
-#include "xdk/D3D9.h"
-#include "xdk/XGRAPHICS.h"
+#include <xtl.h>
+#include <xgraphics.h>
 #include "xdk/d3d9i/d3d9types.h"
 #include "xdk/xgraphics/xgraphics.h"
 

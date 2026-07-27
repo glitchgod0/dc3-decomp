@@ -8,10 +8,9 @@
 #include "rnddx9/Tex.h"
 #include "rndobj/Bitmap.h"
 #include "rndobj/Rnd_NG.h"
-#include "xdk/D3D9.h"
-#include "xdk/D3DX9.h"
-#include "xdk/XGRAPHICS.h"
-#include "xdk/xapilibi/xbase.h"
+
+#include <xgraphics.h>
+#include <xtl.h>
 #include <types.h>
 
 struct LargeQuadRenderData {

@@ -3,8 +3,7 @@
 #include "rnddx9/Rnd.h"
 #include "rndobj/TexMgr.h"
 #include "utl/MemTrack.h"
-#include "xdk/D3D9.h"
-#include "xdk/d3d9i/d3d9.h"
+#include <xtl.h>
 
 DxRndTexMgr TheDxTexMgr;
 TexMgr &TheTexMgr = TheDxTexMgr;

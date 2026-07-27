@@ -10,8 +10,7 @@
 #include "utl/Loader.h"
 #include "utl/MemMgr.h"
 #include "rndobj/Utl.h"
-#include "xdk/d3d9i/d3d9.h"
-#include "xdk/d3d9i/d3d9types.h"
+#include <xtl.h>
 
 DxMovie::DxMovie() : unk44(0), unk4c(0) {}
 

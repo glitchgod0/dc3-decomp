@@ -7,7 +7,7 @@
 #include "utl/MemMgr.h"
 #include "world/Spotlight.h"
 #include "world/SpotlightDrawer.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 
 class NgSpotlightDrawer : public SpotlightDrawer {
 public:

@@ -2,7 +2,7 @@
 #include "obj/Object.h"
 #include "rnddx9/Object.h"
 #include "rndobj/Part.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 
 class DxParticleSys : public RndParticleSys, public DxObject {
 public:

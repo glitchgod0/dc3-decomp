@@ -1,7 +1,7 @@
 #pragma once
 #include "obj/Object.h"
 #include "rndobj/CubeTex.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 
 class DxCubeTex : public RndCubeTex {
 public:

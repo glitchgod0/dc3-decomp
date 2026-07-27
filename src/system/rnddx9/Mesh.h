@@ -6,8 +6,7 @@
 #include "rnddx9/Object.h"
 #include "rndobj/Mesh.h"
 #include "utl/PoolAlloc.h"
-#include "xdk/D3D9.h"
-#include "xdk/d3d9i/d3d9.h"
+#include <xtl.h>
 
 class DxMesh : public RndMesh, public DxObject {
     friend class DxMultiMesh;

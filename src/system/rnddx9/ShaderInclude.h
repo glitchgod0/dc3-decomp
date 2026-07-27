@@ -4,9 +4,7 @@
 #include "rndobj/ShaderOptions.h"
 #include "rndobj/ShaderProgram.h"
 #include "utl/MemMgr.h"
-#include "xdk/D3DX9.h"
 #include <xtl.h>
-#include "xdk/d3dx9/d3dx9mesh.h"
 
 // Basically a wrapper around an ID3DXBuffer.
 // https://learn.microsoft.com/en-us/windows/win32/direct3d9/id3dxbuffer

@@ -8,7 +8,7 @@
 #include "rndobj/Mesh.h"
 #include "rndobj/MeshVertCompress.h"
 #include "rndobj/Rnd.h"
-#include "xdk/D3D9.h"
+#include <xtl.h>
 
 DxMultiMesh::DxMultiMesh() : unk5c(0), unk60(0) {
     for (int i = 0; i < 3; i++) {
