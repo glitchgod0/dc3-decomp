@@ -19,7 +19,8 @@ public:
         const typename T::Params &params,
         float *__restrict buffer,
         unsigned int ui3,
-        unsigned int numChans
+        unsigned int numChans,
+		BOOL bullshit
     ) {
         if (!params.bypass) {
             mEffect->Process(buffer, ui3, numChans);

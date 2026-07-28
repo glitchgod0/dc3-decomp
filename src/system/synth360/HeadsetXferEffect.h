@@ -15,7 +15,7 @@ public:
     HeadsetXferEffect();
     virtual ~HeadsetXferEffect() {}
     virtual void DoProcess(
-        const HeadsetXferEffectParams &, float *__restrict, unsigned int, unsigned int
+        const HeadsetXferEffectParams &, float *__restrict, unsigned int, unsigned int, BOOL
     );
 
 private:

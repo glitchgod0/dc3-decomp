@@ -14,7 +14,7 @@ public:
 
     virtual void OnSetParameters(const MeterEffectParams &);
     virtual void
-    DoProcess(const MeterEffectParams &, float *__restrict, unsigned int, unsigned int);
+    DoProcess(const MeterEffectParams &, float *__restrict, unsigned int, unsigned int, BOOL);
 
 private:
     float unk60[6]; // 0x60

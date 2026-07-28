@@ -187,7 +187,7 @@ void Synth360::SetDolby(bool b1, bool b2) {
 bool Synth360::IsUsingDolby() const {
     DWORD cfg;
     XAudioGetSpeakerConfig(&cfg);
-    return cfg & DolbyDigital;
+    return cfg & XAUDIOSPEAKERCONFIG_DIGITAL_DOLBYDIGITAL;
 }
 
 void Synth360::Terminate() {
@@ -434,9 +434,9 @@ void Synth360::SetGlobalReverbPreset(const char *name) {
 void Synth360::UpdateDolby() {
     DWORD cfg;
     XAudioGetSpeakerConfig(&cfg);
-    XCONFIG_USER_AUDIO_FLAGS flag = DolbyDigital;
+    XAUDIOSPEAKERCONFIG flag = XAUDIOSPEAKERCONFIG_DIGITAL_DOLBYDIGITAL;
     if (!unk104) {
-        flag = LowLatency;
+        flag = XAUDIOSPEAKERCONFIG_ANALOG_LOW_LATENCY;
     }
     if ((cfg & flag) != flag) {
         XAudioOverrideSpeakerConfig(flag);

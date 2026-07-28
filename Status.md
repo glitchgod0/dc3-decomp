@@ -571,7 +571,7 @@ src/
     │   ├── PitchShiftEffect.cpp
     │   ├── SampleInst.cpp
     │   ├── StreamReceiver.cpp
-    │   ├── Synth.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── Synth.cpp
     │   ├── SynthSample.cpp
     │   ├── Voice.cpp
     │   │

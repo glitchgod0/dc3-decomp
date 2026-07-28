@@ -9,7 +9,7 @@ HeadsetXferEffect::HeadsetXferEffect() : unk60(0) {
 }
 
 void HeadsetXferEffect::DoProcess(
-    const HeadsetXferEffectParams &, float *__restrict farr, unsigned int, unsigned int
+    const HeadsetXferEffectParams &, float *__restrict farr, unsigned int, unsigned int, BOOL
 ) {
     memcpy(unk64[unk60 % 2], farr, sizeof(unk64[unk60 % 2]));
     unk60++;
