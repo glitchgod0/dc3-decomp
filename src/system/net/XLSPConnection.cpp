@@ -79,7 +79,7 @@ void XLSPConnection::StartEnumeration() {
 
 bool XLSPConnection::SecureDisconnect(in_addr a) {
     bool ret = true;
-    auto it = mXLSPRefCountMap.find(a.s_un.s_addr);
+    auto it = mXLSPRefCountMap.find(a.s_addr);
     if (it != mXLSPRefCountMap.end()) {
         it->second--;
         if (it->second == 0) {
@@ -97,21 +97,21 @@ bool XLSPConnection::SecureDisconnect(in_addr a) {
 
 int XLSPConnection::StartGatewayConnection(in_addr a) {
     int ret;
-    auto it = mXLSPRefCountMap.find(a.s_un.s_addr);
+    auto it = mXLSPRefCountMap.find(a.s_addr);
     if (it != mXLSPRefCountMap.end()) {
         ret = 0;
         it->second++;
     } else {
         ret = XNetConnect(a);
         if (ret == 0) {
-            mXLSPRefCountMap.insert(std::make_pair(a.s_un.s_addr, 1));
+            mXLSPRefCountMap.insert(std::make_pair(a.s_addr, 1));
         } else {
             MILO_NOTIFY(
                 "XNetConnect(%d.%d.%d.%d) failed with %d",
-                a.s_un.s_un_b.s_b1,
-                a.s_un.s_un_b.s_b2,
-                a.s_un.s_un_b.s_b3,
-                a.s_un.s_un_b.s_b4,
+					a.S_un.S_un_b.s_b1,
+					a.S_un.S_un_b.s_b2,
+					a.S_un.S_un_b.s_b3,
+					a.S_un.S_un_b.s_b4,
                 ret
             );
         }

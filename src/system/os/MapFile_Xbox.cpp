@@ -109,7 +109,7 @@ namespace {
 }
 
 void TryDemangleScope(char *demangled, const char *mangled, int i3) {
-    char *c2 = strchr(mangled, 64);
+    const char *c2 = strchr(mangled, 64);
     if (c2 && c2 < mangled + i3) {
         int count = c2 - mangled;
         TryDemangleScope(demangled, c2 + 1, (i3 - count) - 1);

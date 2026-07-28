@@ -151,7 +151,7 @@ const char *FileGetPathBuf(const char *iBuf, char *oBuf) {
 const char *FileGetDriveBuf(const char *iFilepath, char *oBuf) {
     MILO_ASSERT(iFilepath, 0x437);
     MILO_ASSERT(oBuf, 0x438);
-    char *chr = strchr(iFilepath, ':');
+    const char *chr = strchr(iFilepath, ':');
     if (chr) {
         strncpy(oBuf, iFilepath, chr - iFilepath);
         oBuf[chr - iFilepath] = '\0';
@@ -164,7 +164,7 @@ const char *FileGetDriveBuf(const char *iFilepath, char *oBuf) {
 const char *FileGetBaseBuf(const char *iFilepath, char *oBuf) {
     MILO_ASSERT(iFilepath, 0x458);
     MILO_ASSERT(oBuf, 0x459);
-    char *chr = strrchr(iFilepath, '/');
+    const char *chr = strrchr(iFilepath, '/');
     if (!chr) {
         chr = strrchr(iFilepath, '\\');
     }

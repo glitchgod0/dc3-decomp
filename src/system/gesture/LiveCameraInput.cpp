@@ -28,7 +28,7 @@
 #include <xtl.h>
 #include <nuiapi.h>
 #include <NuiAudio.h>
-//#include "xdk/nui/nuidetroit.h"
+#include "xdk/nui/nuidetroit.h"
 #include <NuiSkeleton.h>
 #include <d3dx9.h>
 #include <cstring>

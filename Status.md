@@ -120,7 +120,7 @@ src/
     │   ├── ArchiveSkeleton.cpp
     │   ├── BaseSkeleton.cpp
     │   ├── CameraInput.cpp
-    │   ├── CameraTilt.cpp (Fails)
+    │   ├── CameraTilt.cpp (Fails (nuidetroit))
     │   ├── DepthBuffer3D.cpp
     │   ├── DirectionGestureFilter.cpp
     │   ├── DrawUtl.cpp
@@ -135,7 +135,7 @@ src/
     │   ├── HighFiveGestureFilter.cpp 
     │   ├── IdentityInfo.cpp
     │   ├── JointUtl.cpp 
-    │   ├── LiveCameraInput.cpp (Fails)
+    │   ├── LiveCameraInput.cpp (Fails (nuidetroit))
     │   ├── NavigationSkeletonDir.cpp 
     │   ├── Skeleton.cpp 
     │   ├── SkeletonClip.cpp
@@ -278,7 +278,7 @@ src/
     │   ├── SongMgr.cpp
     │   ├── SongPreview.cpp
     │   ├── Sorting.cpp
-    │   ├── StoreEnumeration.cpp  (Fails (in xdk libs))
+    │   ├── StoreEnumeration.cpp
     │   ├── StoreOffer.cpp
     │   ├── StorePanel.cpp
     │   ├── StorePreviewMgr.cpp
@@ -316,7 +316,7 @@ src/
     │   ├── WebSvcMgr.cpp
     │   ├── WebSvcMgrCurl.cpp
     │   ├── WebSvcReq.cpp
-    │   ├── XLSPConnection.cpp  (Fails)
+    │   ├── XLSPConnection.cpp
     │   ├── curl/
     │   └── json-c/
     ├── obj/
@@ -325,7 +325,7 @@ src/
     │   ├── DataFlex.c
     │   ├── DataFunc.cpp
     │   ├── DataNode.cpp
-    │   ├── DataUtl.cpp  (Fails (in xdk libs))
+    │   ├── DataUtl.cpp
     │   ├── Dir.cpp
     │   ├── DirLoader.cpp
     │   ├── DirUnloader.cpp
@@ -353,7 +353,7 @@ src/
     │   ├── CritSec.cpp
     │   ├── DateTime.cpp
     │   ├── Debug.cpp  (Fails (xbdm include))
-    │   ├── File.cpp (Fails)
+    │   ├── File.cpp
     │   ├── FileCache.cpp
     │   ├── File_Win.cpp
     │   ├── HDCache.cpp
@@ -369,7 +369,7 @@ src/
     │   ├── Keyboard.cpp
     │   ├── KeyboardJoypadAdapter.cpp
     │   ├── Keyboard_Xbox.cpp
-    │   ├── MapFile_Xbox.cpp (Fails)
+    │   ├── MapFile_Xbox.cpp
     │   ├── Memcard.cpp
     │   ├── Memcard_Xbox.cpp
     │   ├── Memory_Xbox.cpp
@@ -542,7 +542,7 @@ src/
     │   ├── Synth.cpp
     │   ├── SynthSample.cpp
     │   ├── ThreeDSound.cpp
-    │   ├── Utl.cpp (Fails)
+    │   ├── Utl.cpp
     │   ├── VorbisReader.cpp
     │   ├── WavMgr.cpp
     │   ├── WavReader.cpp
@@ -640,9 +640,9 @@ src/
     │   ├── UITrigger.cpp
     │   └── Utl.cpp
     ├── utl/
-    │   ├── AllocInfo.cpp  (Fails)
+    │   ├── AllocInfo.cpp  (Fails (xbdm))
     │   ├── BeatMap.cpp
-    │   ├── BinkIntegration.cpp  (Fails (in xdk libs))
+    │   ├── BinkIntegration.cpp
     │   ├── BinStream.cpp
     │   ├── BufStream.cpp
     │   ├── Cache.cpp
@@ -670,9 +670,9 @@ src/
     │   ├── KnownIssues.cpp
     │   ├── Licenses.cpp
     │   ├── Loader.cpp
-    │   ├── Locale.cpp  (Fails (in xdk libs))
+    │   ├── Locale.cpp  (Fails (xbdm))
     │   ├── LocaleOrdinal.cpp
-    │   ├── Magnu.cpp  (Fails (in xdk libs))
+    │   ├── Magnu.cpp
     │   ├── MakeString.cpp
     │   ├── MBT.cpp
     │   ├── MemHeap.cpp
