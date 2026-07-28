@@ -10,7 +10,7 @@
  * optimizations.  Most users will not need to touch this file.
  */
 
-
+#define XMD_H
 /*
  * Define BITS_IN_JSAMPLE as either
  *   8   for 8-bit sample values (the usual setting)
@@ -74,6 +74,7 @@ typedef char JSAMPLE;
 #define CENTERJSAMPLE	128
 
 #endif /* BITS_IN_JSAMPLE == 8 */
+
 
 
 #if BITS_IN_JSAMPLE == 12
