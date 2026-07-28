@@ -4,6 +4,8 @@
 
 DEFINE_CLSID(EQEffect, 0E0F3600, B28E, 4434, 81, 0D, 21, B8, BE, 74, 06, 19);
 
+void _blkmov(void *d, const void *s, size_t c);
+
 // size 0x34C
 class EQEffect {
 public:

@@ -294,8 +294,8 @@ LiveCameraInput::LiveCameraInput()
         mSpeechMgr = new SpeechMgr(kinectArr);
     }
     unk11d4 = 0;
-    if (SUCCEEDED(NuiAudioCreate(5, NuiAudioErrorCallback, 1, &unk11d8, nullptr))) {
-        NuiAudioRegisterCallbacks(&unk11d8, 1, NuiAudioDataCallback);
+    if (SUCCEEDED(NuiAudioCreate(5, NuiAudioErrorCallback, 1, unk11d8, nullptr))) {
+        NuiAudioRegisterCallbacks(unk11d8, 1, NuiAudioDataCallback);
         unk11d4 = 1;
     }
     bool i6 = kinectArr->FindArray("title_tracked_skeletons")->Int(1);
@@ -364,8 +364,8 @@ LiveCameraInput::~LiveCameraInput() {
     }
     ClearSnapshots();
     if (unk11d4) {
-        NuiAudioUnregisterCallbacks(&unk11d8, NuiAudioDataCallback);
-        NuiAudioRelease(&unk11d8);
+        NuiAudioUnregisterCallbacks(unk11d8, NuiAudioDataCallback);
+        NuiAudioRelease(unk11d8);
     }
     delete mSpeechMgr;
     NuiShutdown();

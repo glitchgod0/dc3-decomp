@@ -39,7 +39,7 @@ void DSP::SynapseAPO::OnSetParameters(const SynapseAPOParams &params) {
 }
 
 void DSP::SynapseAPO::DoProcess(
-    const SynapseAPOParams &, float *__restrict f, unsigned int ui, unsigned int
+    const SynapseAPOParams &, float *__restrict f, unsigned int ui, unsigned int, BOOL t
 ) {
     if (mSynapse) {
         mSynapse->ProcessInPlace(ui, f);

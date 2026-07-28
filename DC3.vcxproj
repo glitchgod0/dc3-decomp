@@ -697,7 +697,9 @@
     <ClCompile Include="src\system\jpeg\jddctmgr.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
     </ClCompile>
-    <ClCompile Include="src\system\jpeg\jdhuff.c" />
+    <ClCompile Include="src\system\jpeg\jdhuff.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\jpeg\jdinput.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
     </ClCompile>
@@ -1610,11 +1612,17 @@
     <ClCompile Include="src\system\synth360\Mic.cpp" />
     <ClCompile Include="src\system\synth360\PitchShiftEffect.cpp" />
     <ClCompile Include="src\system\synth360\SampleInst.cpp" />
-    <ClCompile Include="src\system\synth360\soundtouch\3dnow_win.cpp" />
+    <ClCompile Include="src\system\synth360\soundtouch\3dnow_win.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\system\synth360\soundtouch\AAFilter.cpp" />
     <ClCompile Include="src\system\synth360\soundtouch\BPMDetect.cpp" />
-    <ClCompile Include="src\system\synth360\soundtouch\cpu_detect_x86_gcc.cpp" />
-    <ClCompile Include="src\system\synth360\soundtouch\cpu_detect_x86_win.cpp" />
+    <ClCompile Include="src\system\synth360\soundtouch\cpu_detect_x86_gcc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\system\synth360\soundtouch\cpu_detect_x86_win.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\system\synth360\soundtouch\FIFOSampleBuffer.cpp" />
     <ClCompile Include="src\system\synth360\soundtouch\FIRFilter.cpp" />
     <ClCompile Include="src\system\synth360\soundtouch\mmx_optimized.cpp" />
@@ -2011,6 +2019,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
+    <ClInclude Include="src\binkxenon\bink.h" />
+    <ClInclude Include="src\binkxenon\rad.h" />
+    <ClInclude Include="src\binkxenon\rrcore.h" />
     <ClInclude Include="src\ChecksumData_xbox.h" />
     <ClInclude Include="src\KeyChain.h" />
     <ClInclude Include="src\lazer\game\BustAMovePanel.h" />

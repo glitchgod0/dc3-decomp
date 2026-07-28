@@ -23,6 +23,7 @@
 #include <xparty.h>
 #include <nuiapi.h>
 #include <xbc.h>
+#include <xsocialpost.h>
 #include <d3dx9.h>
 #include <algorithm>
 #include <cstdlib>
@@ -121,7 +122,7 @@ namespace {
         return true;
     }
 
-    void DtaToJsonHelper(HJSONWRITER *writer, const DataArray *a) {
+    void DtaToJsonHelper(HJSONWRITER writer, const DataArray *a) {
         int aSize = a->Size();
         if (aSize != 0) {
             for (int i = 0; i < aSize; i++) {
@@ -153,10 +154,10 @@ namespace {
         }
     }
 
-    DataArrayPtr JsonToDta(HJSONREADER *reader, bool b2) {
+    DataArrayPtr JsonToDta(HJSONREADER reader, bool b2) {
         DataArrayPtr ptr;
         DataArray *arr = nullptr;
-        JSONTokenType tokenType;
+        JSONTOKENTYPE tokenType;
         DWORD tokenLength;
         DWORD parsed;
         WCHAR src[128];
@@ -212,8 +213,8 @@ namespace {
         return ptr;
     }
 
-    HJSONWRITER *DtaToJson(const DataArray *a) {
-        HJSONWRITER *writer = XJSONCreateWriter();
+    HJSONWRITER DtaToJson(const DataArray *a) {
+        HJSONWRITER writer = XJSONCreateWriter();
         XJSONBeginArray(writer);
         DtaToJsonHelper(writer, a);
         XJSONEndArray(writer);
@@ -221,7 +222,7 @@ namespace {
     }
 
     void XbcSendMsg(DWORD id, const DataArray *a) {
-        HJSONWRITER *writer = DtaToJson(a);
+        HJSONWRITER writer = DtaToJson(a);
         if (id == 0) {
             // i hate this
             for (DWORD *it = gSmartGlassClientIDs; it < &gSmartGlassClientIDs[4]; it++) {
@@ -237,7 +238,7 @@ namespace {
         XJSONCloseWriter(writer);
     }
 
-    void XbcRecieveMsg(DWORD id, HJSONREADER *reader) {
+    void XbcRecieveMsg(DWORD id, HJSONREADER reader) {
         DataArrayPtr dta = JsonToDta(reader, true);
         SmartGlassMsg msg(id, dta);
         ThePlatformMgr.Handle(msg, true);

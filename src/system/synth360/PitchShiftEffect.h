@@ -16,7 +16,7 @@ public:
     PitchShiftEffect();
     virtual ~PitchShiftEffect();
     virtual void DoProcess(
-        const PitchShiftEffectParams &, float *__restrict, unsigned int, unsigned int
+        const PitchShiftEffectParams &, float *__restrict, unsigned int, unsigned int, BOOL
     );
 
 private:

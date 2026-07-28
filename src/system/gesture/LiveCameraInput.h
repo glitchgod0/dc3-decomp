@@ -112,7 +112,7 @@ protected:
     static void Terminate();
 
     int unk11d4;
-    HANDLE unk11d8;
+    NUIAUDIO_HANDLE unk11d8;
     int unk11dc;
     int unk11e0;
     int unk11e4;

@@ -43,7 +43,7 @@ namespace DSP {
         virtual ~SynapseAPO();
 
         virtual void
-        DoProcess(const SynapseAPOParams &, float *__restrict, unsigned int, unsigned int);
+        DoProcess(const SynapseAPOParams &, float *__restrict, unsigned int, unsigned int, BOOL);
 
         void SetSamplingRate(float);
 

@@ -2459,6 +2459,9 @@
     <ClInclude Include="src\lazer\meta_ham\VoiceControlPanel.h" />
     <ClInclude Include="src\lazer\meta_ham\VoiceInputPanel.h" />
     <ClInclude Include="src\lazer\meta_ham\WeightInput.h" />
+    <ClInclude Include="src\binkxenon\bink.h" />
+    <ClInclude Include="src\binkxenon\rrcore.h" />
+    <ClInclude Include="src\binkxenon\rad.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />

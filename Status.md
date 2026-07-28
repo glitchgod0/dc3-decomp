@@ -232,7 +232,7 @@ src/
     │   ├── CompressionEffect.cpp
     │   ├── DelayEffect.cpp
     │   ├── DistortionEffect.cpp
-    │   ├── EQEffect.cpp  (Fails (_blkmov))
+    │   ├── EQEffect.cpp
     │   ├── FlangerEffect.cpp
     │   ├── WahEffect.cpp
     │   └── mkfilter/
@@ -289,7 +289,7 @@ src/
     │   ├── HighFiveGestureFilter.cpp 
     │   ├── IdentityInfo.cpp
     │   ├── JointUtl.cpp 
-    │   ├── LiveCameraInput.cpp (Fails (C2664))
+    │   ├── LiveCameraInput.cpp
     │   ├── NavigationSkeletonDir.cpp 
     │   ├── Skeleton.cpp 
     │   ├── SkeletonClip.cpp
@@ -453,9 +453,9 @@ src/
     │   ├── Splash.cpp
     │   └── TexMovie.cpp
     ├── moviebink/
-    │   ├── BinkMovieImpl.cpp  (Fails)
+    │   ├── BinkMovieImpl.cpp
     │   ├── BinkMovieSys.cpp
-    │   └── BinkMovieSys_Xbox.cpp  (Fails)
+    │   └── BinkMovieSys_Xbox.cpp
     ├── net/
     │   ├── DingoAuthJob.cpp
     │   ├── DingoJob.cpp
@@ -532,7 +532,7 @@ src/
     │   ├── NetworkSocket_Win.cpp
     │   ├── OnlineID.cpp
     │   ├── PlatformMgr.cpp
-    │   ├── PlatformMgr_Xbox.cpp (Fails (afaik Smartglass))
+    │   ├── PlatformMgr_Xbox.cpp
     │   ├── SynchronizationEvent.cpp
     │   ├── System.cpp
     │   ├── System_Xbox.cpp
@@ -706,18 +706,18 @@ src/
     │   ├── ExternalMic.cpp
     │   ├── FxSend.cpp
     │   ├── FxSendBitCrush.cpp
-    │   ├── FxSendChorus.cpp (Fails (IXAudioBatchAllocator))
-    │   ├── FxSendCompress.cpp (Fails (IXAudioBatchAllocator)) 
-    │   ├── FxSendDelay.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── FxSendDistortion.cpp (Fails (ATG))
-    │   ├── FxSendEQ.cpp (Fails (ATG))
-    │   ├── FxSendFlanger.cpp (Fails (ATG))
-    │   ├── FxSendMeterEffect.cpp (Fails (ATG))
-    │   ├── FxSendPitchShift.cpp (Fails (ATG))
+    │   ├── FxSendChorus.cpp
+    │   ├── FxSendCompress.cpp
+    │   ├── FxSendDelay.cpp
+    │   ├── FxSendDistortion.cpp
+    │   ├── FxSendEQ.cpp
+    │   ├── FxSendFlanger.cpp
+    │   ├── FxSendMeterEffect.cpp
+    │   ├── FxSendPitchShift.cpp
     │   ├── FxSendReverb.cpp
-    │   ├── FxSendSynapse.cpp (Fails (ATG))
-    │   ├── FxSendWah.cpp (Fails)
-    │   ├── GainEffect.cpp (Fails)
+    │   ├── FxSendSynapse.cpp
+    │   ├── FxSendWah.cpp
+    │   ├── GainEffect.cpp
     │   ├── HeadsetPlaybackEffect.cpp
     │   ├── HeadsetXferEffect.cpp
     │   ├── MeterEffect.cpp
