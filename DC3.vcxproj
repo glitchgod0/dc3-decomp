@@ -614,7 +614,9 @@
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="src\system\jpeg\Jpeg.cpp" />
-    <ClCompile Include="src\system\jpeg\jpegtran.c" />
+    <ClCompile Include="src\system\jpeg\jpegtran.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\jpeg\jquant1.c">
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
     </ClCompile>

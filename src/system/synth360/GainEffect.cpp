@@ -2,6 +2,7 @@
 #include "vectorintrinsics.h"
 #include <cstddef>
 #include <cstring>
+#include <types.h>
 
 float GainEffect::sGain = 1;
 
