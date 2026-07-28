@@ -303,10 +303,10 @@ src/
     │   ├── BinkMovieSys.cpp
     │   └── BinkMovieSys_Xbox.cpp  (Fails)
     ├── net/
-    │   ├── DingoAuthJob.cpp (Fails (in xdk libs))
-    │   ├── DingoJob.cpp (Fails (in xdk libs))
-    │   ├── DingoSvr.cpp (Fails (in xdk libs))
-    │   ├── DingoSvr_Xbox.cpp (Fails (in xdk libs))
+    │   ├── DingoAuthJob.cpp
+    │   ├── DingoJob.cpp
+    │   ├── DingoSvr.cpp
+    │   ├── DingoSvr_Xbox.cpp
     │   ├── HttpGet.cpp
     │   ├── HttpReq.cpp
     │   ├── HttpReqCurl.cpp
