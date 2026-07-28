@@ -9,7 +9,8 @@
 #include "utl/LocaleChunkSort.h"
 #include "utl/Str.h"
 #include "utl/StringTable.h"
-#include "xdk/xbdm/xbdm.h"
+#include <xtl.h>
+#include <xbdm.h>
 #include <vector>
 
 static char gFloatBufs[4][50];

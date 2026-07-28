@@ -15,10 +15,10 @@
 #include "utl/MemMgr.h"
 #include "utl/Option.h"
 #include "utl/TextFileStream.h"
-#include <d3dx9.h>
-#include "xdk/xbdm/xbdm.h"
 #include <vector>
 #include <xtl.h>
+#include <d3dx9.h>
+#include <xbdm.h>
 #include "utl/Std.h"
 
 const char *kAssertStr = "File: %s Line: %d Error: %s\n";

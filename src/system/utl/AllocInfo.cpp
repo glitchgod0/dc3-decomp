@@ -5,7 +5,8 @@
 #include "os/Debug.h"
 #include "utl/trie.h"
 #include "utl/TextStream.h"
-#include "xdk/XBDM.h"
+#include <xtl.h>
+#include <xbdm.h>
 #include <cstdio>
 
 static Trie *s_pTrie = nullptr;
@@ -156,7 +157,7 @@ int AllocInfo::Compare(const AllocInfo &info) const {
 }
 
 void AllocInfo::FillStackTrace() {
-    int stack[20];
+    PVOID stack[20];
     DmCaptureStackBackTrace(20, stack);
     for (int i = 0; i < 16; i++) {
         mStackTrace[i] = stack[i];

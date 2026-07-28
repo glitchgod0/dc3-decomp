@@ -352,7 +352,7 @@ src/
     │   ├── ContentMgr_Xbox.cpp
     │   ├── CritSec.cpp
     │   ├── DateTime.cpp
-    │   ├── Debug.cpp  (Fails (xbdm include))
+    │   ├── Debug.cpp
     │   ├── File.cpp
     │   ├── FileCache.cpp
     │   ├── File_Win.cpp
@@ -360,7 +360,7 @@ src/
     │   ├── HolmesClient.cpp
     │   ├── HolmesClient_NetSocket.cpp
     │   ├── HolmesKeyboard.cpp
-    │   ├── HolmesUtl.cpp  (Fails (xbdm include))
+    │   ├── HolmesUtl.cpp
     │   ├── Joypad.cpp
     │   ├── JoypadClient.cpp
     │   ├── JoypadMsgs.cpp
@@ -375,7 +375,7 @@ src/
     │   ├── Memory_Xbox.cpp
     │   ├── NetStream.cpp
     │   ├── NetworkSocket.cpp
-    │   ├── NetworkSocket_Win.cpp  (Fails (xbdm include))
+    │   ├── NetworkSocket_Win.cpp
     │   ├── OnlineID.cpp
     │   ├── PlatformMgr.cpp
     │   ├── PlatformMgr_Xbox.cpp (Fails (afaik Smartglass))

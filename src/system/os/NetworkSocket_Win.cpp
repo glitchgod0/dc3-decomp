@@ -2,7 +2,7 @@
 #include "os/Debug.h"
 #include "os/NetworkSocket.h"
 #include <xtl.h>
-#include "xdk/xbdm/xbdm.h"
+#include <xbdm.h>
 
 bool WinSockSocket::sInit = false;
 
@@ -30,7 +30,7 @@ bool WinSockSocket::Connect(unsigned int ip, unsigned short port) {
     sockaddr_in addr;
     addr.sin_family = 2;
     addr.sin_port = port;
-    addr.sin_addr.s_un.s_addr = ip;
+    addr.sin_addr.s_addr = ip;
     int res = connect(mSocket, (const sockaddr *)&addr, 0x10);
     if (res == -1 && WSAGetLastError() != 0x2733) {
         mFail = true;
@@ -72,7 +72,7 @@ void WinSockSocket::Bind(unsigned short port) {
     sockaddr_in addr;
     addr.sin_family = 2;
     addr.sin_port = port;
-    addr.sin_addr.s_un.s_addr = 0;
+    addr.sin_addr.s_addr = 0;
     int ret = bind(mSocket, (sockaddr *)&addr, 0x10);
     if (ret == -1) {
         MILO_FAIL(
@@ -111,7 +111,7 @@ void WinSockSocket::GetRemoteIP(unsigned int &ip, unsigned short &port) {
     sockaddr_in addr;
     int namelen = 16;
     getpeername(mSocket, (sockaddr *)&addr, &namelen);
-    ip = addr.sin_addr.s_un.s_addr;
+    ip = addr.sin_addr.s_addr;
     port = addr.sin_port;
 }
 
@@ -175,7 +175,7 @@ int WinSockSocket::SendTo(
     sockaddr_in addr;
     addr.sin_family = 2;
     addr.sin_port = port;
-    addr.sin_addr.s_un.s_addr = ip;
+    addr.sin_addr.s_addr = ip;
     int res = sendto(mSocket, (const char *)data, len, 0, (sockaddr *)&addr, 16);
     if (res == -1) {
         int err = WSAGetLastError();
@@ -217,7 +217,7 @@ int WinSockSocket::RecvFrom(
             return 0;
         }
     } else {
-        ip = addr.sin_addr.s_un.s_addr;
+        ip = addr.sin_addr.s_addr;
         port = addr.sin_port;
     }
     return ret;
@@ -256,7 +256,7 @@ String NetworkSocket::IPIntToString(unsigned int ip) {
     buffer[0] = 0;
     memset(&buffer[1], 0, 31);
     in_addr addr;
-    addr.s_un.s_addr = ip;
+    addr.s_addr = ip;
     XNetInAddrToString(addr, buffer, 32);
     return buffer;
 }
@@ -284,7 +284,7 @@ unsigned int NetworkSocket::ResolveHostName(String name) {
         } else if (dns->iStatus == 0x274C) {
             MILO_LOG("Host %s lookup timed out.", name.c_str());
         } else if (dns->iStatus == 0) {
-            ret = dns->aina[0].s_un.s_addr;
+            ret = dns->aina[0].s_addr;
         }
         if (XNetDnsRelease(dns) != 0) {
             MILO_LOG("could not release XNDNS");

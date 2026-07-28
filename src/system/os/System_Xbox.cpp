@@ -5,7 +5,7 @@
 #include "os/PlatformMgr.h"
 #include "os/System.h"
 #include <xtl.h>
-#include "xdk/XBDM.h"
+#include <xbdm.h>
 #include "os/Memory.h"
 
 namespace {
@@ -305,7 +305,7 @@ void ShowDirtyDiscError() {
 void CaptureStackTrace(int p1, struct StackData *stackData, void *p3) {
     stackData->mFailThreadStack[0] = 0;
 
-    DmCaptureStackBackTrace(p1, stackData);
+    DmCaptureStackBackTrace(p1, stackData->mFailThreadStack);
 
     memmove(stackData->mFailThreadStack, stackData->mFailThreadStack + 3, (p1 + -3) * 4);
 

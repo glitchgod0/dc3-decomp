@@ -4,13 +4,14 @@
 #include <list>
 #include <string.h>
 #include "utl/Std.h"
+#include <xtl.h>
 
 typedef void ExitCallbackFunc(void);
 typedef void FixedStringFunc(FixedString &);
 
 struct StackData {
     /** Addresses in memory corresponding to called functions. */
-    unsigned int mFailThreadStack[50]; // 0x0
+    PVOID mFailThreadStack[50]; // 0x0
 };
 
 // size 0x134

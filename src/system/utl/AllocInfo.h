@@ -3,6 +3,7 @@
 #include "os/Debug.h"
 #include "utl/Str.h"
 #include "utl/TextStream.h"
+#include <xtl.h>
 
 // size 0x65
 #pragma pack(push, 1)
@@ -50,7 +51,7 @@ public:
     int mLine; // 0x19
     unsigned int unk1d; // 0x1d
     unsigned int unk21; // 0x21
-    int mStackTrace[0x10]; // 0x25
+    PVOID mStackTrace[0x10]; // 0x25
 };
 #pragma pack(pop)
 
