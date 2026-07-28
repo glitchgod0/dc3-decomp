@@ -653,7 +653,7 @@ src/
     │       ├── _algo.c
     │       ├── _algobase.c
     │       ├── _alloc.c
-    │       ├── _bitset.c (Fails)
+    │       ├── _bitset.c
     │       ├── _complex.c
     │       ├── _deque.c
     │       ├── _fstream.c (Fails)
