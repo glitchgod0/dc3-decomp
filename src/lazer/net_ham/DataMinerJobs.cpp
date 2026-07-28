@@ -23,7 +23,7 @@
 #include "utl/MakeString.h"
 #include "utl/Str.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 GameEndedDataPointJob::GameEndedDataPointJob(
     Hmx::Object *callback, EndGameResult const &result

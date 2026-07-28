@@ -22,9 +22,7 @@
 #include "utl/UTF8.h"
 #include <xtl.h>
 #include <d3dx9.h>
-#include "xdk/xapilibi/synchapi.h"
-#include "xdk/xapilibi/winerror.h"
-#include "xdk/xsocial/xsocial.h"
+#include <xsocialpost.h>
 #include <cstring>
 #include <cwchar>
 

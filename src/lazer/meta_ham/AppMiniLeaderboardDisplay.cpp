@@ -23,7 +23,7 @@
 #include "ui/UIListWidget.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 
 AppMiniLeaderboardDisplay::AppMiniLeaderboardDisplay()
     : unk60(0), mLeaderboardList(0), mSongID(0), unk6c(0) {}

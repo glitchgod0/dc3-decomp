@@ -19,7 +19,7 @@
 #include "utl/JobMgr.h"
 #include "utl/Locale.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 OptionsPanel::OptionsPanel() {
     unk48 = 0;

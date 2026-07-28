@@ -4,7 +4,7 @@
 #include "os/System.h"
 #include "utl/HxGuid.h"
 #include "utl/MemMgr.h"
-#include "xdk/xapilibi/sysinfoapi.h"
+#include <xtl.h>
 
 KinectShare::KinectShare(
     unsigned int ip,

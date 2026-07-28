@@ -21,8 +21,7 @@
 #include "ui/UIPanel.h"
 #include "utl/DataPointMgr.h"
 #include "utl/Symbol.h"
-#include "xdk/XNET.h"
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 
 char g_szMachineIdString[24]; // i counted this many in objdiff
 const String RockCentral::kServerVer = "1";

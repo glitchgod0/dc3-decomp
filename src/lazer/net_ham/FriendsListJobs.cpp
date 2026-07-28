@@ -11,7 +11,7 @@
 #include "utl/DataPointMgr.h"
 #include "utl/MakeString.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbase.h"
+#include <xtl.h>
 #include <cstddef>
 #include <cstring>
 

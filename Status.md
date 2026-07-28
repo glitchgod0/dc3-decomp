@@ -8,8 +8,162 @@ src/
 ├── binkxenon/
 ├── lazer/
 │   ├── game/
+│   │   ├── BustAMovePanel.cpp
+│   │   ├── Game.cpp
+│   │   ├── GameMode.cpp
+│   │   ├── GamePanel.cpp
+│   │   ├── HamUser.cpp
+│   │   ├── HamUserMgr.cpp
+│   │   ├── LiveInput.cpp
+│   │   ├── PartyModeMgr.cpp
+│   │   ├── PresenceMgr.cpp
+│   │   ├── Shuttle.cpp
+│   │   ├── SongDB.cpp
+│   │   └── SongSequence.cpp
 │   ├── meta_ham/
+│   │   ├── Accomplishment.cpp
+│   │   ├── AccomplishmentCampaignConditional.cpp
+│   │   ├── AccomplishmentCategory.cpp
+│   │   ├── AccomplishmentCharacterListConditional.cpp
+│   │   ├── AccomplishmentConditional.cpp
+│   │   ├── AccomplishmentCountConditional.cpp
+│   │   ├── AccomplishmentDiscSongConditional.cpp
+│   │   ├── AccomplishmentGroup.cpp
+│   │   ├── AccomplishmentManager.cpp
+│   │   ├── AccomplishmentOneShot.cpp
+│   │   ├── AccomplishmentProgress.cpp
+│   │   ├── AccomplishmentSongConditional.cpp
+│   │   ├── AccomplishmentSongListConditional.cpp
+│   │   ├── AppLabel.cpp
+│   │   ├── AppMiniLeaderboardDisplay.cpp
+│   │   ├── AppNavProvider.cpp
+│   │   ├── Award.cpp
+│   │   ├── BlacklightPanel.cpp
+│   │   ├── CalibrationPanel.cpp
+│   │   ├── Campaign.cpp
+│   │   ├── CampaignDiffSelectPanel.cpp
+│   │   ├── CampaignEra.cpp
+│   │   ├── CampaignMasterQuestCrewSelectPanel.cpp
+│   │   ├── CampaignMasterQuestSongSelectPanel.cpp
+│   │   ├── CampaignPerformer.cpp
+│   │   ├── CampaignProgress.cpp
+│   │   ├── CampaignSongSelectPanel.cpp
+│   │   ├── ChallengeRecord.cpp
+│   │   ├── ChallengeResultPanel.cpp
+│   │   ├── Challenges.cpp
+│   │   ├── ChallengeSort.cpp
+│   │   ├── ChallengeSortByScore.cpp
+│   │   ├── ChallengeSortMgr.cpp
+│   │   ├── ChallengeSortNode.cpp
+│   │   ├── CharacterProvider.cpp
+│   │   ├── ChooseModeProvider.cpp
+│   │   ├── ChooseProfilePanel.cpp
+│   │   ├── ContentLoadingPanel.cpp
+│   │   ├── ContextChecker.cpp
+│   │   ├── CorrectIdentityPanel.cpp
+│   │   ├── CrewProvider.cpp
+│   │   ├── CursorPanel.cpp
+│   │   ├── DepthBuffer.cpp
+│   │   ├── DifficultyProvider.cpp
+│   │   ├── EventDialogPanel.cpp
+│   │   ├── FitnessCalorieSort.cpp
+│   │   ├── FitnessCalorieSortByCalorie.cpp
+│   │   ├── FitnessCalorieSortMgr.cpp
+│   │   ├── FitnessCalorieSortNode.cpp
+│   │   ├── FitnessGoalMgr.cpp
+│   │   ├── FitnessProvider.cpp
+│   │   ├── HamMemcardAction.cpp
+│   │   ├── HamPanel.cpp
+│   │   ├── HamProfile.cpp
+│   │   ├── HamScreen.cpp
+│   │   ├── HamSongMetadata.cpp
+│   │   ├── HamSongMgr.cpp
+│   │   ├── HamStarsDisplay.cpp
+│   │   ├── HamStoreFilterProvider.cpp
+│   │   ├── HamStoreOffer.cpp
+│   │   ├── HamStorePanel.cpp
+│   │   ├── HamStoreProvider.cpp
+│   │   ├── HamUI.cpp
+│   │   ├── HelpBarPanel.cpp
+│   │   ├── Instarank.cpp
+│   │   ├── KinectSharePanel.cpp
+│   │   ├── Leaderboards.cpp
+│   │   ├── LetterboxPanel.cpp
+│   │   ├── LoadingPanel.cpp
+│   │   ├── LockedContentPanel.cpp
+│   │   ├── MainMenuPanel.cpp
+│   │   ├── MainMenuProvider.cpp
+│   │   ├── MetagameRank.cpp
+│   │   ├── MetagameStats.cpp
+│   │   ├── MetaPanel.cpp
+│   │   ├── MetaPerformer.cpp
+│   │   ├── MoveRatingHistory.cpp
+│   │   ├── MovieProvider.cpp
+│   │   ├── MQSongSort.cpp
+│   │   ├── MQSongSortByCharacter.cpp
+│   │   ├── MQSongSortMgr.cpp
+│   │   ├── MQSongSortNode.cpp
+│   │   ├── MultiUserGesturePanel.cpp
+│   │   ├── NavListNode.cpp
+│   │   ├── NavListSort.cpp
+│   │   ├── NavListSortMgr.cpp
+│   │   ├── OptionsPanel.cpp
+│   │   ├── OutfitProvider.cpp
+│   │   ├── OverlayPanel.cpp
+│   │   ├── Overshell.cpp
+│   │   ├── PassiveMessagesPanel.cpp
+│   │   ├── PassiveMessenger.cpp
+│   │   ├── Playlist.cpp
+│   │   ├── PlaylistSongProvider.cpp
+│   │   ├── PlaylistSort.cpp
+│   │   ├── PlaylistSortByTypeCmp.cpp
+│   │   ├── PlaylistSortMgr.cpp
+│   │   ├── PlaylistSortNode.cpp
+│   │   ├── PracticeChoosePanel.cpp
+│   │   ├── ProfileMgr.cpp
+│   │   ├── SaveLoadManager.cpp
+│   │   ├── ShellInput.cpp
+│   │   ├── SigninScreen.cpp
+│   │   ├── SingleUserCrewSelectPanel.cpp
+│   │   ├── SkeletonChooser.cpp
+│   │   ├── SkeletonIdentifier.cpp
+│   │   ├── SkillsAwardList.cpp
+│   │   ├── SongRecord.cpp
+│   │   ├── SongSelectPanel.cpp
+│   │   ├── SongSelectPlaylistCustomizePanel.cpp
+│   │   ├── SongSelectPlaylistPanel.cpp
+│   │   ├── SongSort.cpp
+│   │   ├── SongSortByDiff.cpp
+│   │   ├── SongSortByLocation.cpp
+│   │   ├── SongSortBySong.cpp
+│   │   ├── SongSortMgr.cpp
+│   │   ├── SongSortNode.cpp
+│   │   ├── SongStatusMgr.cpp
+│   │   ├── TexLoadPanel.cpp
+│   │   ├── TitleProvider.cpp
+│   │   ├── UIEventMgr.cpp
+│   │   ├── Utl.cpp
+│   │   ├── VenueProvider.cpp
+│   │   ├── VoiceControlPanel.cpp
+│   │   ├── VoiceInputPanel.cpp
+│   │   └── WeightInput.cpp
 │   └── net_ham/
+│       ├── ChallengeSystemJobs.cpp
+│       ├── DataMinerJobs.cpp
+│       ├── FitnessGoalJobs.cpp
+│       ├── FriendsListJobs.cpp
+│       ├── HamStoreCartJobs.cpp
+│       ├── KinectShare.cpp
+│       ├── KinectShareJobs.cpp
+│       ├── LeaderboardJobs.cpp
+│       ├── MotdJobs.cpp
+│       ├── PartyModeJobs.cpp
+│       ├── PlaylistJobs.cpp
+│       ├── RCJobDingo.cpp
+│       ├── RockCentral.cpp
+│       ├── ScoreJobs.cpp
+│       ├── TokenJobs.cpp
+│       └── WebLinkJobs.cpp
 └── system/
     ├── beatmatch/
     ├── char/

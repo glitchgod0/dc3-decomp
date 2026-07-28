@@ -5,7 +5,7 @@
 #include "rndobj/Tex.h"
 #include "ui/UIPanel.h"
 #include <xtl.h>
-#include "xdk/XSOCIAL.h"
+#include <xsocialpost.h>
 
 class KinectSharePanel : public UIPanel {
 public:

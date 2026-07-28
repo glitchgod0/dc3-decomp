@@ -40,7 +40,7 @@
 #include "utl/MakeString.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 HamProfile::HamProfile(int i1)
     : Profile(i1), mAccProgress(this), unk2fc(0), mInFitnessMode(0), mFitnessPounds(130),

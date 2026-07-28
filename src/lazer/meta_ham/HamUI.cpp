@@ -45,7 +45,7 @@
 #include "ui/UIScreen.h"
 #include "utl/Std.h"
 #include "utl/Symbol.h"
-#include "xdk/xapilibi/xbox.h"
+#include <xtl.h>
 
 namespace {
     UIPanel *FindPanel(const char *name) {
