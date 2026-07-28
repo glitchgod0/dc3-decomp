@@ -1,5 +1,6 @@
 #pragma once
 #include <xaudio2.h>
+#include "XAudioBatchAlloc_stub.h"
 
 DEFINE_CLSID(WahEffect, 20F3EB49, FF6B, 41A0, 8A, 09, 35, 31, A3, 50, 1A, E1);
 

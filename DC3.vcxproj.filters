@@ -2148,6 +2148,7 @@
     <ClInclude Include="src\system\net\WebSvcMgrCurl.h" />
     <ClInclude Include="src\system\net\websvcreq.h" />
     <ClInclude Include="src\system\net\xlspconnection.h" />
+    <ClInclude Include="src\system\dsp\XAudioBatchAlloc_stub.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />

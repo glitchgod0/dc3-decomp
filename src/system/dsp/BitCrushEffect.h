@@ -1,5 +1,6 @@
 #pragma once
 #include <xaudio2.h>
+#include "XAudioBatchAlloc_stub.h"
 
 DEFINE_CLSID(BitCrushEffect, D794C77C, D14D, 470C, 93, 46, B9, BE, 9A, C4, 86, 0B);
 

@@ -381,7 +381,7 @@ src/
     │   ├── PlatformMgr_Xbox.cpp (Fails (afaik Smartglass))
     │   ├── SynchronizationEvent.cpp
     │   ├── System.cpp
-    │   ├── System_Xbox.cpp  (Fails (xbdm include))
+    │   ├── System_Xbox.cpp
     │   ├── ThreadCall_Win.cpp
     │   ├── Timer.cpp
     │   ├── UsbMidiGuitar.cpp
@@ -548,13 +548,13 @@ src/
     │   ├── WavReader.cpp
     │   └── tomcrypt/
     ├── synth360/
-    │   ├── EnvelopeGenerator.cpp (Fails (ATG))
-    │   ├── ExternalMic.cpp (Fails (ATG))
+    │   ├── EnvelopeGenerator.cpp
+    │   ├── ExternalMic.cpp
     │   ├── FxSend.cpp
-    │   ├── FxSendBitCrush.cpp (Fails (ATG))
-    │   ├── FxSendChorus.cpp (Fails (ATG))
-    │   ├── FxSendCompress.cpp (Fails (ATG))
-    │   ├── FxSendDelay.cpp (Fails (ATG))
+    │   ├── FxSendBitCrush.cpp
+    │   ├── FxSendChorus.cpp (Fails (IXAudioBatchAllocator))
+    │   ├── FxSendCompress.cpp (Fails (IXAudioBatchAllocator)) 
+    │   ├── FxSendDelay.cpp  (Fails (IXAudioBatchAllocator))
     │   ├── FxSendDistortion.cpp (Fails (ATG))
     │   ├── FxSendEQ.cpp (Fails (ATG))
     │   ├── FxSendFlanger.cpp (Fails (ATG))
@@ -567,13 +567,13 @@ src/
     │   ├── HeadsetPlaybackEffect.cpp (Fails (ATG))
     │   ├── HeadsetXferEffect.cpp (Fails (ATG))
     │   ├── MeterEffect.cpp (Fails (ATG))
-    │   ├── Mic.cpp (Fails (ATG))
+    │   ├── Mic.cpp
     │   ├── PitchShiftEffect.cpp (Fails (ATG))
     │   ├── SampleInst.cpp (Fails (ATG))
-    │   ├── StreamReceiver.cpp (Fails (ATG))
-    │   ├── Synth.cpp (Fails (ATG))
-    │   ├── SynthSample.cpp (Fails (ATG))
-    │   ├── Voice.cpp (Fails (ATG))
+    │   ├── StreamReceiver.cpp
+    │   ├── Synth.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── SynthSample.cpp
+    │   ├── Voice.cpp
     │   │
     │   ├── soundtouch/
     │   │   ├── 3dnow_win.cpp
@@ -640,7 +640,7 @@ src/
     │   ├── UITrigger.cpp
     │   └── Utl.cpp
     ├── utl/
-    │   ├── AllocInfo.cpp  (Fails (xbdm))
+    │   ├── AllocInfo.cpp
     │   ├── BeatMap.cpp
     │   ├── BinkIntegration.cpp
     │   ├── BinStream.cpp
@@ -670,7 +670,7 @@ src/
     │   ├── KnownIssues.cpp
     │   ├── Licenses.cpp
     │   ├── Loader.cpp
-    │   ├── Locale.cpp  (Fails (xbdm))
+    │   ├── Locale.cpp
     │   ├── LocaleOrdinal.cpp
     │   ├── Magnu.cpp
     │   ├── MakeString.cpp

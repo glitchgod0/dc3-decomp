@@ -1325,6 +1325,7 @@
     <ClInclude Include="src\system\dsp\mkfilter\filterdesign.h" />
     <ClInclude Include="src\system\dsp\StandardEffect.h" />
     <ClInclude Include="src\system\dsp\WahEffect.h" />
+    <ClInclude Include="src\system\dsp\XAudioBatchAlloc_stub.h" />
     <ClInclude Include="src\system\flow\DrivenPropertyEntry.h" />
     <ClInclude Include="src\system\flow\DrivenPropertyMathOps.h" />
     <ClInclude Include="src\system\flow\flow.h" />

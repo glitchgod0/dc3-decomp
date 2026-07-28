@@ -1,5 +1,6 @@
 #pragma once
 #include <xaudio2.h>
+#include "XAudioBatchAlloc_stub.h"
 
 DEFINE_CLSID(EQEffect, 0E0F3600, B28E, 4434, 81, 0D, 21, B8, BE, 74, 06, 19);
 

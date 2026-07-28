@@ -1,5 +1,6 @@
 #pragma once
 #include <xaudio2.h>
+#include "XAudioBatchAlloc_stub.h"
 
 DEFINE_CLSID(CompressionEffect, 443A5BB5, 2BD8, 45FE, AC, E8, 3B, 51, 2D, 6C, BE, 68);
 

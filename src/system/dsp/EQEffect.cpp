@@ -2,7 +2,6 @@
 #include "dsp/mkfilter/filterdesign.h"
 #include "math/Utl.h"
 #include "os/Debug.h"
-#include <xaudio2.h>
 #include <cstring>
 
 void EQEffect::SetParameter(int idx, float val) {
