@@ -1,6 +1,7 @@
 #pragma once
 #include "synth360/soundtouch/SoundTouch.h"
 #include <xaudio2.h>
+#include "AtgApobase.h"
 
 struct PitchShiftEffectParams {
     float unk0;

@@ -2120,6 +2120,7 @@
     <ClInclude Include="src\system\stlport\using\h\strstream.h" />
     <ClInclude Include="src\system\stlport\wchar.h" />
     <ClInclude Include="src\system\stlport\wctype.h" />
+    <ClInclude Include="src\system\synth360\AtgApobase.h" />
     <ClInclude Include="src\system\synth360\EnvelopeGenerator.h" />
     <ClInclude Include="src\system\synth360\ExternalMic.h" />
     <ClInclude Include="src\system\synth360\FxSend.h" />

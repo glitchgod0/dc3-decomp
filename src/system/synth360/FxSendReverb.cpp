@@ -1,6 +1,8 @@
 #include "FxSendReverb.h"
 #include "FxSend.h"
 #include <xaudio2.h>
+#include <xaudio2fx.h>
+
 
 FxSendReverb360::FxSendReverb360() : FxSend360(this) {}
 

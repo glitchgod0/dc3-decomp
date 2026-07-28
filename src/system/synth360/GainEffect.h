@@ -1,5 +1,6 @@
 #pragma once
 #include <xaudio2.h>
+#include "AtgApobase.h"
 
 // size 0x1
 struct GainEffectParams {

@@ -41,9 +41,10 @@
 #include "utl/Std.h"
 #include "utl/Str.h"
 #include <xtl.h>
-#include <xaudio2.h>
 #include <d3dx9.h>
 #include <xaudio2.h>
+#include <xaudio2fx.h>
+
 
 Synth360 *TheXboxSynth;
 

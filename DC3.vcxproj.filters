@@ -2149,6 +2149,7 @@
     <ClInclude Include="src\system\net\websvcreq.h" />
     <ClInclude Include="src\system\net\xlspconnection.h" />
     <ClInclude Include="src\system\dsp\XAudioBatchAlloc_stub.h" />
+    <ClInclude Include="src\system\synth360\AtgApobase.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\system\stlport\algorithm" />

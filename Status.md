@@ -73,14 +73,14 @@ src/
     │   ├── FileMergerOrganizer.cpp
     │   └── Waypoint.cpp
     ├── dsp/
-    │   ├── BitCrushEffect.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── Common_Xbox.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── CompressionEffect.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── DelayEffect.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── DistortionEffect.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── EQEffect.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── FlangerEffect.cpp  (Fails (IXAudioBatchAllocator))
-    │   ├── WahEffect.cpp  (Fails (IXAudioBatchAllocator))
+    │   ├── BitCrushEffect.cpp
+    │   ├── Common_Xbox.cpp
+    │   ├── CompressionEffect.cpp
+    │   ├── DelayEffect.cpp
+    │   ├── DistortionEffect.cpp
+    │   ├── EQEffect.cpp  (Fails (_blkmov))
+    │   ├── FlangerEffect.cpp
+    │   ├── WahEffect.cpp
     │   └── mkfilter/
     │       ├── complex.cpp
     │       └── filterdesign.cpp
@@ -560,16 +560,16 @@ src/
     │   ├── FxSendFlanger.cpp (Fails (ATG))
     │   ├── FxSendMeterEffect.cpp (Fails (ATG))
     │   ├── FxSendPitchShift.cpp (Fails (ATG))
-    │   ├── FxSendReverb.cpp (Fails (ATG))
+    │   ├── FxSendReverb.cpp
     │   ├── FxSendSynapse.cpp (Fails (ATG))
-    │   ├── FxSendWah.cpp (Fails (ATG))
-    │   ├── GainEffect.cpp (Fails (ATG))
-    │   ├── HeadsetPlaybackEffect.cpp (Fails (ATG))
-    │   ├── HeadsetXferEffect.cpp (Fails (ATG))
-    │   ├── MeterEffect.cpp (Fails (ATG))
+    │   ├── FxSendWah.cpp (Fails)
+    │   ├── GainEffect.cpp (Fails)
+    │   ├── HeadsetPlaybackEffect.cpp
+    │   ├── HeadsetXferEffect.cpp
+    │   ├── MeterEffect.cpp
     │   ├── Mic.cpp
-    │   ├── PitchShiftEffect.cpp (Fails (ATG))
-    │   ├── SampleInst.cpp (Fails (ATG))
+    │   ├── PitchShiftEffect.cpp
+    │   ├── SampleInst.cpp
     │   ├── StreamReceiver.cpp
     │   ├── Synth.cpp  (Fails (IXAudioBatchAllocator))
     │   ├── SynthSample.cpp
