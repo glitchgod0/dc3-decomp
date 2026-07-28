@@ -23,7 +23,7 @@
 #define RADEXPLINK __cdecl
 #define RADEXPFUNC RADDEFFUNC
 #define PTR4
-#define S8 signed char
+#define S8_ signed char
 #define U8 unsigned char
 #define U16 unsigned short
 #define S16 signed short

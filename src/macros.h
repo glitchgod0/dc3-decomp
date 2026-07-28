@@ -5,7 +5,7 @@
 #ifdef _MSC_VER
 #define CDECL __cdecl
 #define STDCALL __stdcall
-#define FASTCALL __fastcall
+#define FASTCALL_ __fastcall
 
 #define SEH_TRY __try
 #define SEH_EXCEPT __except
