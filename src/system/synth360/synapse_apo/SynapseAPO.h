@@ -1,6 +1,7 @@
 #pragma once
 #include "synth360/synapse_apo/Synapse_dsp.h"
 #include <xaudio2.h>
+#include "../AtgApobase.h"
 
 namespace DSP {
 

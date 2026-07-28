@@ -80,7 +80,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)src\System\net\curl\include;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\synth\tomcrypt;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)src\System\net\curl\include;$(ProjectDir)src\System\zlib\;$(ProjectDir)src\System\stlport\;$(ProjectDir)src;$(ProjectDir)src\system\synth\tomcrypt;$(ProjectDir)src\system\oggvorbis;$(ProjectDir)src\binkxenon;$(ProjectDir)src\System;$(ProjectDir)src\lazer;%(AdditionalIncludeDirectories);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
@@ -456,79 +456,219 @@
     <ClCompile Include="src\system\hamobj\StarsDisplay.cpp" />
     <ClCompile Include="src\system\hamobj\SuperEasyRemixer.cpp" />
     <ClCompile Include="src\system\hamobj\TransConstraint.cpp" />
-    <ClCompile Include="src\system\jpeg\ansi2knr.c" />
-    <ClCompile Include="src\system\jpeg\cdjpeg.c" />
-    <ClCompile Include="src\system\jpeg\cjpeg.c" />
-    <ClCompile Include="src\system\jpeg\ckconfig.c" />
-    <ClCompile Include="src\system\jpeg\djpeg.c" />
-    <ClCompile Include="src\system\jpeg\example.c" />
-    <ClCompile Include="src\system\jpeg\jcapimin.c" />
-    <ClCompile Include="src\system\jpeg\jcapistd.c" />
-    <ClCompile Include="src\system\jpeg\jccoefct.c" />
-    <ClCompile Include="src\system\jpeg\jccolor.c" />
-    <ClCompile Include="src\system\jpeg\jcdctmgr.c" />
-    <ClCompile Include="src\system\jpeg\jchuff.c" />
-    <ClCompile Include="src\system\jpeg\jcinit.c" />
-    <ClCompile Include="src\system\jpeg\jcmainct.c" />
-    <ClCompile Include="src\system\jpeg\jcmarker.c" />
-    <ClCompile Include="src\system\jpeg\jcmaster.c" />
-    <ClCompile Include="src\system\jpeg\jcomapi.c" />
-    <ClCompile Include="src\system\jpeg\jcparam.c" />
-    <ClCompile Include="src\system\jpeg\jcphuff.c" />
-    <ClCompile Include="src\system\jpeg\jcprepct.c" />
-    <ClCompile Include="src\system\jpeg\jcsample.c" />
-    <ClCompile Include="src\system\jpeg\jctrans.c" />
-    <ClCompile Include="src\system\jpeg\jdapimin.c" />
-    <ClCompile Include="src\system\jpeg\jdapistd.c" />
-    <ClCompile Include="src\system\jpeg\jdatadst.c" />
-    <ClCompile Include="src\system\jpeg\jdatasrc.c" />
-    <ClCompile Include="src\system\jpeg\jdcoefct.c" />
-    <ClCompile Include="src\system\jpeg\jdcolor.c" />
-    <ClCompile Include="src\system\jpeg\jddctmgr.c" />
+    <ClCompile Include="src\system\jpeg\ansi2knr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\cdjpeg.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\cjpeg.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\ckconfig.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\djpeg.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\example.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcapimin.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcapistd.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jccoefct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jccolor.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcdctmgr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jchuff.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcinit.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcmainct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcmarker.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcmaster.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcomapi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcparam.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcphuff.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcprepct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jcsample.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jctrans.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdapimin.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdapistd.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdatadst.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdatasrc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdcoefct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdcolor.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jddctmgr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\jpeg\jdhuff.c" />
-    <ClCompile Include="src\system\jpeg\jdinput.c" />
-    <ClCompile Include="src\system\jpeg\jdmainct.c" />
-    <ClCompile Include="src\system\jpeg\jdmarker.c" />
-    <ClCompile Include="src\system\jpeg\jdmaster.c" />
-    <ClCompile Include="src\system\jpeg\jdmerge.c" />
-    <ClCompile Include="src\system\jpeg\jdphuff.c" />
-    <ClCompile Include="src\system\jpeg\jdpostct.c" />
-    <ClCompile Include="src\system\jpeg\jdsample.c" />
-    <ClCompile Include="src\system\jpeg\jdtrans.c" />
-    <ClCompile Include="src\system\jpeg\jerror.c" />
-    <ClCompile Include="src\system\jpeg\jfdctflt.c" />
-    <ClCompile Include="src\system\jpeg\jfdctfst.c" />
-    <ClCompile Include="src\system\jpeg\jfdctint.c" />
-    <ClCompile Include="src\system\jpeg\jidctflt.c" />
-    <ClCompile Include="src\system\jpeg\jidctfst.c" />
-    <ClCompile Include="src\system\jpeg\jidctint.c" />
-    <ClCompile Include="src\system\jpeg\jidctred.c" />
-    <ClCompile Include="src\system\jpeg\jmemansi.c" />
-    <ClCompile Include="src\system\jpeg\jmemdos.c" />
-    <ClCompile Include="src\system\jpeg\jmemmac.c" />
-    <ClCompile Include="src\system\jpeg\jmemmgr.c" />
-    <ClCompile Include="src\system\jpeg\jmemname.c" />
-    <ClCompile Include="src\system\jpeg\jmemnobs.c" />
+    <ClCompile Include="src\system\jpeg\jdinput.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdmainct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdmarker.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdmaster.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdmerge.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdphuff.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdpostct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdsample.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jdtrans.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jerror.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jfdctflt.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jfdctfst.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jfdctint.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jidctflt.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jidctfst.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jidctint.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jidctred.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jmemansi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jmemdos.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jmemmac.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jmemmgr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jmemname.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jmemnobs.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\jpeg\Jpeg.cpp" />
     <ClCompile Include="src\system\jpeg\jpegtran.c" />
-    <ClCompile Include="src\system\jpeg\jquant1.c" />
-    <ClCompile Include="src\system\jpeg\jquant2.c" />
-    <ClCompile Include="src\system\jpeg\jutils.c" />
-    <ClCompile Include="src\system\jpeg\rdbmp.c" />
-    <ClCompile Include="src\system\jpeg\rdcolmap.c" />
-    <ClCompile Include="src\system\jpeg\rdgif.c" />
-    <ClCompile Include="src\system\jpeg\rdjpgcom.c" />
-    <ClCompile Include="src\system\jpeg\rdppm.c" />
-    <ClCompile Include="src\system\jpeg\rdrle.c" />
-    <ClCompile Include="src\system\jpeg\rdswitch.c" />
-    <ClCompile Include="src\system\jpeg\rdtarga.c" />
-    <ClCompile Include="src\system\jpeg\transupp.c" />
-    <ClCompile Include="src\system\jpeg\wrbmp.c" />
-    <ClCompile Include="src\system\jpeg\wrgif.c" />
-    <ClCompile Include="src\system\jpeg\wrjpgcom.c" />
-    <ClCompile Include="src\system\jpeg\wrppm.c" />
-    <ClCompile Include="src\system\jpeg\wrrle.c" />
-    <ClCompile Include="src\system\jpeg\wrtarga.c" />
+    <ClCompile Include="src\system\jpeg\jquant1.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jquant2.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\jutils.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdbmp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdcolmap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdgif.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdjpgcom.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdppm.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdrle.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdswitch.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\rdtarga.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\transupp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\wrbmp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\wrgif.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\wrjpgcom.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\wrppm.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\wrrle.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\jpeg\wrtarga.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\math\Color.cpp" />
     <ClCompile Include="src\system\math\Decibels.cpp" />
     <ClCompile Include="src\system\math\DoubleExponentialSmoother.cpp" />
@@ -593,109 +733,315 @@
     <ClCompile Include="src\system\movie\MovieSys.cpp" />
     <ClCompile Include="src\system\movie\Splash.cpp" />
     <ClCompile Include="src\system\movie\TexMovie.cpp" />
-    <ClCompile Include="src\system\net\curl\lib\amigaos.c" />
-    <ClCompile Include="src\system\net\curl\lib\asyn-ares.c" />
-    <ClCompile Include="src\system\net\curl\lib\asyn-thread.c" />
-    <ClCompile Include="src\system\net\curl\lib\axtls.c" />
-    <ClCompile Include="src\system\net\curl\lib\base64.c" />
-    <ClCompile Include="src\system\net\curl\lib\connect.c" />
-    <ClCompile Include="src\system\net\curl\lib\content_encoding.c" />
-    <ClCompile Include="src\system\net\curl\lib\cookie.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_addrinfo.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_fnmatch.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_gethostname.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_gssapi.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_memrchr.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_ntlm.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_ntlm_core.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_ntlm_msgs.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_ntlm_wb.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_rand.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_rtmp.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_sspi.c" />
-    <ClCompile Include="src\system\net\curl\lib\curl_threads.c" />
-    <ClCompile Include="src\system\net\curl\lib\cyassl.c" />
-    <ClCompile Include="src\system\net\curl\lib\dict.c" />
-    <ClCompile Include="src\system\net\curl\lib\easy.c" />
-    <ClCompile Include="src\system\net\curl\lib\escape.c" />
-    <ClCompile Include="src\system\net\curl\lib\file.c" />
-    <ClCompile Include="src\system\net\curl\lib\fileinfo.c" />
-    <ClCompile Include="src\system\net\curl\lib\formdata.c" />
-    <ClCompile Include="src\system\net\curl\lib\ftp.c" />
-    <ClCompile Include="src\system\net\curl\lib\ftplistparser.c" />
-    <ClCompile Include="src\system\net\curl\lib\getenv.c" />
-    <ClCompile Include="src\system\net\curl\lib\getinfo.c" />
-    <ClCompile Include="src\system\net\curl\lib\gopher.c" />
-    <ClCompile Include="src\system\net\curl\lib\gtls.c" />
-    <ClCompile Include="src\system\net\curl\lib\hash.c" />
-    <ClCompile Include="src\system\net\curl\lib\hmac.c" />
-    <ClCompile Include="src\system\net\curl\lib\hostasyn.c" />
-    <ClCompile Include="src\system\net\curl\lib\hostip.c" />
-    <ClCompile Include="src\system\net\curl\lib\hostip4.c" />
-    <ClCompile Include="src\system\net\curl\lib\hostip6.c" />
-    <ClCompile Include="src\system\net\curl\lib\hostsyn.c" />
-    <ClCompile Include="src\system\net\curl\lib\http.c" />
-    <ClCompile Include="src\system\net\curl\lib\http_chunks.c" />
-    <ClCompile Include="src\system\net\curl\lib\http_digest.c" />
-    <ClCompile Include="src\system\net\curl\lib\http_negotiate.c" />
-    <ClCompile Include="src\system\net\curl\lib\http_negotiate_sspi.c" />
-    <ClCompile Include="src\system\net\curl\lib\http_proxy.c" />
-    <ClCompile Include="src\system\net\curl\lib\idn_win32.c" />
-    <ClCompile Include="src\system\net\curl\lib\if2ip.c" />
-    <ClCompile Include="src\system\net\curl\lib\imap.c" />
-    <ClCompile Include="src\system\net\curl\lib\inet_ntop.c" />
-    <ClCompile Include="src\system\net\curl\lib\inet_pton.c" />
-    <ClCompile Include="src\system\net\curl\lib\krb4.c" />
-    <ClCompile Include="src\system\net\curl\lib\krb5.c" />
-    <ClCompile Include="src\system\net\curl\lib\ldap.c" />
-    <ClCompile Include="src\system\net\curl\lib\llist.c" />
-    <ClCompile Include="src\system\net\curl\lib\md4.c" />
-    <ClCompile Include="src\system\net\curl\lib\md5.c" />
-    <ClCompile Include="src\system\net\curl\lib\memdebug.c" />
-    <ClCompile Include="src\system\net\curl\lib\mprintf.c" />
-    <ClCompile Include="src\system\net\curl\lib\multi.c" />
-    <ClCompile Include="src\system\net\curl\lib\netrc.c" />
-    <ClCompile Include="src\system\net\curl\lib\non-ascii.c" />
-    <ClCompile Include="src\system\net\curl\lib\nonblock.c" />
-    <ClCompile Include="src\system\net\curl\lib\nss.c" />
-    <ClCompile Include="src\system\net\curl\lib\nwlib.c" />
-    <ClCompile Include="src\system\net\curl\lib\nwos.c" />
-    <ClCompile Include="src\system\net\curl\lib\openldap.c" />
-    <ClCompile Include="src\system\net\curl\lib\parsedate.c" />
-    <ClCompile Include="src\system\net\curl\lib\pingpong.c" />
-    <ClCompile Include="src\system\net\curl\lib\polarssl.c" />
-    <ClCompile Include="src\system\net\curl\lib\pop3.c" />
-    <ClCompile Include="src\system\net\curl\lib\progress.c" />
-    <ClCompile Include="src\system\net\curl\lib\qssl.c" />
-    <ClCompile Include="src\system\net\curl\lib\rawstr.c" />
-    <ClCompile Include="src\system\net\curl\lib\rtsp.c" />
-    <ClCompile Include="src\system\net\curl\lib\security.c" />
-    <ClCompile Include="src\system\net\curl\lib\select.c" />
-    <ClCompile Include="src\system\net\curl\lib\sendf.c" />
-    <ClCompile Include="src\system\net\curl\lib\share.c" />
-    <ClCompile Include="src\system\net\curl\lib\slist.c" />
-    <ClCompile Include="src\system\net\curl\lib\smtp.c" />
-    <ClCompile Include="src\system\net\curl\lib\socks.c" />
-    <ClCompile Include="src\system\net\curl\lib\socks_gssapi.c" />
-    <ClCompile Include="src\system\net\curl\lib\socks_sspi.c" />
-    <ClCompile Include="src\system\net\curl\lib\speedcheck.c" />
-    <ClCompile Include="src\system\net\curl\lib\splay.c" />
-    <ClCompile Include="src\system\net\curl\lib\ssh.c" />
-    <ClCompile Include="src\system\net\curl\lib\sslgen.c" />
-    <ClCompile Include="src\system\net\curl\lib\ssluse.c" />
-    <ClCompile Include="src\system\net\curl\lib\strdup.c" />
-    <ClCompile Include="src\system\net\curl\lib\strequal.c" />
-    <ClCompile Include="src\system\net\curl\lib\strerror.c" />
-    <ClCompile Include="src\system\net\curl\lib\strtok.c" />
-    <ClCompile Include="src\system\net\curl\lib\strtoofft.c" />
-    <ClCompile Include="src\system\net\curl\lib\telnet.c" />
-    <ClCompile Include="src\system\net\curl\lib\tftp.c" />
-    <ClCompile Include="src\system\net\curl\lib\timeval.c" />
-    <ClCompile Include="src\system\net\curl\lib\transfer.c" />
-    <ClCompile Include="src\system\net\curl\lib\url.c" />
-    <ClCompile Include="src\system\net\curl\lib\version.c" />
-    <ClCompile Include="src\system\net\curl\lib\warnless.c" />
-    <ClCompile Include="src\system\net\curl\lib\wildcard.c" />
+    <ClCompile Include="src\system\net\curl\lib\amigaos.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\asyn-ares.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\asyn-thread.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\axtls.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\base64.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\connect.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\content_encoding.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\cookie.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_addrinfo.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_fnmatch.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_gethostname.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_gssapi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_memrchr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_ntlm.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_ntlm_core.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_ntlm_msgs.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_ntlm_wb.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_rand.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_rtmp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_sspi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\curl_threads.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\cyassl.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\dict.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\easy.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\escape.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\file.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\fileinfo.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\formdata.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\ftp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\ftplistparser.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\getenv.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\getinfo.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\gopher.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\gtls.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hash.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hmac.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hostasyn.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hostip.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hostip4.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hostip6.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\hostsyn.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\http.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\http_chunks.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\http_digest.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\http_negotiate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\http_negotiate_sspi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\http_proxy.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\idn_win32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\if2ip.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\imap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\inet_ntop.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\inet_pton.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\krb4.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\krb5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\ldap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\llist.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\md4.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\md5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\memdebug.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\mprintf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\multi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\netrc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\non-ascii.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\nonblock.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\nss.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\nwlib.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\nwos.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\openldap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\parsedate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\pingpong.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\polarssl.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\pop3.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\progress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\qssl.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\rawstr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\rtsp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\security.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\select.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\sendf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\share.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\slist.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\smtp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\socks.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\socks_gssapi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\socks_sspi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\speedcheck.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\splay.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\ssh.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\sslgen.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\ssluse.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\strdup.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\strequal.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\strerror.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\strtok.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\strtoofft.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\telnet.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\tftp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\timeval.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\transfer.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\url.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\version.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\warnless.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\curl\lib\wildcard.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\net\DingoAuthJob.cpp" />
     <ClCompile Include="src\system\net\DingoJob.cpp" />
     <ClCompile Include="src\system\net\DingoSvr.cpp" />
@@ -703,13 +1049,27 @@
     <ClCompile Include="src\system\net\HttpGet.cpp" />
     <ClCompile Include="src\system\net\HttpReq.cpp" />
     <ClCompile Include="src\system\net\HttpReqCurl.cpp" />
-    <ClCompile Include="src\system\net\json-c\arraylist.c" />
-    <ClCompile Include="src\system\net\json-c\debug.c" />
-    <ClCompile Include="src\system\net\json-c\json_object.c" />
-    <ClCompile Include="src\system\net\json-c\json_tokener.c" />
-    <ClCompile Include="src\system\net\json-c\json_util.c" />
-    <ClCompile Include="src\system\net\json-c\linkhash.c" />
-    <ClCompile Include="src\system\net\json-c\printbuf.c" />
+    <ClCompile Include="src\system\net\json-c\arraylist.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\json-c\debug.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\json-c\json_object.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\json-c\json_tokener.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\json-c\json_util.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\json-c\linkhash.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\net\json-c\printbuf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\net\JsonMemory.cpp" />
     <ClCompile Include="src\system\net\JsonUtils.cpp" />
     <ClCompile Include="src\system\net\SessionJobs_Xbox.cpp" />
@@ -734,35 +1094,91 @@
     <ClCompile Include="src\system\obj\TextFile.cpp" />
     <ClCompile Include="src\system\obj\TypeProps.cpp" />
     <ClCompile Include="src\system\obj\Utl.cpp" />
-    <ClCompile Include="src\system\oggvorbis\analysis.c" />
-    <ClCompile Include="src\system\oggvorbis\barkmel.c" />
-    <ClCompile Include="src\system\oggvorbis\bitrate.c" />
-    <ClCompile Include="src\system\oggvorbis\bitwise.c" />
-    <ClCompile Include="src\system\oggvorbis\block.c" />
-    <ClCompile Include="src\system\oggvorbis\codebook.c" />
-    <ClCompile Include="src\system\oggvorbis\envelope.c" />
-    <ClCompile Include="src\system\oggvorbis\floor0.c" />
-    <ClCompile Include="src\system\oggvorbis\floor1.c" />
-    <ClCompile Include="src\system\oggvorbis\framing.c" />
-    <ClCompile Include="src\system\oggvorbis\info.c" />
-    <ClCompile Include="src\system\oggvorbis\lookup.c" />
-    <ClCompile Include="src\system\oggvorbis\lpc.c" />
-    <ClCompile Include="src\system\oggvorbis\lsp.c" />
-    <ClCompile Include="src\system\oggvorbis\mapping0.c" />
-    <ClCompile Include="src\system\oggvorbis\mdct.c" />
-    <ClCompile Include="src\system\oggvorbis\misc.c" />
-    <ClCompile Include="src\system\oggvorbis\psy.c" />
-    <ClCompile Include="src\system\oggvorbis\psytune.c" />
-    <ClCompile Include="src\system\oggvorbis\registry.c" />
-    <ClCompile Include="src\system\oggvorbis\res0.c" />
-    <ClCompile Include="src\system\oggvorbis\sharedbook.c" />
-    <ClCompile Include="src\system\oggvorbis\smallft.c" />
-    <ClCompile Include="src\system\oggvorbis\synthesis.c" />
-    <ClCompile Include="src\system\oggvorbis\tone.c" />
-    <ClCompile Include="src\system\oggvorbis\vorbisenc.c" />
-    <ClCompile Include="src\system\oggvorbis\vorbisfile.c" />
+    <ClCompile Include="src\system\oggvorbis\analysis.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\barkmel.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\bitrate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\bitwise.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\block.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\codebook.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\envelope.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\floor0.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\floor1.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\framing.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\info.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\lookup.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\lpc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\lsp.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\mapping0.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\mdct.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\misc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\psy.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\psytune.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\registry.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\res0.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\sharedbook.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\smallft.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\synthesis.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\tone.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\vorbisenc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\oggvorbis\vorbisfile.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\oggvorbis\VorbisMem.cpp" />
-    <ClCompile Include="src\system\oggvorbis\window.c" />
+    <ClCompile Include="src\system\oggvorbis\window.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\os\AppChild.cpp" />
     <ClCompile Include="src\system\os\Archive.cpp" />
     <ClCompile Include="src\system\os\ArkFile.cpp" />
@@ -917,39 +1333,105 @@
     <ClCompile Include="src\system\rndobj\Watcher.cpp" />
     <ClCompile Include="src\system\rndobj\Wind.cpp" />
     <ClCompile Include="src\system\rndobj\wordwrap.cpp" />
-    <ClCompile Include="src\system\stlport\stl\debug\_debug.c" />
-    <ClCompile Include="src\system\stlport\stl\_algo.c" />
-    <ClCompile Include="src\system\stlport\stl\_algobase.c" />
-    <ClCompile Include="src\system\stlport\stl\_alloc.c" />
-    <ClCompile Include="src\system\stlport\stl\_bitset.c" />
-    <ClCompile Include="src\system\stlport\stl\_complex.c" />
-    <ClCompile Include="src\system\stlport\stl\_deque.c" />
-    <ClCompile Include="src\system\stlport\stl\_fstream.c" />
-    <ClCompile Include="src\system\stlport\stl\_hashtable.c" />
-    <ClCompile Include="src\system\stlport\stl\_heap.c" />
-    <ClCompile Include="src\system\stlport\stl\_ios.c" />
-    <ClCompile Include="src\system\stlport\stl\_istream.c" />
-    <ClCompile Include="src\system\stlport\stl\_limits.c" />
-    <ClCompile Include="src\system\stlport\stl\_list.c" />
-    <ClCompile Include="src\system\stlport\stl\_monetary.c" />
-    <ClCompile Include="src\system\stlport\stl\_numeric.c" />
-    <ClCompile Include="src\system\stlport\stl\_num_get.c" />
-    <ClCompile Include="src\system\stlport\stl\_num_put.c" />
-    <ClCompile Include="src\system\stlport\stl\_ostream.c" />
-    <ClCompile Include="src\system\stlport\stl\_pthread_alloc.c" />
-    <ClCompile Include="src\system\stlport\stl\_rope.c" />
-    <ClCompile Include="src\system\stlport\stl\_slist.c" />
-    <ClCompile Include="src\system\stlport\stl\_slist_base.c" />
-    <ClCompile Include="src\system\stlport\stl\_sstream.c" />
-    <ClCompile Include="src\system\stlport\stl\_streambuf.c" />
-    <ClCompile Include="src\system\stlport\stl\_string.c" />
-    <ClCompile Include="src\system\stlport\stl\_string_io.c" />
-    <ClCompile Include="src\system\stlport\stl\_tempbuf.c" />
-    <ClCompile Include="src\system\stlport\stl\_threads.c" />
-    <ClCompile Include="src\system\stlport\stl\_time_facets.c" />
-    <ClCompile Include="src\system\stlport\stl\_tree.c" />
-    <ClCompile Include="src\system\stlport\stl\_valarray.c" />
-    <ClCompile Include="src\system\stlport\stl\_vector.c" />
+    <ClCompile Include="src\system\stlport\stl\debug\_debug.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_algo.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_algobase.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_alloc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_bitset.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_complex.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_deque.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_fstream.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_hashtable.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_heap.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_ios.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_istream.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_limits.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_list.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_monetary.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_numeric.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_num_get.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_num_put.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_ostream.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_pthread_alloc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_rope.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_slist.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_slist_base.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_sstream.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_streambuf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_string.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_string_io.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_tempbuf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_threads.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_time_facets.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_tree.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_valarray.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\stlport\stl\_vector.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\synth360\EnvelopeGenerator.cpp" />
     <ClCompile Include="src\system\synth360\ExternalMic.cpp" />
     <ClCompile Include="src\system\synth360\FxSend.cpp" />
@@ -1046,56 +1528,154 @@
     <ClCompile Include="src\system\synth\Synth.cpp" />
     <ClCompile Include="src\system\synth\SynthSample.cpp" />
     <ClCompile Include="src\system\synth\ThreeDSound.cpp" />
-    <ClCompile Include="src\system\synth\tomcrypt\aes.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\aes_tab.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\ampi.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\base64.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\bits.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\blowfish.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\cast5.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\cbc.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\cfb.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\crypt.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\ctr.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\des.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\dh.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\dh_sys.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\ecb.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\ecc.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\ecc_sys.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\gf.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\hash.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\hmac.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\keyring.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\md2.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\md4.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\md5.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\mem.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\mpi.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\ofb.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\packet.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\prime.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\rc2.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\rc4.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\rc5.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\rc6.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\rsa.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\rsa_sys.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\safer+.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\safer.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\safer_tab.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\serpent.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\sha1.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\sha256.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\sha384.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\sha512.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\sprng.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\strings.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\tiger.c" />
+    <ClCompile Include="src\system\synth\tomcrypt\aes.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\aes_tab.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\ampi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\base64.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\bits.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\blowfish.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\cast5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\cbc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\cfb.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\crypt.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\ctr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\des.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\dh.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\dh_sys.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\ecb.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\ecc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\ecc_sys.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\gf.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\hash.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\hmac.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\keyring.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\md2.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\md4.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\md5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\mem.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\mpi.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\ofb.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\packet.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\prime.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\rc2.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\rc4.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\rc5.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\rc6.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\rsa.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\rsa_sys.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\safer+.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\safer.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\safer_tab.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\serpent.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\sha1.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\sha256.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\sha384.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\sha512.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\sprng.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\strings.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\tiger.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\synth\tomcrypt\TomCryptLicense.cpp" />
-    <ClCompile Include="src\system\synth\tomcrypt\twofish.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\xtea.c" />
-    <ClCompile Include="src\system\synth\tomcrypt\yarrow.c" />
+    <ClCompile Include="src\system\synth\tomcrypt\twofish.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\xtea.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\synth\tomcrypt\yarrow.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\synth\Utl.cpp" />
     <ClCompile Include="src\system\synth\VorbisReader.cpp" />
     <ClCompile Include="src\system\synth\WavMgr.cpp" />
@@ -1229,21 +1809,49 @@
     <ClCompile Include="src\system\world\SpotlightEnder.cpp" />
     <ClCompile Include="src\system\world\ThreeDSoundManager.cpp" />
     <ClCompile Include="src\system\world\World.cpp" />
-    <ClCompile Include="src\system\zlib\adler32.c" />
-    <ClCompile Include="src\system\zlib\compress.c" />
-    <ClCompile Include="src\system\zlib\crc32.c" />
-    <ClCompile Include="src\system\zlib\deflate.c" />
-    <ClCompile Include="src\system\zlib\example.c" />
-    <ClCompile Include="src\system\zlib\gzio.c" />
-    <ClCompile Include="src\system\zlib\infback.c" />
-    <ClCompile Include="src\system\zlib\inffast.c" />
-    <ClCompile Include="src\system\zlib\inflate.c" />
-    <ClCompile Include="src\system\zlib\inftrees.c" />
-    <ClCompile Include="src\system\zlib\minigzip.c" />
-    <ClCompile Include="src\system\zlib\trees.c" />
-    <ClCompile Include="src\system\zlib\uncompr.c" />
+    <ClCompile Include="src\system\zlib\adler32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\compress.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\crc32.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\deflate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\example.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\gzio.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\infback.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\inffast.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\inflate.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\inftrees.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\minigzip.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\trees.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="src\system\zlib\uncompr.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
     <ClCompile Include="src\system\zlib\ZlibLicense.cpp" />
-    <ClCompile Include="src\system\zlib\zutil.c" />
+    <ClCompile Include="src\system\zlib\zutil.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">CompileAsC</CompileAs>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\App.h" />
@@ -2510,9 +3118,23 @@
     <None Include="src\system\stlport\typeinfo" />
     <None Include="src\system\stlport\unordered_map" />
     <None Include="src\system\stlport\unordered_set" />
+    <None Include="src\system\stlport\using\cstring" />
+    <None Include="src\system\stlport\using\export" />
+    <None Include="src\system\stlport\using\fstream" />
+    <None Include="src\system\stlport\using\iomanip" />
+    <None Include="src\system\stlport\using\ios" />
+    <None Include="src\system\stlport\using\iosfwd" />
+    <None Include="src\system\stlport\using\iostream" />
+    <None Include="src\system\stlport\using\istream" />
+    <None Include="src\system\stlport\using\locale" />
+    <None Include="src\system\stlport\using\ostream" />
+    <None Include="src\system\stlport\using\sstream" />
+    <None Include="src\system\stlport\using\streambuf" />
+    <None Include="src\system\stlport\using\strstream" />
     <None Include="src\system\stlport\utility" />
     <None Include="src\system\stlport\valarray" />
     <None Include="src\system\stlport\vector" />
+    <None Include="src\system\zlib\algorithm.txt" />
   </ItemGroup>
   <ItemGroup>
     <Object Include="src\system\jpeg\jdosabcc.obj" />

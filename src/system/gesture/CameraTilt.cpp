@@ -6,9 +6,8 @@
 #include "os/PlatformMgr.h"
 #include "os/System.h"
 #include "ui/UI.h"
-#include <nuiapi.h>
 #include <xtl.h>
-#include "xdk/nui/nuidetroit.h"
+#include <nuiapi.h>
 
 CameraTilt *TheCameraTilt;
 

@@ -120,7 +120,7 @@ src/
     │   ├── ArchiveSkeleton.cpp
     │   ├── BaseSkeleton.cpp
     │   ├── CameraInput.cpp
-    │   ├── CameraTilt.cpp (Fails (nuidetroit))
+    │   ├── CameraTilt.cpp
     │   ├── DepthBuffer3D.cpp
     │   ├── DirectionGestureFilter.cpp
     │   ├── DrawUtl.cpp
@@ -135,7 +135,7 @@ src/
     │   ├── HighFiveGestureFilter.cpp 
     │   ├── IdentityInfo.cpp
     │   ├── JointUtl.cpp 
-    │   ├── LiveCameraInput.cpp (Fails (nuidetroit))
+    │   ├── LiveCameraInput.cpp (Fails (C2664))
     │   ├── NavigationSkeletonDir.cpp 
     │   ├── Skeleton.cpp 
     │   ├── SkeletonClip.cpp

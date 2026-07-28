@@ -2276,6 +2276,20 @@
     <None Include="src\system\jpeg\usage.doc" />
     <None Include="src\system\jpeg\wizard.doc" />
     <None Include="src\system\jpeg\wrjpgcom.1" />
+    <None Include="src\system\stlport\using\cstring" />
+    <None Include="src\system\stlport\using\strstream" />
+    <None Include="src\system\stlport\using\export" />
+    <None Include="src\system\stlport\using\fstream" />
+    <None Include="src\system\stlport\using\iomanip" />
+    <None Include="src\system\stlport\using\ios" />
+    <None Include="src\system\stlport\using\iosfwd" />
+    <None Include="src\system\stlport\using\iostream" />
+    <None Include="src\system\stlport\using\istream" />
+    <None Include="src\system\stlport\using\locale" />
+    <None Include="src\system\stlport\using\ostream" />
+    <None Include="src\system\stlport\using\sstream" />
+    <None Include="src\system\stlport\using\streambuf" />
+    <None Include="src\system\zlib\algorithm.txt" />
   </ItemGroup>
   <ItemGroup>
     <Object Include="src\system\jpeg\jdosabcc.obj" />
