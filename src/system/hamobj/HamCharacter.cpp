@@ -54,9 +54,9 @@ String mCampaignVO;
 
 HamCharacter::HamCharacter()
     : mCampaignVOBankDir(0), mCampaignVODir(0), mFileMerger(0), mIsBackup(0), mShowBox(0),
-      mOutfitLoaded(1), mEyes(this), mGender(kHamFemale), unk314(0), mPollWhenHidden(0),
-      mTexBlendersActive(1), mEffectors(this), mStoredSongOffset(0), mNeutralSkelDir(0),
-      mSkeletonBones(0), mCrewCard(nullptr), mUseCameraSkeleton(0) {
+      mOutfitLoaded(1), mEyes(this), mGender(kHamFemale), mUsedRestStep(0),
+      mPollWhenHidden(0), mTexBlendersActive(1), mEffectors(this), mStoredSongOffset(0),
+      mNeutralSkelDir(0), mSkeletonBones(0), mCrewCard(nullptr), mUseCameraSkeleton(0) {
     mWaypoint = Hmx::Object::New<Waypoint>();
     mWaypoint->SetAngRadius(0);
     mWaypoint->SetRadius(36);
@@ -316,7 +316,7 @@ void HamCharacter::Enter() {
     if (Regulator()) {
         Regulator()->SetWaypoint(nullptr);
     }
-    unk314 = 0;
+    mUsedRestStep = nullptr;
     TheSynth->AddPlayHandler(this);
 }
 

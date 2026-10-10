@@ -25,18 +25,20 @@ enum HamBackupDancers {
     kBackupDancersNumTypes = 4
 };
 
-enum HamGender {
-    /** "female character" */
-    kHamFemale = 0,
-    /** "male character" */
-    kHamMale = 1
-};
-
 /** "Hammer main character class, can be configured to look like characters in /dancer" */
 class HamCharacter : public Character {
 public:
-    enum {
-        kNumSkeletons = 13
+    enum Gender {
+        /** "female character" */
+        kHamFemale = 0,
+        /** "male character" */
+        kHamMale = 1
+    };
+    enum ClipFlags {
+        kNoRetarget = 1,
+        kAnimatePropBone = 2,
+        kNoRestStep = 4,
+        kForceRestStep = 8
     };
 
     HamCharacter();
@@ -105,6 +107,7 @@ public:
     Symbol Outfit() const { return mOutfit; }
 
     static bool sLoadVO;
+    static const int kNumSkeletons = 13;
 
 protected:
     virtual void Load(BinStream &);
@@ -144,8 +147,8 @@ protected:
     bool mOutfitLoaded; // 0x2fa
     ObjPtr<CharEyes> mEyes; // 0x2fc
     /** "Gender of this character" */
-    HamGender mGender; // 0x310
-    int unk314; // 0x314
+    Gender mGender; // 0x310
+    CharClip *mUsedRestStep; // 0x314
     /** "Updates the character's animation even though showing is set to FALSE.
         Useful for rendering the character to a texture." */
     bool mPollWhenHidden; // 0x318
