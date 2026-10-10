@@ -102,12 +102,12 @@ public:
     MoveVariant *mPrevMoveVariant; // 0xa0
     MoveGraph mWholeMoveGraph; // 0xa4
     std::set<const MoveVariant *> mMovesNeeded; // 0x104
-    // indexed by number of players
+    // indexed by number of players, then number of measures in the song
     std::vector<const MoveParent *> mRoutineParents[2]; // 0x11c
-    // indexed by number of players
+    // indexed by number of players, then number of measures in the song
     std::vector<const MoveVariant *> mRoutinePreferredVariants[2]; // 0x134
     Symbol mPreferredSong; // 0x14c
-    // indexed by number of players
+    // indexed by number of players, then number of measures in the song
     std::vector<std::pair<const MoveVariant *, const MoveVariant *> > mRoutine[2]; // 0x150
     bool mHasRoutine; // 0x168
     std::vector<MoveChoiceSet> mTempSongChoices; // 0x16c
