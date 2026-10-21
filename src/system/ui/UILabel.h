@@ -16,7 +16,7 @@ class UILabel : public RndText, public UIComponent, public TextHolder {
 public:
     struct LabelStyle {
         LabelStyle(Hmx::Object *owner) : mColorOverride(owner), mFontResource(owner) {}
-        FORCEINLINE LabelStyle &operator=(const LabelStyle &style) {
+        LabelStyle &operator=(const LabelStyle &style) {
             mFontResource = style.mFontResource;
             mColorOverride = style.mColorOverride;
             return *this;

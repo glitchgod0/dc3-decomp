@@ -89,7 +89,7 @@ BEGIN_LOADS(RndMorph)
     }
 END_LOADS
 
-FORCEINLINE TextStream &operator<<(TextStream &ts, const RndMorph::Pose &pose) {
+TextStream &operator<<(TextStream &ts, const RndMorph::Pose &pose) {
     ts << "mesh:" << pose.mesh << " weightKeys:" << pose.weightKeys;
     return ts;
 }

@@ -184,7 +184,7 @@ BEGIN_HANDLERS(RndMesh)
     HANDLE_SUPERCLASS(Hmx::Object)
 END_HANDLERS
 
-FORCEINLINE bool RndMesh::HasInstancedBones() {
+bool RndMesh::HasInstancedBones() {
     return mGeomOwner && !mBones.empty() && mGeomOwner->Bone(0) != Bone(0);
 }
 
@@ -568,7 +568,7 @@ BEGIN_LOADS(RndMesh)
     Sync(kKeepPatches | kAll);
 END_LOADS
 
-FORCEINLINE TextStream &operator<<(TextStream &ts, RndMesh::Volume v) {
+TextStream &operator<<(TextStream &ts, RndMesh::Volume v) {
     if (v == RndMesh::kEmpty)
         ts << "Empty";
     else if (v == RndMesh::kTriangles)

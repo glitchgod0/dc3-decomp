@@ -440,7 +440,7 @@ void HamDirector::ForceScene(Symbol s) {
     mForceVenue = gNullStr;
 }
 
-FORCEINLINE void HamDirector::ForceMiniVenue(Symbol s) {
+void HamDirector::ForceMiniVenue(Symbol s) {
     Symbol idk(gNullStr);
     mForceVenue = idk;
     mForceVenue = s;

@@ -407,7 +407,7 @@ void ReplaceObject(
         delete from;
 }
 
-FORCEINLINE void EditorBlockProps(
+void EditorBlockProps(
     DataArray *editDefn, std::list<Symbol> &props, std::list<Symbol> *arrayProps
 ) {
     DataArray *ed = editDefn->FindArray("editor", false);

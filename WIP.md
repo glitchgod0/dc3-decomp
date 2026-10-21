@@ -11,43 +11,43 @@ Everything here is from single file compiles
 - Archive.cpp
 - ArkFile.cpp
 - AsyncFile.cpp
-- AsyncFile_Win.cpp (X)
+- AsyncFile_Win.cpp
 - AsyncFileHolmes.cpp
 - AsyncTask.cpp
-- BlockMgr.cpp (X)
-- CDReader.cpp (X)
+- BlockMgr.cpp
+- CDReader.cpp
 - ContentMgr.cpp
-- ContentMgr_Xbox.cpp (X)
+- ContentMgr_Xbox.cpp
 - CritSec.cpp
 - DateTime.cpp
 - Debug.cpp
-- File.cpp (X)
+- File.cpp
 - File_Win.cpp
 - FileCache.cpp (X)
-- HDCache.cpp (X)
-- HolmesClient.cpp (X)
+- HDCache.cpp
+- HolmesClient.cpp
 - HolmesClient_NetSocket.cpp
-- HolmesKeyboard.cpp (X)
-- HolmesUtl.cpp (X)
+- HolmesKeyboard.cpp
+- HolmesUtl.cpp
 - Joypad.cpp
 - Joypad_Xbox.cpp
 - Joypad_Xinput.cpp
-- JoypadClient.cpp (X)
+- JoypadClient.cpp
 - JoyPadMsgs.cpp
 - Keyboard.cpp
 - Keyboard_Xbox.cpp
 - KeyboardJoypadAdapter.cpp
 - MapFile_Xbox.cpp
 - Memcard.cpp
-- Memcard_Xbox.cpp (X)
-- Memory_Xbox.cpp (X)
+- Memcard_Xbox.cpp
+- Memory_Xbox.cpp
 - NetStream.cpp
 - NetworkSocket.cpp
 - NetworkSocket_Win.cpp (X)
 - OnlineID.cpp
 - PlatformMgr_Xbox.cpp (X)
 - SynchronizationEvent.cpp
-- System.cpp (X)
+- System.cpp
 - System_Xbox.cpp (X)
 - ThreadCall_Win.cpp (X)
 - Timer.cpp
@@ -55,7 +55,7 @@ Everything here is from single file compiles
 - UsbMidiGuitarMsgs.cpp
 - UsbMidiKeyboard.cpp
 - UsbMidiKeyboardMsgs.cpp
-- User.cpp (X)
+- User.cpp
 - UserMgr.cpp
 - VirtualKeyboard.cpp
 - VirtualKeyboard_Xbox.cpp
@@ -77,8 +77,8 @@ Everything here is from single file compiles
 - Compress.cpp
 - Crc.cpp
 - Data.cpp
-- DebugGraph.cpp (X)
-- DebugMeter.cpp (X)
+- DebugGraph.cpp
+- DebugMeter.cpp
 - DeJitter.cpp
 - EncryptXTEA.cpp
 - FakeSongMgr.cpp
@@ -88,7 +88,7 @@ Everything here is from single file compiles
 - HxGuid.cpp (X)
 - JobMgr.cpp
 - JsonEncode.cpp
-- KnownIssues.cpp (X)
+- KnownIssues.cpp
 - Licenses.cpp
 - Loader.cpp
 - Locale.cpp
@@ -97,13 +97,13 @@ Everything here is from single file compiles
 - MakeString.cpp
 - MBT.cpp
 - MeasureMap.cpp (X)
-- MemHeap.cpp (X)
+- MemHeap.cpp
 - MemMgr.cpp (X)
 - MemPoint.cpp
 - MemStats.cpp
-- MemStream.cpp (X)
-- MemTrack.cpp (X)
-- MemTracker.cpp (X)
+- MemStream.cpp
+- MemTrack.cpp
+- MemTracker.cpp
 - MultiTempoTempoMap.cpp (X)
 - NetCacheLoader.cpp
 - NetCacheMgr.cpp

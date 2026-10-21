@@ -88,7 +88,7 @@ public:
         SetDirty();
     }
 
-    FORCEINLINE const Transform &WorldXfm() {
+    const Transform &WorldXfm() {
         return !mDirty ? mWorldXfm : WorldXfm_Force();
     }
 

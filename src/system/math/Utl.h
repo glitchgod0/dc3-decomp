@@ -230,7 +230,7 @@ inline float Limit(float f1, float f2, float f3, int &i) {
     return -(i * fsub - f3);
 }
 
-FORCEINLINE unsigned short FloatToHalfFloat(float x) {
+unsigned short FloatToHalfFloat(float x) {
     unsigned int fInt = *(unsigned int *)&x;
     unsigned int abs = fInt & 0x7FFFFFFF;
     unsigned int sign = (fInt >> 16) & 0x8000;

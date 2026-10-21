@@ -22,7 +22,7 @@ public:
     int Size() const { return mBuffer.size(); }
     void Resize(int size) { mBuffer.resize(size); }
     void Reserve(int size) { mBuffer.reserve(size); }
-    const char *Buffer() const { return mBuffer.begin(); }
+    const char *Buffer() const { return mBuffer.data(); }
 
 private:
     virtual void ReadImpl(void *, int);

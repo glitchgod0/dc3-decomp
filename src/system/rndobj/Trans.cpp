@@ -255,7 +255,7 @@ END_LOADS
 
 void RndTransformable::Highlight() { UtilDrawAxes(WorldXfm(), 3, Hmx::Color(1, 1, 1)); }
 
-FORCEINLINE TextStream &operator<<(TextStream &ts, RndTransformable::Constraint c) {
+TextStream &operator<<(TextStream &ts, RndTransformable::Constraint c) {
     if (c == RndTransformable::kNone) {
         ts << "None";
     } else if (c == RndTransformable::kLocalRotate) {
