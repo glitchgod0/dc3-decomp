@@ -13,6 +13,7 @@ typedef unsigned long u32;
 typedef unsigned long long u64;
 
 typedef unsigned int uint;
+typedef unsigned __int64 QWORD;
 
 typedef float f32;
 typedef double f64;

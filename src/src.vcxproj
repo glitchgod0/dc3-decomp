@@ -1718,11 +1718,34 @@
     <ClInclude Include="system\zlib\zlib.h" />
     <ClInclude Include="system\zlib\zutil.h" />
     <ClInclude Include="types.h" />
+    <ClInclude Include="xdk\D3D9.h" />
+    <ClInclude Include="xdk\d3d9i\d3d9.h" />
     <ClInclude Include="xdk\NUI.h" />
+    <ClInclude Include="xdk\nui\nuidetroit.h" />
+    <ClInclude Include="xdk\nui\nuispeech.h" />
     <ClInclude Include="xdk\win_types.h" />
     <ClInclude Include="xdk\XAPILIB.h" />
+    <ClInclude Include="xdk\xapilibi\errhandlingapi.h" />
+    <ClInclude Include="xdk\xapilibi\fileapi.h" />
+    <ClInclude Include="xdk\xapilibi\handleapi.h" />
+    <ClInclude Include="xdk\xapilibi\ioapiset.h" />
+    <ClInclude Include="xdk\xapilibi\minwinbase.h" />
+    <ClInclude Include="xdk\xapilibi\processthreadsapi.h" />
+    <ClInclude Include="xdk\xapilibi\timezoneapi.h" />
+    <ClInclude Include="xdk\xapilibi\winerror.h" />
+    <ClInclude Include="xdk\xapilibi\xbase.h" />
+    <ClInclude Include="xdk\xapilibi\xbox.h" />
+    <ClInclude Include="xdk\XBC.h" />
     <ClInclude Include="xdk\XBDM.h" />
+    <ClInclude Include="xdk\xbdm\xbdm.h" />
     <ClInclude Include="xdk\XBOXKRNL.h" />
+    <ClInclude Include="xdk\XMP.h" />
+    <ClInclude Include="xdk\XNET.h" />
+    <ClInclude Include="xdk\xnet\winsockx.h" />
+    <ClInclude Include="xdk\XONLINE.h" />
+    <ClInclude Include="xdk\xonline\xonline.h" />
+    <ClInclude Include="xdk\XPARTY.h" />
+    <ClInclude Include="xdk\XSOCIAL.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />

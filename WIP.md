@@ -69,7 +69,7 @@ Everything here is from single file compiles
 - Cache.cpp
 - Cache_Xbox.cpp
 - CacheMgr.cpp
-- CacheMgr_Xbox.cpp (X)
+- CacheMgr_Xbox.cpp
 - Cheats.cpp (X)
 - ChunkIDs.cpp
 - Chunks.cpp
@@ -86,7 +86,7 @@ Everything here is from single file compiles
 - FileStream.cpp
 - GlitchFinder.cpp
 - HxGuid.cpp (X)
-- JobMgr.cpp (X) -- This is behind alot of errors
+- JobMgr.cpp
 - JsonEncode.cpp
 - KnownIssues.cpp (X)
 - Licenses.cpp
@@ -94,7 +94,7 @@ Everything here is from single file compiles
 - Locale.cpp
 - LocaleOrdinal.cpp
 - Magnu.cpp
-- MakeString.cpp (X)
+- MakeString.cpp
 - MBT.cpp
 - MeasureMap.cpp (X)
 - MemHeap.cpp (X)
@@ -106,10 +106,10 @@ Everything here is from single file compiles
 - MemTracker.cpp (X)
 - MultiTempoTempoMap.cpp (X)
 - NetCacheLoader.cpp
-- NetCacheMgr.cpp (X)
-- NetCacheMgr_Xbox.cpp (X)
+- NetCacheMgr.cpp
+- NetCacheMgr_Xbox.cpp
 - NetLoader.cpp
-- NetLoader_Xbox.cpp (X)
+- NetLoader_Xbox.cpp
 - Option.cpp (X)
 - OSCMessenger.cpp
 - Pool.cpp
@@ -120,7 +120,7 @@ Everything here is from single file compiles
 - SongInfoCopy.cpp (X)
 - Spew.cpp
 - Str.cpp (X)
-- StringTable.cpp (X)
+- StringTable.cpp
 - SuperFormatString.cpp
 - Symbol.cpp
 - TempoMap.cpp

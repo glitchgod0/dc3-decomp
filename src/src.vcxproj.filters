@@ -3885,7 +3885,7 @@
     <ClInclude Include="system\stlport\stl\pointers\_void_ptr_traits.h">
       <Filter>system\stlport\stl\pointers</Filter>
     </ClInclude>
-    <ClInclude Include="xdk\XAPILIB.h">
+    <ClInclude Include="xdk\D3D9.h">
       <Filter>xdk</Filter>
     </ClInclude>
     <ClInclude Include="xdk\NUI.h">
@@ -3894,11 +3894,80 @@
     <ClInclude Include="xdk\win_types.h">
       <Filter>xdk</Filter>
     </ClInclude>
+    <ClInclude Include="xdk\XAPILIB.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XBC.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
     <ClInclude Include="xdk\XBDM.h">
       <Filter>xdk</Filter>
     </ClInclude>
     <ClInclude Include="xdk\XBOXKRNL.h">
       <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XMP.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XNET.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XONLINE.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XPARTY.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XSOCIAL.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\d3d9i\d3d9.h">
+      <Filter>xdk\d3d9i</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\nui\nuidetroit.h">
+      <Filter>xdk\nui</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\nui\nuispeech.h">
+      <Filter>xdk\nui</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\errhandlingapi.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\fileapi.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\handleapi.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\ioapiset.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\minwinbase.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\timezoneapi.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\winerror.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\xbase.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\xbox.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xbdm\xbdm.h">
+      <Filter>xdk\xbdm</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xapilibi\processthreadsapi.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xnet\winsockx.h">
+      <Filter>xdk\xnet</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xonline\xonline.h">
+      <Filter>xdk\xonline</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -4063,6 +4132,24 @@
     </Filter>
     <Filter Include="xdk">
       <UniqueIdentifier>{78bd1bf2-a60d-42eb-aa37-581264f39d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\d3d9i">
+      <UniqueIdentifier>{0c606015-b165-4c51-b3f2-7a323c7f5d43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\nui">
+      <UniqueIdentifier>{aeb3ab0b-0232-45cf-9495-c69bb4b79b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\xapilibi">
+      <UniqueIdentifier>{abcdb99a-80e6-4673-a190-840126fad700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\xbdm">
+      <UniqueIdentifier>{72f6856e-34f8-4e14-b4fc-faf8953e5787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\xnet">
+      <UniqueIdentifier>{4f770b64-844a-4678-8569-c1e0026fb027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\xonline">
+      <UniqueIdentifier>{9476b346-c055-4504-86d6-fe046ad2a295}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -7549,9 +7636,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt">
-      <Filter>xdk</Filter>
-    </None>
     <None Include="system\jpeg\ansi2knr.1">
       <Filter>system\jpeg</Filter>
     </None>
@@ -8080,6 +8164,7 @@
     <None Include="system\stlport\config\new_compiler\unconfigure">
       <Filter>system\stlport\config\new_compiler</Filter>
     </None>
+    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Object Include="system\jpeg\jdosabcc.obj">
