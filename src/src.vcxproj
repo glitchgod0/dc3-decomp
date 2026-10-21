@@ -1722,6 +1722,7 @@
     <ClInclude Include="xdk\win_types.h" />
     <ClInclude Include="xdk\XAPILIB.h" />
     <ClInclude Include="xdk\XBDM.h" />
+    <ClInclude Include="xdk\XBOXKRNL.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />

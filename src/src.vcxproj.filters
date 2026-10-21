@@ -3897,6 +3897,9 @@
     <ClInclude Include="xdk\XBDM.h">
       <Filter>xdk</Filter>
     </ClInclude>
+    <ClInclude Include="xdk\XBOXKRNL.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="binkxenon">

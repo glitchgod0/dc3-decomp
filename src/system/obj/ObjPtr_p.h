@@ -22,7 +22,7 @@ ObjRefConcrete<T1, T2>::ObjRefConcrete(T1 *obj) : mObject(obj) {
 }
 
 template <class T1, class T2>
-FORCEINLINE ObjRefConcrete<T1, T2>::ObjRefConcrete(const ObjRefConcrete &o)
+ObjRefConcrete<T1, T2>::ObjRefConcrete(const ObjRefConcrete &o)
     : mObject(o.mObject) {
     if (mObject)
         mObject->AddRef(this);
