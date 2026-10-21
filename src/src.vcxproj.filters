@@ -1,0 +1,1052 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="types.h" />
+    <ClInclude Include="binkxenon\bink.h">
+      <Filter>binkxenon</Filter>
+    </ClInclude>
+    <ClInclude Include="binkxenon\rad.h">
+      <Filter>binkxenon</Filter>
+    </ClInclude>
+    <ClInclude Include="binkxenon\rrCore.h">
+      <Filter>binkxenon</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="ChecksumData_xbox.h" />
+    <ClInclude Include="KeyChain.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="lazer\game\BustAMovePanel.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\Game.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\GameInput.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\GameMode.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\GamePanel.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\HamUser.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\HamUserMgr.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\LiveInput.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\PartyModeMgr.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\PresenceMgr.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\Shuttle.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\SongDB.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\game\SongSequence.h">
+      <Filter>lazer\game</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Accomplishment.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCampaignConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCategory.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCharacterListConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCountConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentDiscSongConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentGroup.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentManager.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentOneShot.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentProgress.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentSongConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AccomplishmentSongListConditional.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AppLabel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AppMiniLeaderboardDisplay.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\AppNavProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Award.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\BlacklightPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CalibrationPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Campaign.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignDiffSelectPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignEra.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignMasterQuestCrewSelectPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignMasterQuestSongSelectPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignPerformer.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignProgress.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CampaignSongSelectPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChallengeRecord.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChallengeResultPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Challenges.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChallengeSort.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChallengeSortByScore.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChallengeSortMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChallengeSortNode.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CharacterProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChooseModeProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ChooseProfilePanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ContentLoadingPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ContextChecker.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CorrectIdentityPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CrewProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\CursorPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\DepthBuffer.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\DifficultyProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\EventDialogPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSort.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSortByCalorie.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSortMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSortNode.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\FitnessGoalMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\FitnessProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamMemcardAction.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamProfile.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamScreen.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamSongMetadata.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamSongMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamStarsDisplay.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamStoreFilterProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamStoreOffer.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamStorePanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamStoreProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HamUI.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\HelpBarPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Instarank.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\KinectSharePanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Leaderboards.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\LetterboxPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\LoadingPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\LockedContentPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MainMenuPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MainMenuProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MetagameRank.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MetagameStats.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MetaPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MetaPerformer.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MoveRatingHistory.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MovieProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MQSongSort.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MQSongSortByCharacter.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MQSongSortMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MQSongSortNode.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\MultiUserGesturePanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\NavListNode.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\NavListSort.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\NavListSortMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\OptionsPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\OutfitProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\OverlayPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Overshell.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PassiveMessagesPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PassiveMessenger.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Playlist.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PlaylistSongProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PlaylistSort.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PlaylistSortByTypeCmp.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PlaylistSortMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PlaylistSortNode.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\PracticeChoosePanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ProfileMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SaveLoadManager.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\ShellInput.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SigninScreen.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SingleUserCrewSelectPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SkeletonChooser.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SkeletonIdentifier.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SkillsAwardList.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongRecord.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSelectPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSelectPlaylistCustomizePanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSelectPlaylistPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSort.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSortByDiff.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSortByLocation.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSortBySong.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSortMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongSortNode.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\SongStatusMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\TexLoadPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\TitleProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\UIEventMgr.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\Utl.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\VenueProvider.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\VoiceControlPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\VoiceInputPanel.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\meta_ham\WeightInput.h">
+      <Filter>lazer\meta_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\ChallengeSystemJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\DataMinerJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\FitnessGoalJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\FriendsListJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\HamStoreCartJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\KinectShare.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\KinectShareJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\LeaderboardJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\MotdJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\PartyModeJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\PlaylistJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\RCJobDingo.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\RockCentral.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\ScoreJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\TokenJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+    <ClInclude Include="lazer\net_ham\WebLinkJobs.h">
+      <Filter>lazer\net_ham</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="binkxenon">
+      <UniqueIdentifier>{e8d0cf4f-2562-4f59-a4e4-ffc3aac03338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lazer">
+      <UniqueIdentifier>{e897013c-7711-446b-bb54-7927b3984a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lazer\game">
+      <UniqueIdentifier>{d987e05e-0438-4679-b8ff-5bf2c34f3438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lazer\meta_ham">
+      <UniqueIdentifier>{6bee911b-db18-43ea-9ee4-6e433229f0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lazer\net_ham">
+      <UniqueIdentifier>{abf8d574-5099-48a3-a0a7-a7bb2961981d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk2SDK">
+      <UniqueIdentifier>{78bd1bf2-a60d-42eb-aa37-581264f39d04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{eebbdc46-22fa-4567-a2a0-064e1b77c441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\beatmatch">
+      <UniqueIdentifier>{523492f3-0118-457c-a508-6d4d439d3a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\char">
+      <UniqueIdentifier>{bf1f2dce-a6ef-4834-aa72-41e0fd0683ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\dsp">
+      <UniqueIdentifier>{3eb0b1b0-bdc5-4282-b23c-f0462ff58be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\flow">
+      <UniqueIdentifier>{732767f7-b2eb-4163-893e-c04f9df3536e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\gesture">
+      <UniqueIdentifier>{14176b3f-6a3e-4551-90e1-9b096d7bd04e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\hamobj">
+      <UniqueIdentifier>{38191313-82be-4fc6-b978-478bea820703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\jpeg">
+      <UniqueIdentifier>{98ba64e4-a88b-4040-9c7b-92591a0a06c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\math">
+      <UniqueIdentifier>{ef6a87bb-cac1-457e-980c-0025f8f46cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\midi">
+      <UniqueIdentifier>{9f77af24-d1d5-4892-8e0f-16a9728ececd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\movie">
+      <UniqueIdentifier>{e1ae2c75-9a5e-45e3-9d8d-ee5082cc7233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\moviebink">
+      <UniqueIdentifier>{2f12a821-0ec2-4d73-9b96-a5ce74a2aa40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\net">
+      <UniqueIdentifier>{9d847156-8b7b-4591-80a8-1e48d8677ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\obj">
+      <UniqueIdentifier>{c9a5f31f-7456-414d-9e73-22598c8545e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\oggvorbis">
+      <UniqueIdentifier>{753000ae-f8af-4846-a674-42414385f463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\os">
+      <UniqueIdentifier>{98c4bad2-4bf1-4cfd-b4ac-317b91b1981d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\rnddx9">
+      <UniqueIdentifier>{51c67fe3-dcc6-4298-b1c8-38c787e82a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\rndobj">
+      <UniqueIdentifier>{56a4ec2b-a10a-4882-ace5-f52e126b600e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\stlport">
+      <UniqueIdentifier>{e2e65fb0-55df-4acd-90b3-d9d4a99ca573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\synth">
+      <UniqueIdentifier>{4b77391d-e76b-42af-8cb9-ad5d1a315239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\synth360">
+      <UniqueIdentifier>{3e8f516d-744f-4594-9dc9-dc3d7788c7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\ui">
+      <UniqueIdentifier>{64d37c32-cdfe-4542-b9c3-4baf173a64fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\utl">
+      <UniqueIdentifier>{7e6832b1-fb5d-4c52-a1c6-ae38f00da55f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\world">
+      <UniqueIdentifier>{439015eb-5a87-4ed8-a35e-19ee6026ca41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\zlib">
+      <UniqueIdentifier>{742d042c-e027-4976-81cb-801efd02ed4e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="ChecksumData_xbox.cpp" />
+    <ClCompile Include="keygen_xbox.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="lazer\game\BustAMovePanel.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\Game.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\GameMode.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\GamePanel.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\HamUser.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\HamUserMgr.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\LiveInput.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\PartyModeMgr.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\PresenceMgr.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\Shuttle.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\SongDB.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\game\SongSequence.cpp">
+      <Filter>lazer\game</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Accomplishment.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCampaignConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCategory.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCharacterListConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCountConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentDiscSongConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentGroup.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentManager.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentOneShot.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentProgress.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentSongConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AccomplishmentSongListConditional.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AppLabel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AppMiniLeaderboardDisplay.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\AppNavProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Award.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\BlacklightPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CalibrationPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Campaign.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignDiffSelectPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignEra.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignMasterQuestCrewSelectPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignMasterQuestSongSelectPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignPerformer.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignProgress.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CampaignSongSelectPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChallengeRecord.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChallengeResultPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Challenges.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChallengeSort.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChallengeSortByScore.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChallengeSortMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChallengeSortNode.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CharacterProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChooseModeProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ChooseProfilePanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ContentLoadingPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ContextChecker.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CorrectIdentityPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CrewProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\CursorPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\DepthBuffer.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\DifficultyProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\EventDialogPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSort.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSortByCalorie.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSortMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSortNode.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\FitnessGoalMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\FitnessProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamMemcardAction.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamProfile.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamScreen.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamSongMetadata.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamSongMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamStarsDisplay.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamStoreFilterProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamStoreOffer.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamStorePanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamStoreProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HamUI.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\HelpBarPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Instarank.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\KinectSharePanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Leaderboards.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\LetterboxPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\LoadingPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\LockedContentPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MainMenuPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MainMenuProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MetagameRank.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MetagameStats.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MetaPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MetaPerformer.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MoveRatingHistory.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MovieProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MQSongSort.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MQSongSortByCharacter.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MQSongSortMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MQSongSortNode.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\MultiUserGesturePanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\NavListNode.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\NavListSort.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\NavListSortMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\OptionsPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\OutfitProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\OverlayPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Overshell.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PassiveMessagesPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PassiveMessenger.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Playlist.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PlaylistSongProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PlaylistSort.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PlaylistSortByTypeCmp.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PlaylistSortMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PlaylistSortNode.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\PracticeChoosePanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ProfileMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SaveLoadManager.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\ShellInput.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SigninScreen.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SingleUserCrewSelectPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SkeletonChooser.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SkeletonIdentifier.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SkillsAwardList.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongRecord.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSelectPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSelectPlaylistCustomizePanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSelectPlaylistPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSort.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSortByDiff.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSortByLocation.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSortBySong.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSortMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongSortNode.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\SongStatusMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\TexLoadPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\TitleProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\UIEventMgr.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\Utl.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\VenueProvider.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\VoiceControlPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\VoiceInputPanel.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\meta_ham\WeightInput.cpp">
+      <Filter>lazer\meta_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\ChallengeSystemJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\DataMinerJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\FitnessGoalJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\FriendsListJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\HamStoreCartJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\KinectShare.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\KinectShareJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\LeaderboardJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\MotdJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\PartyModeJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\PlaylistJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\RCJobDingo.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\RockCentral.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\ScoreJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\TokenJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+    <ClCompile Include="lazer\net_ham\WebLinkJobs.cpp">
+      <Filter>lazer\net_ham</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt">
+      <Filter>xdk2SDK</Filter>
+    </None>
+  </ItemGroup>
+</Project>

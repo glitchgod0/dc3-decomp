@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="CodeAnalysis|Xbox 360">
+      <Configuration>CodeAnalysis</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Xbox 360">
+      <Configuration>Debug</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Xbox 360">
+      <Configuration>Profile</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile_FastCap|Xbox 360">
+      <Configuration>Profile_FastCap</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_LTCG|Xbox 360">
+      <Configuration>Release_LTCG</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{286819C4-0F26-42D9-BCEF-E04302DB5372}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\build\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\build\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_XBOX</PreprocessorDefinitions>
+      <CallAttributedProfiling>Callcap</CallAttributedProfiling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>xapilibd.lib;d3d9d.lib;d3dx9d.lib;xgraphicsd.lib;xboxkrnl.lib;xnetd.lib;xaudiod2.lib;xactd3.lib;x3daudiod.lib;xmcored.lib;xbdm.lib;vcompd.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PREfast>AnalyzeOnly</PREfast>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_XBOX</PreprocessorDefinitions>
+      <CallAttributedProfiling>Callcap</CallAttributedProfiling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>xapilibd.lib;d3d9d.lib;d3dx9d.lib;xgraphicsd.lib;xboxkrnl.lib;xnetd.lib;xaudiod2.lib;xactd3.lib;x3daudiod.lib;xmcored.lib;xbdm.lib;vcompd.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;PROFILE</PreprocessorDefinitions>
+      <CallAttributedProfiling>Callcap</CallAttributedProfiling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilibi.lib;d3d9i.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3i.lib;x3daudioi.lib;xmcorei.lib;xbdm.lib;vcomp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile_FastCap|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallAttributedProfiling>Fastcap</CallAttributedProfiling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;PROFILE;FASTCAP</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xbdm.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="binkxenon\bink.h" />
+    <ClInclude Include="binkxenon\rad.h" />
+    <ClInclude Include="binkxenon\rrCore.h" />
+    <ClInclude Include="ChecksumData_xbox.h" />
+    <ClInclude Include="KeyChain.h" />
+    <ClInclude Include="lazer\game\BustAMovePanel.h" />
+    <ClInclude Include="lazer\game\Game.h" />
+    <ClInclude Include="lazer\game\GameInput.h" />
+    <ClInclude Include="lazer\game\GameMode.h" />
+    <ClInclude Include="lazer\game\GamePanel.h" />
+    <ClInclude Include="lazer\game\HamUser.h" />
+    <ClInclude Include="lazer\game\HamUserMgr.h" />
+    <ClInclude Include="lazer\game\LiveInput.h" />
+    <ClInclude Include="lazer\game\PartyModeMgr.h" />
+    <ClInclude Include="lazer\game\PresenceMgr.h" />
+    <ClInclude Include="lazer\game\Shuttle.h" />
+    <ClInclude Include="lazer\game\SongDB.h" />
+    <ClInclude Include="lazer\game\SongSequence.h" />
+    <ClInclude Include="lazer\meta_ham\Accomplishment.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCampaignConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCategory.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCharacterListConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentCountConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentDiscSongConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentGroup.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentManager.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentOneShot.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentProgress.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentSongConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AccomplishmentSongListConditional.h" />
+    <ClInclude Include="lazer\meta_ham\AppLabel.h" />
+    <ClInclude Include="lazer\meta_ham\AppMiniLeaderboardDisplay.h" />
+    <ClInclude Include="lazer\meta_ham\AppNavProvider.h" />
+    <ClInclude Include="lazer\meta_ham\Award.h" />
+    <ClInclude Include="lazer\meta_ham\BlacklightPanel.h" />
+    <ClInclude Include="lazer\meta_ham\CalibrationPanel.h" />
+    <ClInclude Include="lazer\meta_ham\Campaign.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignDiffSelectPanel.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignEra.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignMasterQuestCrewSelectPanel.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignMasterQuestSongSelectPanel.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignPerformer.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignProgress.h" />
+    <ClInclude Include="lazer\meta_ham\CampaignSongSelectPanel.h" />
+    <ClInclude Include="lazer\meta_ham\ChallengeRecord.h" />
+    <ClInclude Include="lazer\meta_ham\ChallengeResultPanel.h" />
+    <ClInclude Include="lazer\meta_ham\Challenges.h" />
+    <ClInclude Include="lazer\meta_ham\ChallengeSort.h" />
+    <ClInclude Include="lazer\meta_ham\ChallengeSortByScore.h" />
+    <ClInclude Include="lazer\meta_ham\ChallengeSortMgr.h" />
+    <ClInclude Include="lazer\meta_ham\ChallengeSortNode.h" />
+    <ClInclude Include="lazer\meta_ham\CharacterProvider.h" />
+    <ClInclude Include="lazer\meta_ham\ChooseModeProvider.h" />
+    <ClInclude Include="lazer\meta_ham\ChooseProfilePanel.h" />
+    <ClInclude Include="lazer\meta_ham\ContentLoadingPanel.h" />
+    <ClInclude Include="lazer\meta_ham\ContextChecker.h" />
+    <ClInclude Include="lazer\meta_ham\CorrectIdentityPanel.h" />
+    <ClInclude Include="lazer\meta_ham\CrewProvider.h" />
+    <ClInclude Include="lazer\meta_ham\CursorPanel.h" />
+    <ClInclude Include="lazer\meta_ham\DepthBuffer.h" />
+    <ClInclude Include="lazer\meta_ham\DifficultyProvider.h" />
+    <ClInclude Include="lazer\meta_ham\EventDialogPanel.h" />
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSort.h" />
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSortByCalorie.h" />
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSortMgr.h" />
+    <ClInclude Include="lazer\meta_ham\FitnessCalorieSortNode.h" />
+    <ClInclude Include="lazer\meta_ham\FitnessGoalMgr.h" />
+    <ClInclude Include="lazer\meta_ham\FitnessProvider.h" />
+    <ClInclude Include="lazer\meta_ham\HamMemcardAction.h" />
+    <ClInclude Include="lazer\meta_ham\HamPanel.h" />
+    <ClInclude Include="lazer\meta_ham\HamProfile.h" />
+    <ClInclude Include="lazer\meta_ham\HamScreen.h" />
+    <ClInclude Include="lazer\meta_ham\HamSongMetadata.h" />
+    <ClInclude Include="lazer\meta_ham\HamSongMgr.h" />
+    <ClInclude Include="lazer\meta_ham\HamStarsDisplay.h" />
+    <ClInclude Include="lazer\meta_ham\HamStoreFilterProvider.h" />
+    <ClInclude Include="lazer\meta_ham\HamStoreOffer.h" />
+    <ClInclude Include="lazer\meta_ham\HamStorePanel.h" />
+    <ClInclude Include="lazer\meta_ham\HamStoreProvider.h" />
+    <ClInclude Include="lazer\meta_ham\HamUI.h" />
+    <ClInclude Include="lazer\meta_ham\HelpBarPanel.h" />
+    <ClInclude Include="lazer\meta_ham\Instarank.h" />
+    <ClInclude Include="lazer\meta_ham\KinectSharePanel.h" />
+    <ClInclude Include="lazer\meta_ham\Leaderboards.h" />
+    <ClInclude Include="lazer\meta_ham\LetterboxPanel.h" />
+    <ClInclude Include="lazer\meta_ham\LoadingPanel.h" />
+    <ClInclude Include="lazer\meta_ham\LockedContentPanel.h" />
+    <ClInclude Include="lazer\meta_ham\MainMenuPanel.h" />
+    <ClInclude Include="lazer\meta_ham\MainMenuProvider.h" />
+    <ClInclude Include="lazer\meta_ham\MetagameRank.h" />
+    <ClInclude Include="lazer\meta_ham\MetagameStats.h" />
+    <ClInclude Include="lazer\meta_ham\MetaPanel.h" />
+    <ClInclude Include="lazer\meta_ham\MetaPerformer.h" />
+    <ClInclude Include="lazer\meta_ham\MoveRatingHistory.h" />
+    <ClInclude Include="lazer\meta_ham\MovieProvider.h" />
+    <ClInclude Include="lazer\meta_ham\MQSongSort.h" />
+    <ClInclude Include="lazer\meta_ham\MQSongSortByCharacter.h" />
+    <ClInclude Include="lazer\meta_ham\MQSongSortMgr.h" />
+    <ClInclude Include="lazer\meta_ham\MQSongSortNode.h" />
+    <ClInclude Include="lazer\meta_ham\MultiUserGesturePanel.h" />
+    <ClInclude Include="lazer\meta_ham\NavListNode.h" />
+    <ClInclude Include="lazer\meta_ham\NavListSort.h" />
+    <ClInclude Include="lazer\meta_ham\NavListSortMgr.h" />
+    <ClInclude Include="lazer\meta_ham\OptionsPanel.h" />
+    <ClInclude Include="lazer\meta_ham\OutfitProvider.h" />
+    <ClInclude Include="lazer\meta_ham\OverlayPanel.h" />
+    <ClInclude Include="lazer\meta_ham\Overshell.h" />
+    <ClInclude Include="lazer\meta_ham\PassiveMessagesPanel.h" />
+    <ClInclude Include="lazer\meta_ham\PassiveMessenger.h" />
+    <ClInclude Include="lazer\meta_ham\Playlist.h" />
+    <ClInclude Include="lazer\meta_ham\PlaylistSongProvider.h" />
+    <ClInclude Include="lazer\meta_ham\PlaylistSort.h" />
+    <ClInclude Include="lazer\meta_ham\PlaylistSortByTypeCmp.h" />
+    <ClInclude Include="lazer\meta_ham\PlaylistSortMgr.h" />
+    <ClInclude Include="lazer\meta_ham\PlaylistSortNode.h" />
+    <ClInclude Include="lazer\meta_ham\PracticeChoosePanel.h" />
+    <ClInclude Include="lazer\meta_ham\ProfileMgr.h" />
+    <ClInclude Include="lazer\meta_ham\SaveLoadManager.h" />
+    <ClInclude Include="lazer\meta_ham\ShellInput.h" />
+    <ClInclude Include="lazer\meta_ham\SigninScreen.h" />
+    <ClInclude Include="lazer\meta_ham\SingleUserCrewSelectPanel.h" />
+    <ClInclude Include="lazer\meta_ham\SkeletonChooser.h" />
+    <ClInclude Include="lazer\meta_ham\SkeletonIdentifier.h" />
+    <ClInclude Include="lazer\meta_ham\SkillsAwardList.h" />
+    <ClInclude Include="lazer\meta_ham\SongRecord.h" />
+    <ClInclude Include="lazer\meta_ham\SongSelectPanel.h" />
+    <ClInclude Include="lazer\meta_ham\SongSelectPlaylistCustomizePanel.h" />
+    <ClInclude Include="lazer\meta_ham\SongSelectPlaylistPanel.h" />
+    <ClInclude Include="lazer\meta_ham\SongSort.h" />
+    <ClInclude Include="lazer\meta_ham\SongSortByDiff.h" />
+    <ClInclude Include="lazer\meta_ham\SongSortByLocation.h" />
+    <ClInclude Include="lazer\meta_ham\SongSortBySong.h" />
+    <ClInclude Include="lazer\meta_ham\SongSortMgr.h" />
+    <ClInclude Include="lazer\meta_ham\SongSortNode.h" />
+    <ClInclude Include="lazer\meta_ham\SongStatusMgr.h" />
+    <ClInclude Include="lazer\meta_ham\TexLoadPanel.h" />
+    <ClInclude Include="lazer\meta_ham\TitleProvider.h" />
+    <ClInclude Include="lazer\meta_ham\UIEventMgr.h" />
+    <ClInclude Include="lazer\meta_ham\Utl.h" />
+    <ClInclude Include="lazer\meta_ham\VenueProvider.h" />
+    <ClInclude Include="lazer\meta_ham\VoiceControlPanel.h" />
+    <ClInclude Include="lazer\meta_ham\VoiceInputPanel.h" />
+    <ClInclude Include="lazer\meta_ham\WeightInput.h" />
+    <ClInclude Include="lazer\net_ham\ChallengeSystemJobs.h" />
+    <ClInclude Include="lazer\net_ham\DataMinerJobs.h" />
+    <ClInclude Include="lazer\net_ham\FitnessGoalJobs.h" />
+    <ClInclude Include="lazer\net_ham\FriendsListJobs.h" />
+    <ClInclude Include="lazer\net_ham\HamStoreCartJobs.h" />
+    <ClInclude Include="lazer\net_ham\KinectShare.h" />
+    <ClInclude Include="lazer\net_ham\KinectShareJobs.h" />
+    <ClInclude Include="lazer\net_ham\LeaderboardJobs.h" />
+    <ClInclude Include="lazer\net_ham\MotdJobs.h" />
+    <ClInclude Include="lazer\net_ham\PartyModeJobs.h" />
+    <ClInclude Include="lazer\net_ham\PlaylistJobs.h" />
+    <ClInclude Include="lazer\net_ham\RCJobDingo.h" />
+    <ClInclude Include="lazer\net_ham\RockCentral.h" />
+    <ClInclude Include="lazer\net_ham\ScoreJobs.h" />
+    <ClInclude Include="lazer\net_ham\TokenJobs.h" />
+    <ClInclude Include="lazer\net_ham\WebLinkJobs.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="ChecksumData_xbox.cpp" />
+    <ClCompile Include="keygen_xbox.cpp" />
+    <ClCompile Include="lazer\game\BustAMovePanel.cpp" />
+    <ClCompile Include="lazer\game\Game.cpp" />
+    <ClCompile Include="lazer\game\GameMode.cpp" />
+    <ClCompile Include="lazer\game\GamePanel.cpp" />
+    <ClCompile Include="lazer\game\HamUser.cpp" />
+    <ClCompile Include="lazer\game\HamUserMgr.cpp" />
+    <ClCompile Include="lazer\game\LiveInput.cpp" />
+    <ClCompile Include="lazer\game\PartyModeMgr.cpp" />
+    <ClCompile Include="lazer\game\PresenceMgr.cpp" />
+    <ClCompile Include="lazer\game\Shuttle.cpp" />
+    <ClCompile Include="lazer\game\SongDB.cpp" />
+    <ClCompile Include="lazer\game\SongSequence.cpp" />
+    <ClCompile Include="lazer\meta_ham\Accomplishment.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCampaignConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCategory.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCharacterListConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentCountConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentDiscSongConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentGroup.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentManager.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentOneShot.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentProgress.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentSongConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AccomplishmentSongListConditional.cpp" />
+    <ClCompile Include="lazer\meta_ham\AppLabel.cpp" />
+    <ClCompile Include="lazer\meta_ham\AppMiniLeaderboardDisplay.cpp" />
+    <ClCompile Include="lazer\meta_ham\AppNavProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\Award.cpp" />
+    <ClCompile Include="lazer\meta_ham\BlacklightPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\CalibrationPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\Campaign.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignDiffSelectPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignEra.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignMasterQuestCrewSelectPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignMasterQuestSongSelectPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignPerformer.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignProgress.cpp" />
+    <ClCompile Include="lazer\meta_ham\CampaignSongSelectPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChallengeRecord.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChallengeResultPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\Challenges.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChallengeSort.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChallengeSortByScore.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChallengeSortMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChallengeSortNode.cpp" />
+    <ClCompile Include="lazer\meta_ham\CharacterProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChooseModeProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\ChooseProfilePanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\ContentLoadingPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\ContextChecker.cpp" />
+    <ClCompile Include="lazer\meta_ham\CorrectIdentityPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\CrewProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\CursorPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\DepthBuffer.cpp" />
+    <ClCompile Include="lazer\meta_ham\DifficultyProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\EventDialogPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSort.cpp" />
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSortByCalorie.cpp" />
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSortMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\FitnessCalorieSortNode.cpp" />
+    <ClCompile Include="lazer\meta_ham\FitnessGoalMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\FitnessProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamMemcardAction.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamProfile.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamScreen.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamSongMetadata.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamSongMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamStarsDisplay.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamStoreFilterProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamStoreOffer.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamStorePanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamStoreProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\HamUI.cpp" />
+    <ClCompile Include="lazer\meta_ham\HelpBarPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\Instarank.cpp" />
+    <ClCompile Include="lazer\meta_ham\KinectSharePanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\Leaderboards.cpp" />
+    <ClCompile Include="lazer\meta_ham\LetterboxPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\LoadingPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\LockedContentPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\MainMenuPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\MainMenuProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\MetagameRank.cpp" />
+    <ClCompile Include="lazer\meta_ham\MetagameStats.cpp" />
+    <ClCompile Include="lazer\meta_ham\MetaPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\MetaPerformer.cpp" />
+    <ClCompile Include="lazer\meta_ham\MoveRatingHistory.cpp" />
+    <ClCompile Include="lazer\meta_ham\MovieProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\MQSongSort.cpp" />
+    <ClCompile Include="lazer\meta_ham\MQSongSortByCharacter.cpp" />
+    <ClCompile Include="lazer\meta_ham\MQSongSortMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\MQSongSortNode.cpp" />
+    <ClCompile Include="lazer\meta_ham\MultiUserGesturePanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\NavListNode.cpp" />
+    <ClCompile Include="lazer\meta_ham\NavListSort.cpp" />
+    <ClCompile Include="lazer\meta_ham\NavListSortMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\OptionsPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\OutfitProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\OverlayPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\Overshell.cpp" />
+    <ClCompile Include="lazer\meta_ham\PassiveMessagesPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\PassiveMessenger.cpp" />
+    <ClCompile Include="lazer\meta_ham\Playlist.cpp" />
+    <ClCompile Include="lazer\meta_ham\PlaylistSongProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\PlaylistSort.cpp" />
+    <ClCompile Include="lazer\meta_ham\PlaylistSortByTypeCmp.cpp" />
+    <ClCompile Include="lazer\meta_ham\PlaylistSortMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\PlaylistSortNode.cpp" />
+    <ClCompile Include="lazer\meta_ham\PracticeChoosePanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\ProfileMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\SaveLoadManager.cpp" />
+    <ClCompile Include="lazer\meta_ham\ShellInput.cpp" />
+    <ClCompile Include="lazer\meta_ham\SigninScreen.cpp" />
+    <ClCompile Include="lazer\meta_ham\SingleUserCrewSelectPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\SkeletonChooser.cpp" />
+    <ClCompile Include="lazer\meta_ham\SkeletonIdentifier.cpp" />
+    <ClCompile Include="lazer\meta_ham\SkillsAwardList.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongRecord.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSelectPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSelectPlaylistCustomizePanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSelectPlaylistPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSort.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSortByDiff.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSortByLocation.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSortBySong.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSortMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongSortNode.cpp" />
+    <ClCompile Include="lazer\meta_ham\SongStatusMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\TexLoadPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\TitleProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\UIEventMgr.cpp" />
+    <ClCompile Include="lazer\meta_ham\Utl.cpp" />
+    <ClCompile Include="lazer\meta_ham\VenueProvider.cpp" />
+    <ClCompile Include="lazer\meta_ham\VoiceControlPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\VoiceInputPanel.cpp" />
+    <ClCompile Include="lazer\meta_ham\WeightInput.cpp" />
+    <ClCompile Include="lazer\net_ham\ChallengeSystemJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\DataMinerJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\FitnessGoalJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\FriendsListJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\HamStoreCartJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\KinectShare.cpp" />
+    <ClCompile Include="lazer\net_ham\KinectShareJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\LeaderboardJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\MotdJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\PartyModeJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\PlaylistJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\RCJobDingo.cpp" />
+    <ClCompile Include="lazer\net_ham\RockCentral.cpp" />
+    <ClCompile Include="lazer\net_ham\ScoreJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\TokenJobs.cpp" />
+    <ClCompile Include="lazer\net_ham\WebLinkJobs.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
