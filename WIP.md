@@ -49,7 +49,7 @@ Everything here is from single file compiles
 - SynchronizationEvent.cpp
 - System.cpp (X)
 - System_Xbox.cpp (X)
-- ThreaddCall_Win.cpp (X)
+- ThreadCall_Win.cpp (X)
 - Timer.cpp
 - UsbMidiGuitar.cpp
 - UsbMidiGuitarMsgs.cpp
@@ -61,3 +61,77 @@ Everything here is from single file compiles
 - VirtualKeyboard_Xbox.cpp
 
 ### utl/
+- AllocInfo.cpp (X)
+- BeatMap.cpp (X)
+- BinkIntegration.cpp (X)
+- BinStream.cpp
+- BufStream.cpp
+- Cache.cpp
+- Cache_Xbox.cpp
+- CacheMgr.cpp
+- CacheMgr_Xbox.cpp (X)
+- Cheats.cpp (X)
+- ChunkIDs.cpp
+- Chunks.cpp
+- ChunkStream.cpp
+- Compress.cpp
+- Crc.cpp
+- Data.cpp
+- DebugGraph.cpp (X)
+- DebugMeter.cpp (X)
+- DeJitter.cpp
+- EncryptXTEA.cpp
+- FakeSongMgr.cpp
+- FilePath.cpp
+- FileStream.cpp
+- GlitchFinder.cpp
+- HxGuid.cpp (X)
+- JobMgr.cpp (X) -- This is behind alot of errors
+- JsonEncode.cpp
+- KnownIssues.cpp (X)
+- Licenses.cpp
+- Loader.cpp
+- Locale.cpp
+- LocaleOrdinal.cpp
+- Magnu.cpp
+- MakeString.cpp (X)
+- MBT.cpp
+- MeasureMap.cpp (X)
+- MemHeap.cpp (X)
+- MemMgr.cpp (X)
+- MemPoint.cpp
+- MemStats.cpp
+- MemStream.cpp (X)
+- MemTrack.cpp (X)
+- MemTracker.cpp (X)
+- MultiTempoTempoMap.cpp (X)
+- NetCacheLoader.cpp
+- NetCacheMgr.cpp (X)
+- NetCacheMgr_Xbox.cpp (X)
+- NetLoader.cpp
+- NetLoader_Xbox.cpp (X)
+- Option.cpp (X)
+- OSCMessenger.cpp
+- Pool.cpp
+- PoolAlloc.cpp
+- Profiler.cpp
+- Song.cpp (X)
+- SongInfoAudioType.cpp
+- SongInfoCopy.cpp (X)
+- Spew.cpp
+- Str.cpp (X)
+- StringTable.cpp (X)
+- SuperFormatString.cpp
+- Symbol.cpp
+- TempoMap.cpp
+- TextFileStream.cpp
+- TextStream.cpp
+- TimeConversion.cpp
+- trie.cpp
+- UrlEncode.cpp
+- UTF8.cpp
+- VarTimer.cpp
+- WaveFile.cpp
+
+
+
