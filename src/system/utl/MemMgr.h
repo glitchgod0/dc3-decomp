@@ -1,6 +1,6 @@
 #pragma once
 #include "MemHeap.h"
-#include "types_compat.h"
+//#include "types_compat.h"
 
 extern const char *gStlAllocName;
 extern bool gStlAllocNameLookup;

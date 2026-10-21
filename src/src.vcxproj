@@ -81,7 +81,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)..\build\$(Configuration)\</OutDir>
-    <IncludePath>$(ProjectDir)binkxenon;$(ProjectDir)system;$(ProjectDir)lazer;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)binkxenon;$(ProjectDir)system;$(ProjectDir);$(ProjectDir)lazer;$(IncludePath)</IncludePath>
+    <ImageXexOutput>$(OutDir)$(SolutionName).xex</ImageXexOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
@@ -1717,6 +1718,10 @@
     <ClInclude Include="system\zlib\zlib.h" />
     <ClInclude Include="system\zlib\zutil.h" />
     <ClInclude Include="types.h" />
+    <ClInclude Include="xdk\NUI.h" />
+    <ClInclude Include="xdk\win_types.h" />
+    <ClInclude Include="xdk\XAPILIB.h" />
+    <ClInclude Include="xdk\XBDM.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />

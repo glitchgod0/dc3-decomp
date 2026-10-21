@@ -3885,6 +3885,18 @@
     <ClInclude Include="system\stlport\stl\pointers\_void_ptr_traits.h">
       <Filter>system\stlport\stl\pointers</Filter>
     </ClInclude>
+    <ClInclude Include="xdk\XAPILIB.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\NUI.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\win_types.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XBDM.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="binkxenon">
@@ -3901,9 +3913,6 @@
     </Filter>
     <Filter Include="lazer\net_ham">
       <UniqueIdentifier>{abf8d574-5099-48a3-a0a7-a7bb2961981d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="xdk2SDK">
-      <UniqueIdentifier>{78bd1bf2-a60d-42eb-aa37-581264f39d04}</UniqueIdentifier>
     </Filter>
     <Filter Include="system">
       <UniqueIdentifier>{eebbdc46-22fa-4567-a2a0-064e1b77c441}</UniqueIdentifier>
@@ -4048,6 +4057,9 @@
     </Filter>
     <Filter Include="system\stlport\stl\wrappers">
       <UniqueIdentifier>{124abdd5-641b-41fd-95a0-b16d89693073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk">
+      <UniqueIdentifier>{78bd1bf2-a60d-42eb-aa37-581264f39d04}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -7535,7 +7547,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt">
-      <Filter>xdk2SDK</Filter>
+      <Filter>xdk</Filter>
     </None>
     <None Include="system\jpeg\ansi2knr.1">
       <Filter>system\jpeg</Filter>
