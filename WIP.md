@@ -31,33 +31,33 @@ Everything here is from single file compiles
 - Achievements_Xbox.cpp (X)
 - ButtonHolder.cpp
 - ConnectionStatusPanel.cpp
-- CreditsPanel.cpp (X)
+- CreditsPanel.cpp
 - DataArraySongInfo.cpp
 - DeJitterPanel.cpp
 - FixedSizeSaveable.cpp
 - FixedSizeSaveableStream.cpp
-- HAQManager.cpp (X)
-- HeldButtonPanel.cpp (X)
+- HAQManager.cpp
+- HeldButtonPanel.cpp
 - Jukebox.cpp
 - MemcardAction.cpp
-- MemcardMgr.cpp (X)
+- MemcardMgr.cpp
 - MemcardMgr_Xbox.cpp
-- Meta.cpp (X)
+- Meta.cpp
 - MetaMusicManager.cpp
 - MetaMusicScene.cpp
-- MoviePanel.cpp (X)
+- MoviePanel.cpp
 - PreloadPanel.cpp
 - Profile.cpp
 - SongMetadata.cpp
 - SongMgr.cpp
-- SongPreview.cpp (X)
+- SongPreview.cpp
 - Sorting.cpp
 - StoreEnumeration.cpp (X)
 - StoreOffer.cpp
 - StorePanel.cpp (X)
-- StorePreviewMgr.cpp (X)
+- StorePreviewMgr.cpp
 - StorePurchaser.cpp (X)
-- StreamPlayer.cpp (X)
+- StreamPlayer.cpp
 
 
 ### midi/
@@ -70,9 +70,9 @@ Everything here is from single file compiles
 - MidiVarLen.cpp
 
 ### movie/
-- Movie.cpp (X)
+- Movie.cpp
 - MovieImpl.cpp
-- MovieSys.cpp (X)
+- MovieSys.cpp
 - Splash.cpp (X)
 - TexMovie.cpp (X)
 
@@ -144,7 +144,7 @@ Everything here is from single file compiles
 ### utl/
 - AllocInfo.cpp (X)
 - BeatMap.cpp (X)
-- BinkIntegration.cpp (X)
+- BinkIntegration.cpp
 - BinStream.cpp
 - BufStream.cpp
 - Cache.cpp
