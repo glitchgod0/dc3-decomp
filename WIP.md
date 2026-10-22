@@ -10,7 +10,7 @@ Everything here is from single file compiles
 - Color.cpp
 - Decibels.cpp
 - DoubleExponentialSmoother.cpp
-- Easing.cpp (X)
+- Easing.cpp
 - FileChecksum.cpp
 - Geo.cpp (X)
 - Interp.cpp
