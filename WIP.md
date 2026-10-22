@@ -160,8 +160,93 @@ Everything here is from single file compiles
 - TexMgr.cpp (X)
 - Utl.cpp
 
-
 ### rndobj/
+- AmbientOcclusion.cpp (X)
+- Anim.cpp
+- AnimFilter.cpp (X)
+- BaseMaterial.cpp (X)
+- Bitmap.cpp
+- BoxMap.cpp (X)
+- Cam.cpp (X)
+- CamAnim.cpp (X)
+- ColorXfm.cpp
+- Console.cpp
+- CubeTex.cpp
+- Dir.cpp  (X)
+- DOFProc.cpp
+- DOFProc_NG.cpp (X)
+- Draw.cpp (X)
+- Enter.cpp
+- Env.cpp
+- Env_NG.cpp
+- EventTrigger.cpp
+- Flare.cpp (X)
+- Font.cpp (X)
+- Font3d.cpp
+- FontBase.cpp
+- Fur.cpp
+- Fur_NG.cpp
+- Gen.cpp (X)
+- Graph.cpp
+- Group.cpp (X)
+- HiResScreen.cpp
+- Line.cpp
+- Lit.cpp
+- LitAnim.cpp (X)
+- Lit_NG.cpp
+- Mat.cpp (X)
+- MatAnim.cpp (X)
+- Mat_NG.cpp (X)
+- Mesh.cpp (X)
+- MeshAnim.cpp
+- MeshDeform.cpp
+- MetaMaterial.cpp
+- Morph.cpp (X)
+- MotionBlur.cpp
+- Movie.cpp
+- MultiMesh.cpp (X)
+- MultiMeshProxy.cpp (X)
+- Overlay.cpp
+- Part.cpp (X)
+- PartAnim.cpp (X)
+- PartLauncher.cpp (X)
+- Poll.cpp
+- PollAnim.cpp
+- PostProc.cpp (X)
+- PostProcMgr.cpp
+- PostProc_NG.cpp (X)
+- PropAnim.cpp (X)
+- PropKeys.cpp (X)
+- Ribbon.cpp
+- Rnd.cpp (X)
+- Rnd_NG.cpp
+- ScreenMask.cpp
+- Set.cpp
+- Shader.cpp
+- ShaderMgr.cpp (X)
+- ShaderOptions.cpp
+- ShaderProgram.cpp
+- ShadowMap.cpp
+- Shockwave.cpp
+- SIVideo.cpp
+- SoftParticleBuffer.cpp
+- SoftParticles.cpp
+- Spline.cpp
+- Tex.cpp (X)
+- TexBlendController.cpp
+- TexBlender.cpp (X)
+- TexProc.cpp
+- TexRenderer.cpp (X)
+- Text.cpp (X)
+- Trans.cpp (X)
+- TransAnim.cpp (X)
+- TransProxy.cpp
+- Utl.cpp (X)
+- VelocityBuffer.cpp (X)
+- Watcher.cpp
+- Wind.cpp
+- wordwrap.cpp
+
 ### stlport/
 ### synth/
 ### synth360/
