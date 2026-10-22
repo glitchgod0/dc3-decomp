@@ -6,6 +6,87 @@ Everything here is from single file compiles
 
 ## system/
 
+### math/
+- Color.cpp
+- Decibels.cpp
+- DoubleExponentialSmoother.cpp
+- Easing.cpp (X)
+- FileChecksum.cpp
+- Geo.cpp (X)
+- Interp.cpp
+- Key.cpp (X)
+- mtx.cpp
+- Primes.cpp
+- Rand.cpp
+- Rand2.cpp
+- Rot.cpp
+- SHA1.cpp
+- Sort.cpp
+- StreamChecksum.cpp
+- Trig.cpp
+- vec.cpp
+
+### meta/
+- Achievements.cpp
+- Achievements_Xbox.cpp (X)
+- ButtonHolder.cpp
+- ConnectionStatusPanel.cpp
+- CreditsPanel.cpp (X)
+- DataArraySongInfo.cpp
+- DeJitterPanel.cpp
+- FixedSizeSaveable.cpp
+- FixedSizeSaveableStream.cpp
+- HAQManager.cpp (X)
+- HeldButtonPanel.cpp (X)
+- Jukebox.cpp
+- MemcardAction.cpp
+- MemcardMgr.cpp (X)
+- MemcardMgr_Xbox.cpp
+- Meta.cpp (X)
+- MetaMusicManager.cpp
+- MetaMusicScene.cpp
+- MoviePanel.cpp (X)
+- PreloadPanel.cpp
+- Profile.cpp
+- SongMetadata.cpp
+- SongMgr.cpp
+- SongPreview.cpp (X)
+- Sorting.cpp
+- StoreEnumeration.cpp (X)
+- StoreOffer.cpp
+- StorePanel.cpp (X)
+- StorePreviewMgr.cpp (X)
+- StorePurchaser.cpp (X)
+- StreamPlayer.cpp (X)
+
+
+### midi/
+- DataEventList.cpp (X)
+- DisplayEvents.cpp
+- MidiParser.cpp
+- MidiParserMgr.cpp
+- MidiReader.cpp
+- MidiReceiver.cpp
+- MidiVarLen.cpp
+
+### movie/
+- Movie.cpp (X)
+- MovieImpl.cpp
+- MovieSys.cpp (X)
+- Splash.cpp (X)
+- TexMovie.cpp (X)
+
+### moviebink/
+- BinkMovieImpl.cpp (X)
+- BinkMovieImpl_Xbox.cpp (X)
+- BinkMovieSys.cpp
+- BinkMovieSys_Xbox.cpp (X)
+
+
+
+### net/
+
+
 ### os/
 - AppChild.cpp
 - Archive.cpp
