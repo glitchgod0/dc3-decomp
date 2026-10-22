@@ -1720,6 +1720,7 @@
     <ClInclude Include="types.h" />
     <ClInclude Include="xdk\D3D9.h" />
     <ClInclude Include="xdk\d3d9i\d3d9.h" />
+    <ClInclude Include="xdk\d3dx9\d3dx9tex.h" />
     <ClInclude Include="xdk\NUI.h" />
     <ClInclude Include="xdk\nui\nuidetroit.h" />
     <ClInclude Include="xdk\nui\nuispeech.h" />
@@ -1731,6 +1732,7 @@
     <ClInclude Include="xdk\xapilibi\ioapiset.h" />
     <ClInclude Include="xdk\xapilibi\minwinbase.h" />
     <ClInclude Include="xdk\xapilibi\processthreadsapi.h" />
+    <ClInclude Include="xdk\xapilibi\synchapi.h" />
     <ClInclude Include="xdk\xapilibi\timezoneapi.h" />
     <ClInclude Include="xdk\xapilibi\winerror.h" />
     <ClInclude Include="xdk\xapilibi\xbase.h" />
@@ -1739,6 +1741,8 @@
     <ClInclude Include="xdk\XBDM.h" />
     <ClInclude Include="xdk\xbdm\xbdm.h" />
     <ClInclude Include="xdk\XBOXKRNL.h" />
+    <ClInclude Include="xdk\XGRAPHICS.h" />
+    <ClInclude Include="xdk\xgraphics\xgraphics.h" />
     <ClInclude Include="xdk\XMP.h" />
     <ClInclude Include="xdk\XNET.h" />
     <ClInclude Include="xdk\xnet\winsockx.h" />

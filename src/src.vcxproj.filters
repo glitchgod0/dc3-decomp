@@ -3969,6 +3969,18 @@
     <ClInclude Include="xdk\xonline\xonline.h">
       <Filter>xdk\xonline</Filter>
     </ClInclude>
+    <ClInclude Include="xdk\xapilibi\synchapi.h">
+      <Filter>xdk\xapilibi</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\d3dx9\d3dx9tex.h">
+      <Filter>xdk\d3dx9</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\XGRAPHICS.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\xgraphics\xgraphics.h">
+      <Filter>xdk\xgraphics</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="binkxenon">
@@ -4150,6 +4162,12 @@
     </Filter>
     <Filter Include="xdk\xonline">
       <UniqueIdentifier>{9476b346-c055-4504-86d6-fe046ad2a295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\d3dx9">
+      <UniqueIdentifier>{113d20a4-faec-427b-a0e8-c7bf60dafda7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\xgraphics">
+      <UniqueIdentifier>{90003d8d-e103-4936-86e9-2157dabdce31}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

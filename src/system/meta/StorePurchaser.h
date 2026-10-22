@@ -7,8 +7,6 @@
 #include "xdk/win_types.h"
 #include "xdk/xapilibi/xbase.h"
 
-const int XMARKETPLACE_MAX_OFFERIDS = 6;
-
 class StorePurchaser {
 public:
     virtual ~StorePurchaser() {}

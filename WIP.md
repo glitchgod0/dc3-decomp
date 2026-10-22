@@ -56,7 +56,7 @@ Everything here is from single file compiles
 - StoreOffer.cpp
 - StorePanel.cpp (X)
 - StorePreviewMgr.cpp
-- StorePurchaser.cpp (X)
+- StorePurchaser.cpp
 - StreamPlayer.cpp
 
 
@@ -140,6 +140,33 @@ Everything here is from single file compiles
 - UserMgr.cpp
 - VirtualKeyboard.cpp
 - VirtualKeyboard_Xbox.cpp
+
+
+### rnddx9/
+- Cam.cpp
+- CubeTex.cpp
+- Env.cpp
+- Lit.cpp
+- Mat.cpp
+- Mesh.cpp (X)
+- Movie.cpp (X)
+- MultiMesh.cpp (X)
+- Part.cpp
+- RenderState.cpp
+- Rnd.cpp (X)
+- Rnd_Xbox.cpp (X)
+- ShaderMgr.cpp (X)
+- Tex.cpp
+- TexMgr.cpp (X)
+- Utl.cpp
+
+
+### rndobj/
+### stlport/
+### synth/
+### synth360/
+### ui/
+
 
 ### utl/
 - AllocInfo.cpp (X)
