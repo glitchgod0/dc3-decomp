@@ -86,6 +86,9 @@ Everything here is from single file compiles
 
 ### net/
 
+### obj/
+
+### oggvorbis
 
 ### os/
 - AppChild.cpp
