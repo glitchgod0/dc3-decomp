@@ -121,7 +121,7 @@ Everything here is from single file compiles
 - Keyboard.cpp
 - Keyboard_Xbox.cpp
 - KeyboardJoypadAdapter.cpp
-- MapFile_Xbox.cpp
+- MapFile_Xbox.cpp (X)
 - Memcard.cpp
 - Memcard_Xbox.cpp
 - Memory_Xbox.cpp
