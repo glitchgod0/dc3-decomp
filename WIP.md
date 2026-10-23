@@ -1,5 +1,10 @@
 Everything here is from single file compiles
 
+##### notes for merging with upstream
+- git fetch upstream
+- git merge upstream/main
+- git pull
+
 ## root/
 - keygen_xbox.cpp
 - ChecksumData_xbox.cpp
