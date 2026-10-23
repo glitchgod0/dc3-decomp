@@ -5,6 +5,7 @@
 #include "os/System.h"
 #include "xdk/xapilibi/errhandlingapi.h"
 #include "xdk/xapilibi/fileapi.h"
+#include "xdk/xapilibi/winerror.h"
 #include <vector>
 #include "xdk/XAPILIB.h"
 
@@ -24,11 +25,7 @@ namespace {
         if (gArkFiles.empty()) {
             gArkFiles.resize(TheArchive->NumArkFiles());
             gExternalArkFiles.resize(TheArchive->NumArkFiles());
-            gOverlapped.Internal = 0;
-            gOverlapped.InternalHigh = 0;
-            gOverlapped.Offset = 0;
-            gOverlapped.OffsetHigh = 0;
-            gOverlapped.hEvent = 0;
+            memset(&gOverlapped, 0, sizeof(gOverlapped));
             for (int i = 0; i < gArkFiles.size(); i++) {
                 const char *arkFileName = TheArchive->GetArkfileName(i);
                 String fullPath;
@@ -76,7 +73,9 @@ bool CDReadDone() {
             return true;
         }
         gErrorCode = GetLastError();
-        if (gErrorCode == ERROR_IO_PENDING || gErrorCode == ERROR_IO_INCOMPLETE) {
+        if (gErrorCode == ERROR_IO_PENDING) {
+            return false;
+        } else if (gErrorCode == ERROR_IO_INCOMPLETE) {
             return false;
         }
     }
@@ -94,30 +93,38 @@ int CDRead(int arkfileNum, int sector, int numSectors, void *buf) {
         if (ret) {
             return ret;
         }
-        gOverlapped.OffsetHigh = (sector << 0xB) >> 0x20;
-        gOverlapped.Offset = sector << 0xB;
-        if (!ReadFile(gArkFiles[arkfileNum], buf, numSectors << 0xB, nullptr, &gOverlapped)) {
+        s64 sector64 = sector;
+        u64 off = sector64 * 2048;
+        gOverlapped.OffsetHigh = (off) >> 0x20;
+        gOverlapped.Offset = static_cast<u32>(off);
+        if (!ReadFile(
+                gArkFiles[arkfileNum], buf, numSectors << 0xB, nullptr, &gOverlapped
+            )) {
             DWORD err = GetLastError();
-            if (err == ERROR_IO_PENDING || err == ERROR_IO_INCOMPLETE) {
-                MILO_NOTIFY("Disc error: ERROR_IO_INCOMPLETE, ignoring");
-                gPendingFile = arkfileNum;
-                return 0;
-            } else {
-                gErrorCode = err;
-                DiskErrorLoop();
-                return 1;
+            if (err != ERROR_IO_PENDING) {
+                if (err == ERROR_IO_INCOMPLETE) {
+                    TheDebugNotifier
+                        << MakeString("Disc error: ERROR_IO_INCOMPLETE, ignoring");
+                } else {
+                    gErrorCode = err;
+                    DiskErrorLoop();
+                    return 1;
+                }
             }
         }
     }
+    gPendingFile = arkfileNum;
+    return 0;
 }
 
-bool CDReadExternal(void *&out_handle, int arkfileNum, u64 startByte) {
+bool CDReadExternal(HANDLE &out_handle, int arkfileNum, u64 startByte) {
     if (ArkFilesInit() != 0) {
         return false;
     } else {
         out_handle = gExternalArkFiles[arkfileNum];
-        LONG l = startByte;
-        SetFilePointer(out_handle, startByte, &l, 0);
+        LARGE_INTEGER li;
+        li.QuadPart = startByte;
+        SetFilePointer(out_handle, li.LowPart, &li.HighPart, 0);
         return true;
     }
 }
