@@ -11,6 +11,18 @@ Everything here is from single file compiles
 
 ## system/
 
+### char/
+
+### dsp/
+
+### flow/
+
+### gesture/
+
+### hamobj/
+
+### jpeg
+
 ### math/
 - Color.cpp
 - Decibels.cpp
@@ -259,6 +271,42 @@ Everything here is from single file compiles
 ### synth/
 ### synth360/
 ### ui/
+- CheatProvider.cpp (X)
+- InlineHelp.cpp
+- LabelNumberTicker.cpp
+- LabelShrinkWrapper.cpp
+- LocalePanel.cpp
+- PanelDir.cpp
+- ResourceDirPtr.cpp
+- Screenshot.cpp (X)
+- ScrollSelect.cpp
+- UI.cpp (X)
+- UIButton.cpp
+- UIColor.cpp
+- UIComponent.cpp
+- UIFontImporter.cpp
+- UIGuide.cpp
+- UILabel.cpp (X)
+- UILabelDir.cpp
+- UIList.cpp
+- UIListArrow.cpp
+- UIListCustom.cpp
+- UIListDir.cpp
+- UIListHighlight.cpp
+- UIListLabel.cpp (X)
+- UIListMesh.cpp (X)
+- UIListProvider.cpp (X)
+- UIListSlot.cpp
+- UIListState.cpp
+- UIListSubList.cpp
+- UIListWidget.cpp (X)
+- UIPanel.cpp
+- UIPicture.cpp
+- UIScreen.cpp (X)
+- UISlider.cpp
+- UITransitionHandler.cpp
+- UITrigger.cpp
+- Utl.cpp
 
 
 ### utl/

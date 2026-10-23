@@ -3981,6 +3981,9 @@
     <ClInclude Include="xdk\xgraphics\xgraphics.h">
       <Filter>xdk\xgraphics</Filter>
     </ClInclude>
+    <ClInclude Include="xdk\XAUDIO2.h">
+      <Filter>xdk</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="binkxenon">
