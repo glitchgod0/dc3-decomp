@@ -440,7 +440,7 @@ Everything here is from single file compiles
 - FilePath.cpp
 - FileStream.cpp
 - GlitchFinder.cpp
-- HxGuid.cpp (X)
+- HxGuid.cpp
 - JobMgr.cpp
 - JsonEncode.cpp
 - KnownIssues.cpp
@@ -474,7 +474,7 @@ Everything here is from single file compiles
 - SongInfoAudioType.cpp
 - SongInfoCopy.cpp (X)
 - Spew.cpp
-- Str.cpp (X)
+- Str.cpp
 - StringTable.cpp
 - SuperFormatString.cpp
 - Symbol.cpp

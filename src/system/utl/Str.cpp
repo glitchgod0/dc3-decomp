@@ -42,7 +42,7 @@ bool SearchReplace(
 ) {
     bool changed;
     int temp_r31;
-    char *temp_r3;
+    const char *temp_r3;
 
     *dest = 0;
     changed = false;
