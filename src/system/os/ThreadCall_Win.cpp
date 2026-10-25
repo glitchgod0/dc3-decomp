@@ -36,7 +36,7 @@ namespace JobQueue {
 namespace {
     bool gReadyForNext = true;
     ThreadCallData gData[12];
-    HANDLE gThreadHandle;
+    uintptr_t gThreadHandle;
     HANDLE gThreadSema;
     bool gTerminate;
     bool gCallDone;

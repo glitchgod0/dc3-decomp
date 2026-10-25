@@ -3,6 +3,10 @@ Everything here is from single file compiles
 ##### notes for merging with upstream
 - git fetch upstream
 - git merge upstream/main
+- git rm config/373307D9/objects.json
+- git rm config/373307D9/symbols.txt
+- git checkout --ours -- src/xdk/
+- git add src/xdk/
 - git pull
 
 ## root/
@@ -12,10 +16,112 @@ Everything here is from single file compiles
 ## system/
 
 ### char/
+- Char.cpp (X)
+- Character.cpp(X)
+- CharacterTest.cpp(X)
+- CharBlendBone.cpp
+- CharBone.cpp
+- CharBoneDir.cpp
+- CharBoneOffset.cpp
+- CharBones.cpp
+- CharBonesBlender.cpp
+- CharBonesMeshes.cpp (X)
+- CharBonesSamples.cpp
+- CharBoneTwist.cpp
+- CharClip.cpp
+- CharClipDisplay.cpp
+- CharClipDriver.cpp
+- CharClipGroup.cpp (X)
+- CharClipSet.cpp
+- CharCollide.cpp (X)
+- CharCuff.cpp
+- CharDriver.cpp
+- CharDriverMidi.cpp
+- CharEyeDartRuleset.cpp
+- CharEyes.cpp (X)
+- CharFaceServo.cpp
+- CharForeTwist.cpp
+- CharGuitarString.cpp
+- CharHair.cpp (X)
+- CharIKFingers.cpp (X)
+- CharIKFoot.cpp
+- CharIKHand.cpp (X)
+- CharIKHead.cpp (X)
+- CharIKMidi.cpp (X)
+- CharIKRod.cpp
+- CharIKScale.cpp
+- CharIKSliderMidi.cpp (X)
+- CharInterest.cpp
+- CharLipSync.cpp (X)
+- CharLipSyncDriver.cpp (X)
+- CharLookAt.cpp
+- CharMeshHide.cpp
+- CharMirror.cpp
+- CharNeckTwist.cpp
+- CharPollGroup.cpp
+- CharPosConstraint.cpp
+- CharServoBone.cpp
+- CharSignalApplier.cpp
+- CharSleeve.cpp (X)
+- CharTaskMgr.cpp (X)
+- CharTransDraw.cpp
+- CharUpperTwist.cpp
+- CharUtl.cpp
+- CharWeightable.cpp
+- CharWeightSetter.cpp
+- ClipCollide.cpp
+- ClipDistMap.cpp
+- ClipGraphGen.cpp (X)
+- FileMerger.cpp (X)
+- FileMergerOrganizer.cpp
+- Waypoint.cpp
 
 ### dsp/
+- BitCrushEffect.cpp (X)
+- Common_Xbox.cpp (X)
+- CompressionEffect.cpp (X)
+- DelayEffect.cpp (X)
+- DistortionEffect.cpp (X)
+- EQEffect.cpp (X)
+- FlangerEffect.cpp (X)
+- WahEffect.cpp (X)
+
+#### mkfilter/
+- complex.cpp
+- filterdesign.cpp
 
 ### flow/
+- DrivenPropertyEntry.cpp
+- DrivenPropertyMathOps.cpp
+- Flow.cpp (X)
+- FlowAnimate.cpp
+- FlowCommand.cpp
+- FlowDistance.cpp
+- FlowEventListener.cpp
+- FlowIf.cpp
+- FlowLabel.cpp
+- FlowManager.cpp (X)
+- FlowMultiSetProperty.cpp (X)
+- FlowNode.cpp (X)
+- FlowOnStop.cpp
+- FlowOutPort.cpp
+- FlowPickOne.cpp (X)
+- FlowPtr.cpp
+- FlowQueueable.cpp
+- FlowRun.cpp
+- FlowSequence.cpp
+- FlowSetProperty.cpp
+- FlowSlider.cpp
+- FlowSound.cpp
+- FlowSwitch.cpp
+- FlowSwitchCase.cpp (X)
+- FlowTimer.cpp
+- FlowTrigger.cpp
+- FlowValueCase.cpp
+- FlowWhile.cpp
+- PropertyEventListener.cpp
+- PropertyEventProvider.cpp
+
 
 ### gesture/
 
@@ -138,7 +244,7 @@ Everything here is from single file compiles
 - Keyboard.cpp
 - Keyboard_Xbox.cpp
 - KeyboardJoypadAdapter.cpp
-- MapFile_Xbox.cpp (X)
+- MapFile_Xbox.cpp
 - Memcard.cpp
 - Memcard_Xbox.cpp
 - Memory_Xbox.cpp
@@ -150,7 +256,7 @@ Everything here is from single file compiles
 - SynchronizationEvent.cpp
 - System.cpp
 - System_Xbox.cpp (X)
-- ThreadCall_Win.cpp (X)
+- ThreadCall_Win.cpp
 - Timer.cpp
 - UsbMidiGuitar.cpp
 - UsbMidiGuitarMsgs.cpp
@@ -347,7 +453,7 @@ Everything here is from single file compiles
 - MBT.cpp
 - MeasureMap.cpp (X)
 - MemHeap.cpp
-- MemMgr.cpp (X)
+- MemMgr.cpp
 - MemPoint.cpp
 - MemStats.cpp
 - MemStream.cpp
