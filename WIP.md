@@ -283,7 +283,7 @@ Everything here is from single file compiles
 - Rnd_Xbox.cpp (X)
 - ShaderMgr.cpp (X)
 - Tex.cpp
-- TexMgr.cpp (X)
+- TexMgr.cpp
 - Utl.cpp
 
 ### rndobj/
