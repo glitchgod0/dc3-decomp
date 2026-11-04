@@ -123,7 +123,43 @@ Everything here is from single file compiles
 - PropertyEventProvider.cpp
 
 
-### gesture/
+### gesture
+- ArcDetector.cpp (X)
+- ArchiveSkeleton.cpp (X)
+- BaseSkeleton.cpp
+- CameraInput.cpp
+- CameraTilt.cpp (X)
+- DepthBuffer3D.cpp (X)
+- DirectionGestureFilter.cpp (X)
+- DrawUtl.cpp (X)
+- FitnessFilter.cpp (X)
+- FreestyleMotionFilter.cpp (X)
+- Gesture.cpp (X)
+- GestureMgr.cpp (X)
+- HandHeightGestureFilter.cpp (X)
+- HandInvokeGestureFilter.cpp (X)
+- HandRaisedGestureFilter.cpp (X)
+- HandsUpGestureFilter.cpp (X)
+- HighFiveGestureFilter.cpp (X)
+- IdentityInfo.cpp (X)
+- JointUtl.cpp (X)
+- LiveCameraInput.cpp (X)
+- NavigationSkeletonDir.cpp (X)
+- Skeleton.cpp (X)
+- SkeletonClip.cpp (X)
+- SkeletonDir.cpp (X)
+- SkeletonExtentTracker.cpp (X)
+- SkeletonHistory.cpp (X)
+- SkeletonQualityFilter.cpp (X)
+- SkeletonRecoverer.cpp (X)
+- SkeletonUpdate.cpp (X)
+- SkeletonViz.cpp
+- SpeechMgr.cpp (X)
+- StandingStillGestureFilter.cpp (X)
+- StreamRecorder.cpp
+- StreamRenderer.cpp (X)
+- StubCameraInput.cpp
+- WaveToTurnOnLight.cpp (X)
 
 ### hamobj/
 - BustAMoveData.cpp
