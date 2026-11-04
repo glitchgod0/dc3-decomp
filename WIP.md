@@ -126,6 +126,85 @@ Everything here is from single file compiles
 ### gesture/
 
 ### hamobj/
+- BustAMoveData.cpp
+- CamShotCatVO.cpp
+- CharCameraInput.cpp
+- CharFeedback.cpp
+- ClipPlayer.cpp
+- CrazeHollaback.cpp
+- DanceRemixer.cpp (X)
+- DancerSequence.cpp
+- DancerSkeleton.cpp
+- DetectFrame.cpp
+- Difficulty.cpp
+- ErrorNode.cpp
+- FilterQueue.cpp (X)
+- FilterVersion.cpp
+- FreestyleMove.cpp
+- FreestyleMoveRecorder.cpp (X)
+- Ham.cpp (X)
+- HamAudio.cpp
+- HamBattleData.cpp
+- HamCamShot.cpp
+- HamCamTransform.cpp
+- HamCharacter.cpp
+- HamDirector.cpp (X)
+- HamDriver.cpp
+- HamGameData.cpp (X)
+- HamIconMan.cpp
+- HamIKEffector.cpp
+- HamIKSkeleton.cpp
+- HamLabel.cpp
+- HamList.cpp
+- HamListRibbon.cpp (X)
+- HamMaster.cpp (X)
+- HamMove.cpp
+- HamNavList.cpp (X)
+- HamNavProvider.cpp (X)
+- HamPartyJumpData.cpp
+- HamPhotoDisplay.cpp (X)
+- HamPhraseMeter.cpp
+- HamPlayerData.cpp (X)
+- HamProviderPrinter.cpp
+- HamRegulate.cpp
+- HamRibbon.cpp
+- HamScrollBehavior.cpp (X)
+- HamScrollSpeedIndicator.cpp
+- HamSkeletonConverter.cpp
+- HamSong.cpp (X)
+- HamSongData.cpp (X)
+- HamSupereasyData.cpp
+- HamVisDir.cpp (X)
+- HamWardrobe.cpp
+- HollaBackMinigame.cpp (X)
+- MeterDisplay.cpp
+- MiniGameMgr.cpp
+- MiniLeaderboardDisplay.cpp
+- MocapSkeletonIterator.cpp
+- MoveAsyncDetector.cpp
+- MoveDir.cpp (X)
+- MoveGraph.cpp
+- MoveMgr.cpp
+- MoveParent.cpp
+- MoveVariant.cpp
+- OriginalChoreoRemixer.cpp
+- PhotoSpotlightPositioner.cpp (X)
+- Pose.cpp (X)
+- PoseFatalities.cpp (X)
+- PracticeOptionsProvider.cpp
+- PracticeSection.cpp
+- RhythmBattle.cpp (X)
+- RhythmBattlePlayer.cpp (X)
+- RhythmDetector.cpp (X)
+- RhythmDetectorGroup.cpp (X)
+- ScoreUtl.cpp
+- SongCollision.cpp
+- SongDifficultyDisplay.cpp
+- SongLayout.cpp
+- SongUtl.cpp
+- StarsDisplay.cpp
+- SuperEasyRemixer.cpp
+- TransConstraint.cpp
 
 ### jpeg
 
