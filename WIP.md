@@ -16,44 +16,44 @@ Everything here is from single file compiles
 ## system/
 
 ### char/
-- Char.cpp (X)
-- Character.cpp(X)
-- CharacterTest.cpp(X)
+- Char.cpp
+- Character.cpp
+- CharacterTest.cpp
 - CharBlendBone.cpp
 - CharBone.cpp
 - CharBoneDir.cpp
 - CharBoneOffset.cpp
 - CharBones.cpp
 - CharBonesBlender.cpp
-- CharBonesMeshes.cpp (X)
+- CharBonesMeshes.cpp
 - CharBonesSamples.cpp
 - CharBoneTwist.cpp
 - CharClip.cpp
 - CharClipDisplay.cpp
 - CharClipDriver.cpp
-- CharClipGroup.cpp (X)
+- CharClipGroup.cpp
 - CharClipSet.cpp
-- CharCollide.cpp (X)
+- CharCollide.cpp
 - CharCuff.cpp
 - CharDriver.cpp
 - CharDriverMidi.cpp
 - CharEyeDartRuleset.cpp
-- CharEyes.cpp (X)
+- CharEyes.cpp
 - CharFaceServo.cpp
 - CharForeTwist.cpp
 - CharGuitarString.cpp
-- CharHair.cpp (X)
-- CharIKFingers.cpp (X)
+- CharHair.cpp
+- CharIKFingers.cpp
 - CharIKFoot.cpp
-- CharIKHand.cpp (X)
-- CharIKHead.cpp (X)
-- CharIKMidi.cpp (X)
+- CharIKHand.cpp
+- CharIKHead.cpp
+- CharIKMidi.cpp
 - CharIKRod.cpp
 - CharIKScale.cpp
-- CharIKSliderMidi.cpp (X)
+- CharIKSliderMidi.cpp
 - CharInterest.cpp
-- CharLipSync.cpp (X)
-- CharLipSyncDriver.cpp (X)
+- CharLipSync.cpp
+- CharLipSyncDriver.cpp
 - CharLookAt.cpp
 - CharMeshHide.cpp
 - CharMirror.cpp
@@ -62,8 +62,8 @@ Everything here is from single file compiles
 - CharPosConstraint.cpp
 - CharServoBone.cpp
 - CharSignalApplier.cpp
-- CharSleeve.cpp (X)
-- CharTaskMgr.cpp (X)
+- CharSleeve.cpp
+- CharTaskMgr.cpp
 - CharTransDraw.cpp
 - CharUpperTwist.cpp
 - CharUtl.cpp
@@ -71,8 +71,8 @@ Everything here is from single file compiles
 - CharWeightSetter.cpp
 - ClipCollide.cpp
 - ClipDistMap.cpp
-- ClipGraphGen.cpp (X)
-- FileMerger.cpp (X)
+- ClipGraphGen.cpp
+- FileMerger.cpp
 - FileMergerOrganizer.cpp
 - Waypoint.cpp
 
@@ -93,19 +93,19 @@ Everything here is from single file compiles
 ### flow/
 - DrivenPropertyEntry.cpp
 - DrivenPropertyMathOps.cpp
-- Flow.cpp (X)
+- Flow.cpp
 - FlowAnimate.cpp
 - FlowCommand.cpp
 - FlowDistance.cpp
 - FlowEventListener.cpp
 - FlowIf.cpp
 - FlowLabel.cpp
-- FlowManager.cpp (X)
-- FlowMultiSetProperty.cpp (X)
-- FlowNode.cpp (X)
+- FlowManager.cpp
+- FlowMultiSetProperty.cpp
+- FlowNode.cpp
 - FlowOnStop.cpp
 - FlowOutPort.cpp
-- FlowPickOne.cpp (X)
+- FlowPickOne.cpp
 - FlowPtr.cpp
 - FlowQueueable.cpp
 - FlowRun.cpp
@@ -114,7 +114,7 @@ Everything here is from single file compiles
 - FlowSlider.cpp
 - FlowSound.cpp
 - FlowSwitch.cpp
-- FlowSwitchCase.cpp (X)
+- FlowSwitchCase.cpp
 - FlowTimer.cpp
 - FlowTrigger.cpp
 - FlowValueCase.cpp
@@ -135,9 +135,9 @@ Everything here is from single file compiles
 - DoubleExponentialSmoother.cpp
 - Easing.cpp
 - FileChecksum.cpp
-- Geo.cpp (X)
+- Geo.cpp
 - Interp.cpp
-- Key.cpp (X)
+- Key.cpp
 - mtx.cpp
 - Primes.cpp
 - Rand.cpp
@@ -151,7 +151,7 @@ Everything here is from single file compiles
 
 ### meta/
 - Achievements.cpp
-- Achievements_Xbox.cpp (X)
+- Achievements_Xbox.cpp
 - ButtonHolder.cpp
 - ConnectionStatusPanel.cpp
 - CreditsPanel.cpp
@@ -175,7 +175,7 @@ Everything here is from single file compiles
 - SongMgr.cpp
 - SongPreview.cpp
 - Sorting.cpp
-- StoreEnumeration.cpp (X)
+- StoreEnumeration.cpp
 - StoreOffer.cpp
 - StorePanel.cpp (X)
 - StorePreviewMgr.cpp
@@ -184,7 +184,7 @@ Everything here is from single file compiles
 
 
 ### midi/
-- DataEventList.cpp (X)
+- DataEventList.cpp
 - DisplayEvents.cpp
 - MidiParser.cpp
 - MidiParserMgr.cpp
@@ -196,8 +196,8 @@ Everything here is from single file compiles
 - Movie.cpp
 - MovieImpl.cpp
 - MovieSys.cpp
-- Splash.cpp (X)
-- TexMovie.cpp (X)
+- Splash.cpp
+- TexMovie.cpp
 
 ### moviebink/
 - BinkMovieImpl.cpp (X)
@@ -230,7 +230,7 @@ Everything here is from single file compiles
 - Debug.cpp
 - File.cpp
 - File_Win.cpp
-- FileCache.cpp (X)
+- FileCache.cpp
 - HDCache.cpp
 - HolmesClient.cpp
 - HolmesClient_NetSocket.cpp
@@ -274,12 +274,12 @@ Everything here is from single file compiles
 - Env.cpp
 - Lit.cpp
 - Mat.cpp
-- Mesh.cpp (X)
-- Movie.cpp (X)
-- MultiMesh.cpp (X)
+- Mesh.cpp
+- Movie.cpp
+- MultiMesh.cpp
 - Part.cpp
 - RenderState.cpp
-- Rnd.cpp (X)
+- Rnd.cpp
 - Rnd_Xbox.cpp (X)
 - ShaderMgr.cpp (X)
 - Tex.cpp
@@ -287,69 +287,69 @@ Everything here is from single file compiles
 - Utl.cpp
 
 ### rndobj/
-- AmbientOcclusion.cpp (X)
+- AmbientOcclusion.cpp
 - Anim.cpp
-- AnimFilter.cpp (X)
-- BaseMaterial.cpp (X)
+- AnimFilter.cpp
+- BaseMaterial.cpp
 - Bitmap.cpp
-- BoxMap.cpp (X)
+- BoxMap.cpp
 - Cam.cpp (X)
-- CamAnim.cpp (X)
+- CamAnim.cpp
 - ColorXfm.cpp
 - Console.cpp
 - CubeTex.cpp
-- Dir.cpp  (X)
+- Dir.cpp
 - DOFProc.cpp
 - DOFProc_NG.cpp (X)
-- Draw.cpp (X)
+- Draw.cpp
 - Enter.cpp
 - Env.cpp
 - Env_NG.cpp
 - EventTrigger.cpp
-- Flare.cpp (X)
-- Font.cpp (X)
+- Flare.cpp
+- Font.cpp
 - Font3d.cpp
 - FontBase.cpp
 - Fur.cpp
 - Fur_NG.cpp
-- Gen.cpp (X)
+- Gen.cpp
 - Graph.cpp
-- Group.cpp (X)
+- Group.cpp
 - HiResScreen.cpp
 - Line.cpp
 - Lit.cpp
-- LitAnim.cpp (X)
+- LitAnim.cpp
 - Lit_NG.cpp
-- Mat.cpp (X)
-- MatAnim.cpp (X)
-- Mat_NG.cpp (X)
-- Mesh.cpp (X)
+- Mat.cpp
+- MatAnim.cpp
+- Mat_NG.cpp
+- Mesh.cpp
 - MeshAnim.cpp
 - MeshDeform.cpp
 - MetaMaterial.cpp
-- Morph.cpp (X)
+- Morph.cpp
 - MotionBlur.cpp
 - Movie.cpp
-- MultiMesh.cpp (X) !!!!
-- MultiMeshProxy.cpp (X)
+- MultiMesh.cpp
+- MultiMeshProxy.cpp
 - Overlay.cpp
-- Part.cpp (X)
-- PartAnim.cpp (X)
-- PartLauncher.cpp (X)
+- Part.cpp
+- PartAnim.cpp
+- PartLauncher.cpp
 - Poll.cpp
 - PollAnim.cpp
-- PostProc.cpp (X)
+- PostProc.cpp
 - PostProcMgr.cpp
-- PostProc_NG.cpp (X)
-- PropAnim.cpp (X)
-- PropKeys.cpp (X)
+- PostProc_NG.cpp
+- PropAnim.cpp 
+- PropKeys.cpp
 - Ribbon.cpp
-- Rnd.cpp (X)
+- Rnd.cpp
 - Rnd_NG.cpp
 - ScreenMask.cpp
 - Set.cpp
 - Shader.cpp
-- ShaderMgr.cpp (X)
+- ShaderMgr.cpp
 - ShaderOptions.cpp
 - ShaderProgram.cpp
 - ShadowMap.cpp
@@ -358,17 +358,17 @@ Everything here is from single file compiles
 - SoftParticleBuffer.cpp
 - SoftParticles.cpp
 - Spline.cpp
-- Tex.cpp (X)
+- Tex.cpp
 - TexBlendController.cpp
-- TexBlender.cpp (X)
+- TexBlender.cpp
 - TexProc.cpp
-- TexRenderer.cpp (X)
-- Text.cpp (X)
-- Trans.cpp (X)
-- TransAnim.cpp (X)
+- TexRenderer.cpp
+- Text.cpp
+- Trans.cpp
+- TransAnim.cpp
 - TransProxy.cpp
-- Utl.cpp (X)
-- VelocityBuffer.cpp (X)
+- Utl.cpp
+- VelocityBuffer.cpp
 - Watcher.cpp
 - Wind.cpp
 - wordwrap.cpp
@@ -377,22 +377,22 @@ Everything here is from single file compiles
 ### synth/
 ### synth360/
 ### ui/
-- CheatProvider.cpp (X)
+- CheatProvider.cpp
 - InlineHelp.cpp
 - LabelNumberTicker.cpp
 - LabelShrinkWrapper.cpp
 - LocalePanel.cpp
 - PanelDir.cpp
 - ResourceDirPtr.cpp
-- Screenshot.cpp (X)
+- Screenshot.cpp
 - ScrollSelect.cpp
-- UI.cpp (X)
+- UI.cpp
 - UIButton.cpp
 - UIColor.cpp
 - UIComponent.cpp
 - UIFontImporter.cpp
 - UIGuide.cpp
-- UILabel.cpp (X)
+- UILabel.cpp
 - UILabelDir.cpp
 - UIList.cpp
 - UIListArrow.cpp
@@ -400,12 +400,12 @@ Everything here is from single file compiles
 - UIListDir.cpp
 - UIListHighlight.cpp
 - UIListLabel.cpp (X)
-- UIListMesh.cpp (X)
-- UIListProvider.cpp (X)
+- UIListMesh.cpp
+- UIListProvider.cpp
 - UIListSlot.cpp
 - UIListState.cpp
 - UIListSubList.cpp
-- UIListWidget.cpp (X)
+- UIListWidget.cpp
 - UIPanel.cpp
 - UIPicture.cpp
 - UIScreen.cpp (X)
@@ -417,7 +417,7 @@ Everything here is from single file compiles
 
 ### utl/
 - AllocInfo.cpp (X)
-- BeatMap.cpp (X)
+- BeatMap.cpp
 - BinkIntegration.cpp
 - BinStream.cpp
 - BufStream.cpp
@@ -425,7 +425,7 @@ Everything here is from single file compiles
 - Cache_Xbox.cpp
 - CacheMgr.cpp
 - CacheMgr_Xbox.cpp
-- Cheats.cpp (X)
+- Cheats.cpp
 - ChunkIDs.cpp
 - Chunks.cpp
 - ChunkStream.cpp
@@ -451,7 +451,7 @@ Everything here is from single file compiles
 - Magnu.cpp
 - MakeString.cpp
 - MBT.cpp
-- MeasureMap.cpp (X)
+- MeasureMap.cpp
 - MemHeap.cpp
 - MemMgr.cpp
 - MemPoint.cpp
@@ -459,20 +459,20 @@ Everything here is from single file compiles
 - MemStream.cpp
 - MemTrack.cpp
 - MemTracker.cpp
-- MultiTempoTempoMap.cpp (X)
+- MultiTempoTempoMap.cpp
 - NetCacheLoader.cpp
 - NetCacheMgr.cpp
 - NetCacheMgr_Xbox.cpp
 - NetLoader.cpp
 - NetLoader_Xbox.cpp
-- Option.cpp (X)
+- Option.cpp
 - OSCMessenger.cpp
 - Pool.cpp
 - PoolAlloc.cpp
 - Profiler.cpp
-- Song.cpp (X)
+- Song.cpp
 - SongInfoAudioType.cpp
-- SongInfoCopy.cpp (X)
+- SongInfoCopy.cpp
 - Spew.cpp
 - Str.cpp
 - StringTable.cpp
