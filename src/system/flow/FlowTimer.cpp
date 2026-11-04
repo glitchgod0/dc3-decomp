@@ -21,10 +21,12 @@ void EventTask::Poll(float f1) {
     if (!mOwner) {
         MILO_NOTIFY("EventTask::Poll NULL mOwner");
     } else {
-        for (; mItr != mCases->end()
-             && f1 >= static_cast<FlowValueCase *>((FlowNode *)*mItr)->GetValue();
-             ++mItr) {
-            mOwner->OnKeyframe(*mItr);
+        for (; mItr != mCases->end(); ++mItr) {
+            FlowValueCase *cur = static_cast<FlowValueCase *>(*mItr);
+            if (f1 < cur->GetValue()) {
+                break;
+            }
+            mOwner->OnKeyframe(cur);
         }
         if (f1 >= mTime) {
             mOwner->OnTimerEnd();
@@ -86,7 +88,7 @@ bool FlowTimer::Activate() {
     if (mTotalTime <= 0) {
         return false;
     } else {
-        TheFlowMgr->QueueCommand(this, kQueue);
+        TheFlowMgr->QueueCommand(this, kStarting);
         return true;
     }
 }
@@ -118,7 +120,7 @@ void FlowTimer::RequestStop() {
     FLOW_LOG("RequestStop\n");
     if (mStopMode == 0) {
         mRequestingStop = true;
-        TheFlowMgr->QueueCommand(this, kIgnore);
+        TheFlowMgr->QueueCommand(this, kRequestStop);
         FlowNode::RequestStop();
     }
 }
@@ -126,25 +128,25 @@ void FlowTimer::RequestStop() {
 void FlowTimer::RequestStopCancel() {
     FLOW_LOG("RequestStopC\n");
     mRequestingStop = false;
-    TheFlowMgr->QueueCommand(this, kQueue);
+    TheFlowMgr->QueueCommand(this, kStarting);
     FlowNode::RequestStopCancel();
 }
 
 void FlowTimer::Execute(FlowNode::QueueState state) {
     FLOW_LOG("Execute: state = %i\n", (int)state);
     if (IsRunning()) {
-        if (state == kIgnore) {
+        if (state == kRequestStop) {
             if (mTask) {
                 delete mTask;
             }
             FLOW_TIMED_RELEASE_FROM_PARENT;
         }
     } else {
-        if (state == kQueue) {
+        if (state == kStarting) {
             mTask = new EventTask(
                 this, &mChildNodes, RndAnimatable::RateToTaskUnits(mRate), mTotalTime
             );
-        } else if (state == kIgnore) {
+        } else if (state == kRequestStop) {
             mFlowParent->ChildFinished(this);
         }
     }

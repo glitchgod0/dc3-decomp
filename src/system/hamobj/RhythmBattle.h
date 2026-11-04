@@ -37,8 +37,8 @@ public:
     void ResetCombo();
     void Begin();
     bool CanTrick(Symbol);
-    bool InFullKTB() const { return mFullOnKtB; }
-    bool IsPaused() const { return mPaused; }
+    bool FullonKtB() const { return mFullOnKtB; }
+    bool Paused() const { return mPaused; }
 
 protected:
     RhythmBattle();
@@ -56,6 +56,8 @@ private:
     void QueueFinaleVO(Symbol);
     void OnReset();
     void OnBeat();
+
+    // bool FinaleDanceTime(int);
 
     /** "instruction display" */
     ObjPtr<HamLabel> mCommandLabel; // 0x8
@@ -86,18 +88,18 @@ private:
     bool mPaused; // 0x102
     float mStartBeat; // 0x104
     float mEndBeat; // 0x108
-    /** Mind control mini-game after Tan's army storm and hijach DCI HQ. */
+    /** Mind control mini-game after Tan's army storm and hijack DCI HQ. */
     float mMindControlProgress; // 0x10c
     float mLastMindControlVOTime; // 0x110
     float mMidwayBeat;
     float mAlmostOverBeat;
     int mBeatCount; // 0x11c
     float mSynchronizedRating; // 0x120
-    RhythmBattleJackState mJackState; // 0x124 - RhythmBattleJackState
+    RhythmBattleJackState mJackState; // 0x124
     int mWarnJackCounter; // 0x128
     Symbol mLastLeader; // 0x12c
-    FreestyleMoveRecorder *mRecorder;
-    std::vector<ArchiveSkeleton> mRecorderPair;
+    FreestyleMoveRecorder *mRecorder; // 0x130
+    std::vector<ArchiveSkeleton> mRecorderPair; // 0x134
     int mStealCooldown; // 0x140
     int mLastBeat; // 0x144
     int mBeatsToNextScriptedStage; // 0x148

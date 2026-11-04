@@ -3,6 +3,7 @@
 #include "obj/Msg.h"
 #include "obj/Object.h"
 #include "os/Debug.h"
+#include "utl/Std.h"
 #include <list>
 
 FlowQueueable::FlowQueueable() : mInterruptMode(kImmediate) {}
@@ -71,15 +72,16 @@ void FlowQueueable::ChildFinished(FlowNode *n) {
                 }
             } else if (mListeners.size() > 1) {
                 Hmx::Object *obj = mListeners.front();
+                auto first = mListeners.begin();
                 bool found = false;
-                for (auto it = ++mListeners.begin(); it != mListeners.end(); ++it) {
+                for (auto it = NextItr(first, 1); it != mListeners.end(); ++it) {
                     if (*it == obj) {
                         found = true;
                         break;
                     }
                 }
                 if (!found) {
-                    ReleaseListener(mListeners.front());
+                    ReleaseListener(*first);
                 }
                 mListeners.pop_front();
                 ActivateTrigger();

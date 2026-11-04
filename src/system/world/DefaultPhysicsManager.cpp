@@ -1,6 +1,7 @@
 #include "world/DefaultPhysicsManager.h"
 #include "math/Geo.h"
 #include "math/Mtx.h"
+#include "obj/Dir.h"
 #include "obj/Object.h"
 #include "os/Debug.h"
 #include "rndobj/Draw.h"
@@ -71,9 +72,12 @@ DefaultPhysicsManager::DefaultPhysicsManager(RndDir *d)
     : PhysicsManager(d), mCollidableRefs(this, kObjListOwnerControl) {}
 
 bool DefaultPhysicsManager::Replace(ObjRef *from, Hmx::Object *to) {
-    if (from->Parent() != &mCollidableRefs) {
+    ObjRef *ref = from->Parent() == &mCollidableRefs ? from : nullptr;
+    if (ref) {
         Hmx::Object *obj = from->GetObj();
-        mCollidableRefs.remove(obj);
+        mCollidableRefs.erase(
+            *reinterpret_cast<ObjPtrList<Hmx::Object>::iterator *>(&ref)
+        );
         RemoveCollidable(obj);
         return true;
     } else {
@@ -123,13 +127,20 @@ void DefaultPhysicsManager::CastRays(RayCast *, int) { MILO_FAIL("not implemente
 void DefaultPhysicsManager::CastRays(
     const Segment *s, RayCastListener *rcl, int i3, unsigned int ui4
 ) {
-    float collideFloat = 1;
     for (int i = 0; i < i3; i++) {
         Segment localSegment = s[i];
+        float collideFloat = 1;
         FOREACH (it, mActiveCollidables) {
             Plane curPlane;
             RndDrawable *d = (*it)->Collide(localSegment, collideFloat, curPlane);
             if (d) {
+                float r = (*rcl)(
+                    d,
+                    mCollidableToDirTbl[d],
+                    curPlane.AsVector4().AsVector3(),
+                    collideFloat
+                );
+                Interp(localSegment.start, localSegment.end, r, localSegment.end);
             }
         }
     }
@@ -170,7 +181,7 @@ void DefaultPhysicsManager::AddCollidable(Hmx::Object *o, ObjectDir *dir, bool i
             } else {
                 mInactiveCollidables.push_front(mesh);
             }
-            mCollidableRefs.insert(mCollidableRefs.begin(), o);
+            mCollidableRefs.push_front(o);
         }
     }
 }

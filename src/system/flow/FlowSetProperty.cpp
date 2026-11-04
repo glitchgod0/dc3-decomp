@@ -73,7 +73,7 @@ PropertyTask::~PropertyTask() {}
 
 bool PropertyTask::Replace(ObjRef *from, Hmx::Object *to) {
     auto &ref = mTarget;
-    if (from == static_cast<ObjRef *>(&ref)) {
+    if (from == &ref) {
         ref = to;
         if (!ref) {
             delete this;
@@ -89,15 +89,16 @@ void PropertyTask::Poll(float f1) {
         ObjPtr<PropertyTask> task(this);
         task = this;
         SetProperty(mTargetValue);
-        if (task) {
-            if (mEventReciever) {
-                static Message msg("on_anim_event", Symbol("ended"));
-                Hmx::Object *obj = mEventReciever;
-                mEventReciever = nullptr;
-                obj->Handle(msg, false);
-            }
-            delete this;
+        if (!task) {
+            return;
         }
+        if (mEventReciever) {
+            static Message msg("on_anim_event", Symbol("ended"));
+            Hmx::Object *obj = mEventReciever;
+            mEventReciever = nullptr;
+            obj->Handle(msg, false);
+        }
+        delete this;
     } else {
         float res = pt2EaseFuncion(f1 / mTime, mEasePower, 1);
         if (mUseColorInterp) {
@@ -105,7 +106,7 @@ void PropertyTask::Poll(float f1) {
             c.UnpackRgb(mStartValue.Int());
             Hmx::Color c2;
             c2.UnpackRgb(mTargetValue.Int());
-            Add(c, c2, c);
+            Interp(c, c2, res, c);
             int packed = c.PackRgb();
             mTarget->SetProperty(mProp.Array(), packed);
         } else {
@@ -292,7 +293,7 @@ bool FlowSetProperty::Activate() {
             if (mTargetObject->Property(mProperty.Array(), true)->Evaluate()
                 != mValue.Node().Evaluate()) {
                 FLOW_LOG("Queueing\n")
-                TheFlowMgr->QueueCommand(this, kQueue);
+                TheFlowMgr->QueueCommand(this, kStarting);
                 return 1;
             }
         }
@@ -326,7 +327,7 @@ void FlowSetProperty::RequestStop() {
     FLOW_LOG("RequestStop\n");
     mRequestingStop = true;
     if (mStopMode == 0 || mSpawnedTask == nullptr) {
-        TheFlowMgr->QueueCommand(this, kIgnore);
+        TheFlowMgr->QueueCommand(this, kRequestStop);
     }
     FlowNode::RequestStop();
 }
@@ -335,7 +336,7 @@ void FlowSetProperty::RequestStopCancel() {
     FLOW_LOG("RequestStopCancel\n");
     mRequestingStop = false;
     if (mStopMode != 0) {
-        TheFlowMgr->QueueCommand(this, kQueue);
+        TheFlowMgr->QueueCommand(this, kStarting);
     }
     FlowNode::RequestStopCancel();
 }
@@ -343,7 +344,7 @@ void FlowSetProperty::RequestStopCancel() {
 void FlowSetProperty::Execute(QueueState qs) {
     FLOW_LOG("Execute: state = %i\n", (int)qs);
     if (IsRunning()) {
-        if (qs == kIgnore) {
+        if (qs == kRequestStop) {
             FLOW_LOG("RequestStop: Stopping\n");
             if (mRegistered) {
                 UnregisterEvents(this);
@@ -355,7 +356,7 @@ void FlowSetProperty::Execute(QueueState qs) {
             }
             mFlowParent->ChildFinished(this);
         }
-    } else if (qs == kQueue) {
+    } else if (qs == kStarting) {
         float time = mBlendTime;
         if (mChangePerUnit && !mUseColorInterp) {
             const DataNode *prop = mTargetObject->Property(mProperty.Array());
@@ -402,7 +403,7 @@ void FlowSetProperty::Execute(QueueState qs) {
                 mFlowParent->ChildFinished(this);
             }
         }
-    } else if (qs == kIgnore) {
+    } else if (qs == kRequestStop) {
         mFlowParent->ChildFinished(this);
     }
 }
@@ -481,10 +482,12 @@ void FlowSetProperty::ReActivate() {
     if (mBlendTime == 0.0f && mChangePerUnit == 0.0f) {
         FLOW_LOG("Setting Value on %s\n", mTargetObject->Name())
         mTargetObject->SetProperty(mProperty.Array(), mValue.Node());
-    } else if (mTargetObject->Property(mProperty.Array(), true)->Evaluate()
-               != mValue.Node().Evaluate()) {
+    } else if (
+        mTargetObject->Property(mProperty.Array(), true)->Evaluate()
+        != mValue.Node().Evaluate()
+    ) {
         FLOW_LOG("Queueing\n")
-        TheFlowMgr->QueueCommand(this, kQueue);
+        TheFlowMgr->QueueCommand(this, kStarting);
     }
     t.Stop();
 

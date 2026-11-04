@@ -11,30 +11,30 @@ bool WinSockSocket::sInit = false;
 WinSockSocket::WinSockSocket(bool streaming) : mStreaming(streaming), mFail(false) {
     Init();
     if (!mStreaming) {
-        mSocket = socket(AF_INET, 2, 0x11);
+        mSocket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
     } else {
-        mSocket = socket(AF_INET, 1, 6);
+        mSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     }
     MILO_ASSERT(mSocket != INVALID_SOCKET, 0xA8);
-    unsigned long ul = 1;
-    ioctlsocket(mSocket, 0x8004667E, &ul);
+    unsigned long mode = 1; // when in FIONBIO mode, 1 == non-blocking, 0 == blocking
+    ioctlsocket(mSocket, FIONBIO, &mode);
 }
 
-WinSockSocket::WinSockSocket(unsigned int s, bool streaming)
-    : mSocket((SOCKET)s), mStreaming(streaming), mFail(false) {
-    unsigned long ul = 1;
-    ioctlsocket(mSocket, 0x8004667E, &ul);
+WinSockSocket::WinSockSocket(SOCKET s, bool streaming)
+    : mSocket(s), mStreaming(streaming), mFail(false) {
+    unsigned long mode = 1; // when in FIONBIO mode, 1 == non-blocking, 0 == blocking
+    ioctlsocket(mSocket, FIONBIO, &mode);
 }
 
 WinSockSocket::~WinSockSocket() { Disconnect(); }
 
 bool WinSockSocket::Connect(unsigned int ip, unsigned short port) {
     sockaddr_in addr;
-    addr.sin_family = 2;
+    addr.sin_family = AF_INET;
     addr.sin_port = port;
     addr.sin_addr.s_un.s_addr = ip;
     int res = connect(mSocket, (const sockaddr *)&addr, 0x10);
-    if (res == -1 && WSAGetLastError() != 0x2733) {
+    if (res == -1 && WSAGetLastError() != WSAEWOULDBLOCK) {
         mFail = true;
     }
     return res == 0;
@@ -50,6 +50,7 @@ bool WinSockSocket::Fail() const {
     switch (select(0, nullptr, nullptr, &set, &val)) {
     case -1:
         MILO_LOG("select returned SOCKET_ERROR %d\n", WSAGetLastError());
+        const_cast<WinSockSocket *>(this)->mFail = true;
         break;
     case 1:
         const_cast<WinSockSocket *>(this)->mFail = true;
@@ -62,7 +63,7 @@ bool WinSockSocket::Fail() const {
 
 void WinSockSocket::Disconnect() {
     if (mSocket != INVALID_SOCKET) {
-        shutdown(mSocket, 2);
+        shutdown(mSocket, SD_BOTH);
         closesocket(mSocket);
         mSocket = INVALID_SOCKET;
     }
@@ -70,9 +71,9 @@ void WinSockSocket::Disconnect() {
 
 void WinSockSocket::Bind(unsigned short port) {
     int val = 1;
-    setsockopt(mSocket, 0xFFFF, 4, (char *)&val, 4);
+    setsockopt(mSocket, SOL_SOCKET, 4, (char *)&val, 4);
     sockaddr_in addr;
-    addr.sin_family = 2;
+    addr.sin_family = AF_INET;
     addr.sin_port = port;
     addr.sin_addr.s_un.s_addr = 0;
     int ret = bind(mSocket, (sockaddr *)&addr, 0x10);
@@ -138,26 +139,22 @@ bool WinSockSocket::CanRead() const {
 }
 
 int WinSockSocket::Send(const void *data, unsigned int len) {
-    if (!mFail) {
-        int ret = send(mSocket, (const char *)data, len, 0);
-        if (ret != -1) {
-            return ret;
-        }
+    if (mFail) {
+        return 0;
+    }
+    int ret = send(mSocket, (const char *)data, len, 0);
+    if (ret == -1) {
         int err = WSAGetLastError();
-        switch (err) {
-        case 0x2733:
-            break;
-        case 0x2746:
-        case 0x2749:
+        if (err == WSAEWOULDBLOCK) {
+            return 0;
+        } else if (err == WSAECONNRESET || err == WSAENOTCONN) {
             mFail = true;
-            break;
-        default:
+            return 0;
+        } else {
             MILO_FAIL("error in Send: %i", err);
-            return -1;
-            break;
         }
     }
-    return 0;
+    return ret;
 }
 
 int WinSockSocket::Recv(void *data, unsigned int len) {
@@ -175,30 +172,29 @@ int WinSockSocket::SendTo(
     const void *data, unsigned int len, unsigned int ip, unsigned short port
 ) {
     sockaddr_in addr;
-    addr.sin_family = 2;
+    addr.sin_family = AF_INET;
     addr.sin_port = port;
     addr.sin_addr.s_un.s_addr = ip;
     int res = sendto(mSocket, (const char *)data, len, 0, (sockaddr *)&addr, 16);
     if (res == -1) {
         int err = WSAGetLastError();
-        if (err != 0x2733) {
-            if (err != 0x2751) {
-                MILO_FAIL("error in Send: %i", err);
-                return -1;
-            }
+        if (err == WSAEWOULDBLOCK) {
+            return 0;
+        } else if (err == WSAEHOSTUNREACH) {
             if (mStreaming) {
                 mFail = true;
             }
+            return 0;
+        } else {
+            MILO_FAIL("error in Send: %i", err);
         }
-        return 0;
-    } else {
-        return res;
     }
+    return res;
 }
 
 int WinSockSocket::BroadcastTo(const void *data, unsigned int len, unsigned short port) {
     int val = 1;
-    setsockopt(mSocket, 0xFFFF, 32, (const char *)&val, 4);
+    setsockopt(mSocket, SOL_SOCKET, 32, (const char *)&val, 4);
     return SendTo(data, len, -1, port);
 }
 
@@ -227,7 +223,7 @@ int WinSockSocket::RecvFrom(
 
 bool WinSockSocket::SetNoDelay(bool enabled) {
     int val = enabled ? 1 : 0;
-    return setsockopt(mSocket, 6, 1, (const char *)&val, 4) == 0;
+    return setsockopt(mSocket, IPPROTO_TCP, 1, (const char *)&val, 4) == 0;
 }
 
 void WinSockSocket::Init() {
@@ -276,25 +272,24 @@ String NetworkSocket::GetHostName() {
 unsigned int NetworkSocket::ResolveHostName(String name) {
     WinSockSocket::Init();
     WSAEVENT event = WSACreateEvent();
-    unsigned int ret = 0;
     XNDNS *dns = nullptr;
     int dnsRet = XNetDnsLookup(name.c_str(), event, &dns);
-    if (dnsRet == 0 && dns) {
-        WaitForSingleObject(event, 10000);
-        if (dns->iStatus == 0x2AF9) {
-            MILO_LOG("Host %s not found.", name.c_str());
-        } else if (dns->iStatus == 0x274C) {
-            MILO_LOG("Host %s lookup timed out.", name.c_str());
-        } else if (dns->iStatus == 0) {
-            ret = dns->aina[0].s_un.s_addr;
-        }
-        if (XNetDnsRelease(dns) != 0) {
-            MILO_LOG("could not release XNDNS");
-        }
-        CloseHandle(event);
-        return ret;
-    } else {
+    if (dnsRet != 0 || !dns) {
         MILO_LOG("XNetDnsLookup returned %d %x for %s\n", dnsRet, dns, name.c_str());
         return 0;
     }
+    unsigned int ret = 0;
+    WaitForSingleObject(event, 10000);
+    if (dns->iStatus == WSAHOST_NOT_FOUND) {
+        MILO_LOG("Host %s not found.", name.c_str());
+    } else if (dns->iStatus == WSAETIMEDOUT) {
+        MILO_LOG("Host %s lookup timed out.", name.c_str());
+    } else if (dns->iStatus == 0) {
+        ret = dns->aina[0].s_un.s_addr;
+    }
+    if (XNetDnsRelease(dns) != 0) {
+        MILO_LOG("could not release XNDNS");
+    }
+    CloseHandle(event);
+    return ret;
 }

@@ -12,6 +12,7 @@
 #include "utl/UTF8.h"
 #include "xdk/XAPILIB.h"
 #include "xdk/win_types.h"
+#include "xdk/xapilibi/winerror.h"
 #include "xdk/xapilibi/xbase.h"
 #include "xdk/xapilibi/xbox.h"
 
@@ -20,7 +21,8 @@ bool IsDeviceConnected(DWORD deviceID) {
 }
 
 CacheMgrXbox::CacheMgrXbox()
-    : mFile(INVALID_HANDLE_VALUE), mppCacheID(nullptr), mppCache(0), mCallback(0) {
+    : mEnumHandle(INVALID_HANDLE_VALUE), mppCacheID(nullptr), mppCache(0),
+      mCallbackObj(0) {
     memset(&mContentData, 0, sizeof(XCONTENT_DATA));
     mContentData.DeviceID = 0;
 }
@@ -64,19 +66,21 @@ bool CacheMgrXbox::SearchAsync(const char *cc, CacheID **ppCacheID) {
             return false;
         } else {
             DWORD bufferSize = 0;
-            DWORD res = XContentCreateEnumerator(0xFE, 0, 1, 0, 1, &bufferSize, &mFile);
+            DWORD res =
+                XContentCreateEnumerator(0xFE, 0, 1, 0, 1, &bufferSize, &mEnumHandle);
             if (res == 0x12) {
-                mFile = INVALID_HANDLE_VALUE;
+                mEnumHandle = INVALID_HANDLE_VALUE;
                 SetLastResult(kCache_ErrorNoStorageDevice);
                 return false;
             } else {
-                if (res == 0 && mFile != INVALID_HANDLE_VALUE) {
+                if (res == 0 && mEnumHandle != INVALID_HANDLE_VALUE) {
                     MILO_ASSERT(bufferSize == sizeof(XCONTENT_DATA), 0x88);
                     memset(&mContentData, 0, sizeof(XCONTENT_DATA));
                     mContentData.DeviceID = 0;
                     memset(&mOverlapped, 0, sizeof(XOVERLAPPED));
-                    DWORD enumRes =
-                        XEnumerate(mFile, &mContentData, 0x134, nullptr, &mOverlapped);
+                    DWORD enumRes = XEnumerate(
+                        mEnumHandle, &mContentData, 0x134, nullptr, &mOverlapped
+                    );
                     if (enumRes != ERROR_IO_PENDING) {
                         MILO_NOTIFY(
                             "CacheMgrXbox::SearchAsync(): Unhandled error %u returned from XEnumerate().\n",
@@ -95,7 +99,7 @@ bool CacheMgrXbox::SearchAsync(const char *cc, CacheID **ppCacheID) {
                         "CacheMgrXbox::SearchAsync(): Unhandled error %u returned from XContentCreateEnumerator().\n",
                         res
                     );
-                    mFile = INVALID_HANDLE_VALUE;
+                    mEnumHandle = INVALID_HANDLE_VALUE;
                     SetLastResult(kCache_ErrorUnknown);
                     return false;
                 }
@@ -122,7 +126,7 @@ bool CacheMgrXbox::ShowUserSelectUIAsync(
         mStrCacheName = cc1;
         mUTF8CacheDescription = cc2;
         if (!mStrCacheName.empty() && !mUTF8CacheDescription.empty()) {
-            DWORD padnum = !user ? 0xFF : user->GetPadNum();
+            DWORD padnum = !user ? XUSER_INDEX_ANY : user->GetPadNum();
             memset(&mContentData, 0, sizeof(XCONTENT_DATA));
             mContentData.DeviceID = 0;
             memset(&mOverlapped, 0, sizeof(XOVERLAPPED));
@@ -205,8 +209,8 @@ bool CacheMgrXbox::MountAsync(CacheID *pCacheIDXbox, Cache **ppCache, Hmx::Objec
             memset(&mOverlapped, 0, sizeof(XOVERLAPPED));
             DWORD res = XContentCreateEx(
                 0xFF,
-                myCacheXbox->Name(),
-                myCacheXbox->ContentData(),
+                myCacheXbox->mStrCacheName.c_str(),
+                &myCacheXbox->mContentData,
                 4,
                 nullptr,
                 nullptr,
@@ -215,7 +219,7 @@ bool CacheMgrXbox::MountAsync(CacheID *pCacheIDXbox, Cache **ppCache, Hmx::Objec
                 &mOverlapped
             );
             if (res != ERROR_IO_PENDING) {
-                if (XContentGetDeviceState(myCacheXbox->ContentData()->DeviceID, nullptr)
+                if (XContentGetDeviceState(myCacheXbox->mContentData.DeviceID, nullptr)
                     != ERROR_SUCCESS) {
                     SetLastResult(kCache_ErrorStorageDeviceMissing);
                     return false;
@@ -230,7 +234,7 @@ bool CacheMgrXbox::MountAsync(CacheID *pCacheIDXbox, Cache **ppCache, Hmx::Objec
             } else {
                 mCacheIDXbox = myCacheXbox;
                 mppCache = ppCache;
-                mCallback = o;
+                mCallbackObj = o;
                 SetLastResult(kCache_NoError);
                 SetOp(kOpMount);
                 return true;
@@ -257,7 +261,7 @@ bool CacheMgrXbox::UnmountAsync(Cache **ppCache, Hmx::Object *o) {
         const char *name = (*ppCache)->GetCacheName();
         DWORD res = XContentClose(name, &mOverlapped);
         if (res != ERROR_IO_PENDING) {
-            if (XContentGetDeviceState(mCacheIDXbox->ContentData()->DeviceID, nullptr)
+            if (XContentGetDeviceState(mCacheIDXbox->mContentData.DeviceID, nullptr)
                 != 0) {
                 MILO_NOTIFY("UnmountAsync: device is not connected");
                 SetLastResult(kCache_ErrorStorageDeviceMissing);
@@ -272,7 +276,7 @@ bool CacheMgrXbox::UnmountAsync(Cache **ppCache, Hmx::Object *o) {
             }
         } else {
             mppCache = ppCache;
-            mCallback = o;
+            mCallbackObj = o;
             SetLastResult(kCache_NoError);
             SetOp(kOpUnmount);
             return true;
@@ -295,9 +299,9 @@ bool CacheMgrXbox::DeleteAsync(CacheID *id) {
             return false;
         } else {
             memset(&mOverlapped, 0, sizeof(XOVERLAPPED));
-            DWORD res = XContentDelete(0xFF, cacheXbox->ContentData(), &mOverlapped);
+            DWORD res = XContentDelete(0xFF, &cacheXbox->mContentData, &mOverlapped);
             if (res != ERROR_IO_PENDING) {
-                if (XContentGetDeviceState(mCacheIDXbox->ContentData()->DeviceID, nullptr)
+                if (XContentGetDeviceState(mCacheIDXbox->mContentData.DeviceID, nullptr)
                     != ERROR_SUCCESS) {
                     SetLastResult(kCache_ErrorStorageDeviceMissing);
                     return false;
@@ -320,8 +324,8 @@ bool CacheMgrXbox::DeleteAsync(CacheID *id) {
 }
 
 void CacheMgrXbox::EndSearch(CacheResult res) {
-    CloseHandle(mFile);
-    mFile = INVALID_HANDLE_VALUE;
+    CloseHandle(mEnumHandle);
+    mEnumHandle = INVALID_HANDLE_VALUE;
     mppCacheID = nullptr;
     mStrCacheName = gNullStr;
     SetLastResult(res);
@@ -337,8 +341,8 @@ void CacheMgrXbox::CreateCacheIDForChosenDevice() {
     MILO_ASSERT(*mppCacheID == NULL, 0x262);
     CacheIDXbox *cacheXbox = new CacheIDXbox();
     *mppCacheID = cacheXbox;
-    memcpy(cacheXbox->ContentData(), &mContentData, sizeof(XCONTENT_DATA));
-    cacheXbox->SetName(mStrCacheName);
+    memcpy(&cacheXbox->mContentData, &mContentData, sizeof(XCONTENT_DATA));
+    cacheXbox->mStrCacheName = mStrCacheName;
 }
 
 void CacheMgrXbox::PollChoose() {
@@ -363,10 +367,10 @@ void CacheMgrXbox::PollDelete() {
             if (res == ERROR_NOT_READY || res == ERROR_MEDIA_CHANGED
                 || res == ERROR_DEVICE_NOT_CONNECTED || res == ERROR_DEVICE_REMOVED) {
                 SetLastResult(kCache_ErrorStorageDeviceMissing);
-            } else if (XContentGetDeviceState(
-                           mCacheIDXbox->ContentData()->DeviceID, nullptr
-                       )
-                       != ERROR_SUCCESS) {
+            } else if (
+                XContentGetDeviceState(mCacheIDXbox->mContentData.DeviceID, nullptr)
+                != ERROR_SUCCESS
+            ) {
                 SetLastResult(kCache_ErrorStorageDeviceMissing);
             } else {
                 MILO_NOTIFY(
@@ -385,10 +389,15 @@ void CacheMgrXbox::PollDelete() {
 
 void CacheMgrXbox::PollSearch() {
     if (mOverlapped.InternalLow != ERROR_IO_PENDING) {
+        CacheIDXbox *cacheXbox;
         DWORD numFound = 0;
         DWORD res = XGetOverlappedResult(&mOverlapped, &numFound, false);
-        if (res != 0 && res != 0x65B) {
-            MILO_FAIL("CacheMgrXbox::PollSearch() encountered unknown error %u.\n", res);
+        if (res != ERROR_SUCCESS) {
+            if (res != ERROR_FUNCTION_FAILED) {
+                MILO_FAIL(
+                    "CacheMgrXbox::PollSearch() encountered unknown error %u.\n", res
+                );
+            }
             EndSearch(kCache_ErrorCacheNotFound);
         } else if (numFound != 0) {
             MILO_ASSERT(numFound == 1, 0x1FB);
@@ -399,25 +408,27 @@ void CacheMgrXbox::PollSearch() {
             if (cmp == 0) {
                 MILO_ASSERT(mppCacheID != NULL, 0x20C);
                 MILO_ASSERT(*mppCacheID == NULL, 0x20D);
-                CacheIDXbox *cacheXbox = new CacheIDXbox();
+                cacheXbox = new CacheIDXbox();
                 *mppCacheID = cacheXbox;
-                memcpy(cacheXbox->ContentData(), &mContentData, sizeof(XCONTENT_DATA));
-                cacheXbox->SetName(mStrCacheName);
+                memcpy(&cacheXbox->mContentData, &mContentData, sizeof(XCONTENT_DATA));
+                cacheXbox->mStrCacheName = mStrCacheName;
                 EndSearch(kCache_NoError);
             } else {
                 memset(&mContentData, 0, sizeof(XCONTENT_DATA));
                 mContentData.DeviceID = 0;
                 memset(&mOverlapped, 0, sizeof(XOVERLAPPED));
-                DWORD enumRes =
-                    XEnumerate(mFile, &mContentData, 0x134, nullptr, &mOverlapped);
-                if (enumRes != ERROR_IO_PENDING) {
+                res =
+                    XEnumerate(mEnumHandle, &mContentData, 0x134, nullptr, &mOverlapped);
+                if (res != ERROR_IO_PENDING) {
                     MILO_NOTIFY(
                         "CacheMgrXbox::PollSearch(): Unhandled error %u returned from XEnumerate().\n",
-                        enumRes
+                        res
                     );
                     EndSearch(kCache_ErrorUnknown);
                 }
             }
+        } else {
+            EndSearch(kCache_ErrorCacheNotFound);
         }
     }
 }
@@ -426,40 +437,45 @@ void CacheMgrXbox::PollMount() {
     if (mOverlapped.InternalLow != ERROR_IO_PENDING) {
         DWORD err;
         DWORD res = XGetOverlappedResult(&mOverlapped, &err, false);
-        if (res == 0) {
+        if (res == ERROR_SUCCESS) {
             MILO_ASSERT(mppCache != NULL, 0x293);
             MILO_ASSERT(*mppCache == NULL, 0x294);
             MILO_ASSERT(mCacheIDXbox, 0x295);
             CacheXbox *cacheXbox = new CacheXbox(*mCacheIDXbox);
             *mppCache = cacheXbox;
             SetLastResult(kCache_NoError);
-        } else if (res == 0x65B) {
+        } else if (res == ERROR_FUNCTION_FAILED) {
             DWORD extErr = XGetOverlappedExtendedError(&mOverlapped);
-            if (XContentGetDeviceState(mContentData.DeviceID, nullptr)) {
+            DWORD extErrShort = extErr & 0xFFFF;
+            if (XContentGetDeviceState(mCacheIDXbox->mContentData.DeviceID, nullptr)) {
                 MILO_NOTIFY(
                     "CacheMgrXbox::PollMount(): error %u (0x%08X) occurred, but the device is no longer connected, so changing to %u.\n",
+                    extErrShort,
                     extErr,
-                    extErr,
-                    0x48F
+                    ERROR_DEVICE_NOT_CONNECTED
                 );
-                extErr = 0x48F;
+                extErrShort = ERROR_DEVICE_NOT_CONNECTED;
             }
-            if (extErr != 0x15) {
-                if (extErr == 0xB7) {
-                    SetLastResult(kCache_ErrorCorrupt);
-                } else {
-                    if (extErr != 0x456) {
-                        MILO_NOTIFY(
-                            "CacheMgrXbox::PollMount(): Unhandled error %u %u %u returned from XContentCreateEx().\n",
-                            res,
-                            err,
-                            extErr
-                        );
-                        SetLastResult(kCache_ErrorUnknown);
-                    }
-                }
-            } else {
+            switch (extErrShort) {
+            case ERROR_NOT_READY:
+            case ERROR_MEDIA_CHANGED:
+            case ERROR_DEVICE_NOT_CONNECTED:
+            case ERROR_DEVICE_REMOVED:
                 SetLastResult(kCache_ErrorStorageDeviceMissing);
+                break;
+            case ERROR_ALREADY_EXISTS:
+            case ERROR_FILE_CORRUPT:
+                SetLastResult(kCache_ErrorCorrupt);
+                break;
+            default:
+                MILO_NOTIFY(
+                    "CacheMgrXbox::PollMount(): Unhandled error %u %u %u returned from XContentCreateEx().\n",
+                    res,
+                    err,
+                    extErrShort
+                );
+                SetLastResult(kCache_ErrorUnknown);
+                break;
             }
         } else {
             MILO_NOTIFY(
@@ -469,15 +485,15 @@ void CacheMgrXbox::PollMount() {
             );
             SetLastResult(kCache_ErrorUnknown);
         }
-    }
-    mCacheIDXbox = nullptr;
-    mppCache = nullptr;
-    SetOp(kOpNone);
-    if (mCallback) {
-        static Message msg("cache_mgr_mount_result", GetLastResult());
-        msg[0] = GetLastResult();
-        mCallback->Handle(msg, true);
-        mCallback = nullptr;
+        mCacheIDXbox = nullptr;
+        mppCache = nullptr;
+        SetOp(kOpNone);
+        if (mCallbackObj) {
+            static Message msg("cache_mgr_mount_result", GetLastResult());
+            msg[0] = GetLastResult();
+            mCallbackObj->Handle(msg, true);
+            mCallbackObj = nullptr;
+        }
     }
 }
 
@@ -489,10 +505,10 @@ void CacheMgrXbox::PollUnmount() {
             if (res == ERROR_NOT_READY || res == ERROR_MEDIA_CHANGED
                 || res == ERROR_DEVICE_NOT_CONNECTED || res == ERROR_DEVICE_REMOVED) {
                 SetLastResult(kCache_ErrorStorageDeviceMissing);
-            } else if (XContentGetDeviceState(
-                           mCacheIDXbox->ContentData()->DeviceID, nullptr
-                       )
-                       != ERROR_SUCCESS) {
+            } else if (
+                XContentGetDeviceState(mCacheIDXbox->mContentData.DeviceID, nullptr)
+                != ERROR_SUCCESS
+            ) {
                 SetLastResult(kCache_ErrorStorageDeviceMissing);
             } else {
                 MILO_NOTIFY(
@@ -506,11 +522,11 @@ void CacheMgrXbox::PollUnmount() {
         RELEASE(*mppCache);
         mppCache = nullptr;
         SetOp(kOpNone);
-        if (mCallback) {
+        if (mCallbackObj) {
             static Message msg("cache_mgr_unmount_result", GetLastResult());
             msg[0] = GetLastResult();
-            mCallback->Handle(msg, true);
-            mCallback = nullptr;
+            mCallbackObj->Handle(msg, true);
+            mCallbackObj = nullptr;
         }
     }
 }

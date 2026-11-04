@@ -121,7 +121,7 @@ bool FlowSwitchCase::Activate() {
         mIsRunning = true;
         FlowNode::Activate();
         if (mUnregisterParent) {
-            TheFlowMgr->QueueCommand(this, kQueue);
+            TheFlowMgr->QueueCommand(this, kStarting);
         }
         return true;
     } else {
@@ -148,7 +148,7 @@ void FlowSwitchCase::RequestStop() {
     FLOW_LOG("RequestStop\n");
     FlowNode::RequestStop();
     if (mIsRunning) {
-        TheFlowMgr->QueueCommand(this, kIgnore);
+        TheFlowMgr->QueueCommand(this, kRequestStop);
     }
 }
 
@@ -160,12 +160,12 @@ void FlowSwitchCase::RequestStopCancel() {
 
 void FlowSwitchCase::Execute(QueueState qs) {
     FLOW_LOG("Execute: state = %i\n", (int)qs);
-    if (qs == kQueue) {
+    if (qs == kStarting) {
         FlowWhile *propEventListener = static_cast<FlowWhile *>(mFlowParent);
         propEventListener->UnregisterSelf();
         if (!mIsRunning)
             return;
-    } else if (qs != kIgnore) {
+    } else if (qs != kRequestStop) {
         return;
     }
     mIsRunning = false;
@@ -185,82 +185,72 @@ void FlowSwitchCase::UseLastValueChanged() {
     if (mUseLastValue) {
         DrivenPropertyEntry *entry = GetDrivenEntry("to_value");
         if (entry) {
-            auto it = mDrivenPropEntries.begin();
-            for (; it != mDrivenPropEntries.end() && entry != it; ++it)
+            auto it = mDrivenProperties.begin();
+            for (; it != mDrivenProperties.end() && entry != it; ++it)
                 ;
-            if (it != mDrivenPropEntries.end()) {
-                mDrivenPropEntries.erase(it);
+            if (it != mDrivenProperties.end()) {
+                mDrivenProperties.erase(it);
             }
         }
     }
 }
 
+// should call the DataNode operator> overload, but it's used elsewhere
+FORCEINLINE bool GTHack(const DataNode &n1, const DataNode &n2) {
+    if ((n1.Type() == kDataInt || n1.Type() == kDataFloat)
+        && (n2.Type() == kDataInt || n2.Type() == kDataFloat)) {
+        return n1.LiteralFloat() > n2.LiteralFloat();
+    }
+    return false;
+}
+
 bool FlowSwitchCase::IsValidCase(
-    FlowNode *flownode, DataNode *n1, const DataNode *n2, bool b4
+    FlowNode *parent, DataNode *lhs, const DataNode *lastValue, bool trans
 ) {
+    bool ret;
     PushDrivenProperties();
     if (mOperator == kTransition) {
         if (mUseLastValue) {
-            mFromValue = *n2;
+            mFromValue = *lastValue;
         }
-        if (n1->Type() != mFromValue.Node().Type()
-            || n2->Type() != mToValue.Node().Type()) {
+        if (lhs->Type() != mToValue.Node().Type()
+            || lhs->Type() != mFromValue.Node().Type()) {
             return false;
-        } else if (n1->Equal(mFromValue.Node(), nullptr, true)
-                   && n2->Equal(mToValue.Node(), nullptr, true)) {
-            return true;
         } else {
-            return false;
+            ret = *lhs == mToValue.Node() && *lastValue == mFromValue.Node();
         }
     } else {
         if (mUseLastValue) {
-            mToValue = *n2;
+            mToValue = *lastValue;
         }
         switch (mOperator) {
-        case kEqual: {
-            return n1->Equal(mToValue.Node(), nullptr, true);
+        case kEquals: {
+            ret = *lhs == mToValue.Node();
+            break;
         }
-        case kNotEqual: {
-            return *n1 != mToValue.Node();
+        case kNotEquals: {
+            ret = *lhs != mToValue.Node();
+            break;
         }
         case kGreaterThan: {
-            DataNode to = mToValue.Node();
-            if ((n1->Type() == kDataInt || n1->Type() == kDataFloat)
-                && (to.Type() == kDataInt || to.Type() == kDataFloat)) {
-                return n1->LiteralFloat() > to.LiteralFloat();
-            } else {
-                return false;
-            }
+            ret = GTHack(*lhs, mToValue.Node());
+            break;
         }
-        case kGreaterThanOrEqual: {
-            DataNode to = mToValue.Node();
-            if ((n1->Type() == kDataInt || n1->Type() == kDataFloat)
-                && (to.Type() == kDataInt || to.Type() == kDataFloat)) {
-                return n1->LiteralFloat() >= to.LiteralFloat();
-            } else {
-                return false;
-            }
+        case kGreaterThanOrEquals: {
+            ret = *lhs >= mToValue.Node();
+            break;
         }
         case kLessThan: {
-            DataNode to = mToValue.Node();
-            if ((n1->Type() == kDataInt || n1->Type() == kDataFloat)
-                && (to.Type() == kDataInt || to.Type() == kDataFloat)) {
-                return n1->LiteralFloat() < to.LiteralFloat();
-            } else {
-                return false;
-            }
+            ret = *lhs < mToValue.Node();
+            break;
         }
-        case kLessThanOrEqual: {
-            DataNode to = mToValue.Node();
-            if ((n1->Type() == kDataInt || n1->Type() == kDataFloat)
-                && (to.Type() == kDataInt || to.Type() == kDataFloat)) {
-                return n1->LiteralFloat() <= to.LiteralFloat();
-            } else {
-                return false;
-            }
+        case kLessThanOrEquals: {
+            ret = *lhs <= mToValue.Node();
+            break;
         }
         default:
             return false;
         }
     }
+    return ret;
 }

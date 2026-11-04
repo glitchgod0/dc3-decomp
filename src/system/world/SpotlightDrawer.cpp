@@ -7,6 +7,7 @@
 #include "rndobj/BoxMap.h"
 #include "rndobj/Draw.h"
 #include "rndobj/Env.h"
+#include "rndobj/Mesh.h"
 #include "rndobj/MultiMesh.h"
 #include "rndobj/Rnd.h"
 #include "rndobj/Stats_NG.h"
@@ -202,7 +203,13 @@ void DrawAccessories(
     SpotlightDrawer::SpotlightEntry *const &spotEnd
 );
 
-class LensExtract {};
+class LensExtract {
+public:
+    static bool Has(SpotlightDrawer::SpotlightEntry *&);
+    static RndMesh *Mesh(SpotlightDrawer::SpotlightEntry *&);
+    static const Transform &Xfm(SpotlightDrawer::SpotlightEntry *&);
+    static RndMat *Mat(SpotlightDrawer::SpotlightEntry *&);
+};
 
 void SpotlightDrawer::DrawWorld() {
     TheNgStats->mSpotlights = Max<int>(sLights.size(), TheNgStats->mSpotlights);
@@ -221,7 +228,12 @@ void SpotlightDrawer::DrawWorld() {
             SpotlightEntry *spotIter = sLights.begin();
             SpotlightEntry *const spotEnd = sLights.end();
             while (spotIter != spotEnd) {
-                Hmx::Color envColor = spotIter->mLight->IntensifiedColor();
+                Spotlight *sl = spotIter->mLight;
+                const Hmx::Color &c = sl->GetColor();
+                float intensity = sl->GetIntensity();
+                Hmx::Color envColor(
+                    c.red * intensity, c.green * intensity, c.blue * intensity, 1
+                );
                 SpotlightEntry *const colorBegin = spotIter;
                 SpotlightEntry *colorEnd = spotIter + 1;
                 for (; colorEnd != spotEnd
@@ -273,7 +285,7 @@ void SpotlightDrawer::DrawMeshVec(std::vector<SpotMeshEntry> &entries) {
         RndEnviron *currEnv = meshIter->mEnv;
         currEnv->Select(nullptr);
         SpotMeshEntry *const meshEnd = entries.end();
-        for (; meshIter != meshEnd; ++meshIter) {
+        for (++meshIter; meshIter != meshEnd; ++meshIter) {
             bool changeEnv = meshIter->mEnv != currEnv;
             bool changeMesh = meshIter->mMesh != currMesh;
             if (changeEnv || changeMesh) {
@@ -316,13 +328,11 @@ void SpotlightDrawer::DrawLenses(
     MILO_ASSERT(spotIter != spotEnd, 0x2B1);
     for (; spotIter != spotEnd; ++spotIter) {
         Spotlight *sl = spotIter->mLight;
-        // idk something weird is happening here
-        //  if (!Spotlight::GetDiskMesh()) {
-        //  MILO_ASSERT(sl->LensMesh(), 0x2B9);
-        // }
-        MILO_ASSERT(sl->LensMesh(), 0x2B9);
-        Spotlight::GetDiskMesh()->SetMat(sl->LensMesh());
-        Spotlight::GetDiskMesh()->Draw();
+        if (sl->LensMat()) {
+            MILO_ASSERT(sl->LensMesh(), 0x2B9);
+            sl->LensMesh()->SetMat(sl->LensMat());
+            sl->LensMesh()->Draw();
+        }
     }
 }
 
@@ -362,10 +372,11 @@ void SpotlightDrawer::ClearPostDraw() {
 void SpotlightDrawer::Init() {
     sEnviron = Hmx::Object::New<RndEnviron>();
     sEnviron->SetUseApproxes(false);
-    REGISTER_OBJ_FACTORY(SpotlightDrawer)
-    sDefault = Hmx::Object::New<SpotlightDrawer>();
-    sDefault->mParams.mLightingInfluence = 0.0f;
-    sDefault->Select();
+    SpotlightDrawer::Register();
+    SpotlightDrawer *sd = Hmx::Object::New<SpotlightDrawer>();
+    sDefault = sd;
+    sd->mParams.mLightingInfluence = 0;
+    sd->Select();
 }
 
 void SpotlightDrawer::Select() {

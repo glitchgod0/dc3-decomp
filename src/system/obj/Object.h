@@ -242,7 +242,12 @@ public:
 
         T1 *operator*() { return mNode->Ptr(); }
 
-        iterator operator++(int);
+        iterator operator++(int) {
+            iterator tmp = *this;
+            ++*this;
+            return tmp;
+        }
+
         iterator operator++() {
             mNode++;
             return *this;
@@ -329,7 +334,7 @@ public:
     bool empty() const { return mVec.empty(); }
     int size() const { return mVec.size(); }
     T1 *front() const { return *begin(); }
-    // T1* back() const;
+    T1 *back() const { return mVec.back(); }
 
     template <class S>
     void sort(const S &);
@@ -517,7 +522,7 @@ public:
             return mNode;
     }
 
-    // operator DataNode() const;
+    operator DataNode() const { return mNode; }
 
     DataNodeObjTrack &operator=(const DataNode &node) {
         mNode = node.Evaluate();
