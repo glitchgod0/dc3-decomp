@@ -3984,6 +3984,33 @@
     <ClInclude Include="xdk\XAUDIO2.h">
       <Filter>xdk</Filter>
     </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\ctype.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\errno.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\float.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\limits.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\math.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\stdarg.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\stdlib.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="xdk\LIBCMT\string.h">
+      <Filter>xdk\LIBCMT</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_xdk.h">
+      <Filter>system\stlport\config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="binkxenon">
@@ -4171,6 +4198,9 @@
     </Filter>
     <Filter Include="system\rndobj">
       <UniqueIdentifier>{56a4ec2b-a10a-4882-ace5-f52e126b600e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xdk\LIBCMT">
+      <UniqueIdentifier>{a3c96bb6-771b-4160-9290-024823804c2a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -8186,6 +8216,18 @@
       <Filter>system\stlport\config\new_compiler</Filter>
     </None>
     <None Include="ReadMe.txt" />
+    <None Include="xdk\LIBCMT\cstring">
+      <Filter>xdk\LIBCMT</Filter>
+    </None>
+    <None Include="xdk\LIBCMT\climits">
+      <Filter>xdk\LIBCMT</Filter>
+    </None>
+    <None Include="xdk\LIBCMT\cstddef">
+      <Filter>xdk\LIBCMT</Filter>
+    </None>
+    <None Include="xdk\LIBCMT\cstdlib">
+      <Filter>xdk\LIBCMT</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Object Include="system\jpeg\jdosabcc.obj">

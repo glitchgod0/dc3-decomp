@@ -81,7 +81,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)..\build\$(Configuration)\</OutDir>
-    <IncludePath>$(ProjectDir)binkxenon;$(ProjectDir)system;$(ProjectDir);$(ProjectDir)lazer;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)system/stlport;$(ProjectDir)binkxenon;$(ProjectDir)system;$(ProjectDir);$(ProjectDir)lazer;$(IncludePath)</IncludePath>
     <ImageXexOutput>$(OutDir)$(SolutionName).xex</ImageXexOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
@@ -113,6 +113,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PreprocessorDefinitions>_DEBUG;_XBOX</PreprocessorDefinitions>
       <CallAttributedProfiling>Callcap</CallAttributedProfiling>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -418,6 +419,10 @@
     <None Include="system\zlib\INDEX" />
     <None Include="system\zlib\README" />
     <None Include="system\zlib\zlib.3" />
+    <None Include="xdk\LIBCMT\climits" />
+    <None Include="xdk\LIBCMT\cstddef" />
+    <None Include="xdk\LIBCMT\cstdlib" />
+    <None Include="xdk\LIBCMT\cstring" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
@@ -582,6 +587,7 @@
     <ClInclude Include="lazer\net_ham\TokenJobs.h" />
     <ClInclude Include="lazer\net_ham\WebLinkJobs.h" />
     <ClInclude Include="macros.h" />
+    <ClInclude Include="stl_xdk.h" />
     <ClInclude Include="system\beatmatch\GemListInterface.h" />
     <ClInclude Include="system\beatmatch\HxAudio.h" />
     <ClInclude Include="system\beatmatch\HxMaster.h" />
@@ -1721,6 +1727,14 @@
     <ClInclude Include="xdk\D3D9.h" />
     <ClInclude Include="xdk\d3d9i\d3d9.h" />
     <ClInclude Include="xdk\d3dx9\d3dx9tex.h" />
+    <ClInclude Include="xdk\LIBCMT\ctype.h" />
+    <ClInclude Include="xdk\LIBCMT\errno.h" />
+    <ClInclude Include="xdk\LIBCMT\float.h" />
+    <ClInclude Include="xdk\LIBCMT\limits.h" />
+    <ClInclude Include="xdk\LIBCMT\math.h" />
+    <ClInclude Include="xdk\LIBCMT\stdarg.h" />
+    <ClInclude Include="xdk\LIBCMT\stdlib.h" />
+    <ClInclude Include="xdk\LIBCMT\string.h" />
     <ClInclude Include="xdk\NUI.h" />
     <ClInclude Include="xdk\nui\nuidetroit.h" />
     <ClInclude Include="xdk\nui\nuispeech.h" />

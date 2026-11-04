@@ -62,9 +62,12 @@
 # elif defined(_MSC_VER) && (_MSC_VER >= 1200) && defined(UNDER_CE)
 /* Microsoft eMbedded Visual C++ 3.0, 4.0 (.NET) */
 #  include <config/stl_evc.h>
-# elif defined(_STLP_MSVC)
-/* Microsoft Visual C++ 6.0, 7.0, 7.1, 8.0 */
-#  include <config/stl_msvc.h>
+#elif defined (_STLP_MSVC)
+#  if defined (_XBOX_VER)
+#    include <config/stl_xdk.h>
+#  else
+#    include <config/stl_msvc.h>
+#  endif
 # elif defined ( __BORLANDC__ )
 /* Borland C++ ( 4.x - 5.x ) */
 #  include <config/stl_bc.h>
