@@ -369,7 +369,7 @@ Everything here is from single file compiles
 - PlatformMgr_Xbox.cpp (X)
 - SynchronizationEvent.cpp
 - System.cpp
-- System_Xbox.cpp (X) // Error	26	error C2664: 'DmCaptureStackBackTrace' : cannot convert parameter 2 from 'StackData *' to 'PVOID *'	D:\Harmonix\Projects\dc3-decomp\src\system\os\System_Xbox.cpp	308
+- System_Xbox.cpp
 - ThreadCall_Win.cpp
 - Timer.cpp
 - UsbMidiGuitar.cpp

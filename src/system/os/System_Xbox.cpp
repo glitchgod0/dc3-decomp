@@ -305,7 +305,7 @@ void ShowDirtyDiscError() {
 void CaptureStackTrace(int p1, struct StackData *stackData, void *p3) {
     stackData[0].address = 0;
 
-    DmCaptureStackBackTrace(p1, stackData);
+    DmCaptureStackBackTrace(p1, (PVOID*)stackData);
 
     memmove(stackData, &stackData[3], (p1 - 3) * 4);
     if (p3 != 0) {
