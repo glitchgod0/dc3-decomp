@@ -223,15 +223,15 @@ Everything here is from single file compiles
 - MoveParent.cpp
 - MoveVariant.cpp
 - OriginalChoreoRemixer.cpp
-- PhotoSpotlightPositioner.cpp (X)
+- PhotoSpotlightPositioner.cpp
 - Pose.cpp (X)
 - PoseFatalities.cpp (X)
 - PracticeOptionsProvider.cpp
 - PracticeSection.cpp
 - RhythmBattle.cpp (X)
-- RhythmBattlePlayer.cpp (X)
-- RhythmDetector.cpp (X)
-- RhythmDetectorGroup.cpp (X)
+- RhythmBattlePlayer.cpp
+- RhythmDetector.cpp
+- RhythmDetectorGroup.cpp
 - ScoreUtl.cpp
 - SongCollision.cpp
 - SongDifficultyDisplay.cpp
