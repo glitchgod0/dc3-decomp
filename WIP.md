@@ -122,7 +122,6 @@ Everything here is from single file compiles
 - PropertyEventListener.cpp
 - PropertyEventProvider.cpp
 
-
 ### gesture
 - ArcDetector.cpp (X)
 - ArchiveSkeleton.cpp (X)
@@ -523,7 +522,7 @@ Everything here is from single file compiles
 - UIListWidget.cpp
 - UIPanel.cpp
 - UIPicture.cpp
-- UIScreen.cpp (X)
+- UIScreen.cpp
 - UISlider.cpp
 - UITransitionHandler.cpp
 - UITrigger.cpp
@@ -531,7 +530,7 @@ Everything here is from single file compiles
 
 
 ### utl/
-- AllocInfo.cpp (X)
+- AllocInfo.cpp
 - BeatMap.cpp
 - BinkIntegration.cpp
 - BinStream.cpp

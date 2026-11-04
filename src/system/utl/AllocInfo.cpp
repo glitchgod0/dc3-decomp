@@ -157,7 +157,7 @@ int AllocInfo::Compare(const AllocInfo &info) const {
 
 void AllocInfo::FillStackTrace() {
     int stack[20];
-    DmCaptureStackBackTrace(20, stack);
+    DmCaptureStackBackTrace(20, (PVOID*)stack);
     for (int i = 0; i < 16; i++) {
         mStackTrace[i] = stack[(i) + (4)];
         if (stack[(i) + (4)] == 0U)
