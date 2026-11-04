@@ -51,12 +51,9 @@
 
 /* Include useful information about system:
  */
-/*
-// decomp hack: skip this include to prevent VS Code include issues
 #ifdef __linux__
 #  include <features.h>
 #endif
-*/
 
 
 /* Definition of the STLport version informations */
@@ -179,7 +176,7 @@
 #      define _STLP_LITTLE_ENDIAN 1
 #    endif
 #  else
-#    define _STLP_BIG_ENDIAN 1 // hack for 360 cause it sucks
+#    error "can't determine endianess"
 #  endif
 #endif /* _STLP_BIG_ENDIAN */
 

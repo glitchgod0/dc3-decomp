@@ -8,7 +8,7 @@
  * For the moment we hope that there is only one SDK for 64 bits windows so
  * we simply detect it using the _WIN64 macro.
  */
-#  define _STLP_NATIVE_INCLUDE_PATH ../crt
+#  define _STLP_NATIVE_INCLUDE_PATH ../xbox
 #  define _STLP_VENDOR_GLOBAL_CSTD
 #  define _STLP_VENDOR_TERMINATE_STD
 #  define _STLP_GLOBAL_NEW_HANDLER
@@ -18,9 +18,11 @@
 #  endif
 #endif
 
+#define _STLP_LITTLE_ENDIAN 1
+
 #define _STLP_CALL __cdecl
 
-#ifndef _STLP_LONG_LONG
+#ifdef _STLP_LONG_LONG
 #  define _STLP_LONG_LONG __int64
 #endif
 
