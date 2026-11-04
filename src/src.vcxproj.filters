@@ -4052,9 +4052,6 @@
     <Filter Include="system\rnddx9">
       <UniqueIdentifier>{51c67fe3-dcc6-4298-b1c8-38c787e82a6e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="system\rndobj">
-      <UniqueIdentifier>{56a4ec2b-a10a-4882-ace5-f52e126b600e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="system\stlport">
       <UniqueIdentifier>{e2e65fb0-55df-4acd-90b3-d9d4a99ca573}</UniqueIdentifier>
     </Filter>
@@ -4171,6 +4168,9 @@
     </Filter>
     <Filter Include="xdk\xgraphics">
       <UniqueIdentifier>{90003d8d-e103-4936-86e9-2157dabdce31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\rndobj">
+      <UniqueIdentifier>{56a4ec2b-a10a-4882-ace5-f52e126b600e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
