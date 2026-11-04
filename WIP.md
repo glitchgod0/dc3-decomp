@@ -177,7 +177,7 @@ Everything here is from single file compiles
 - Sorting.cpp
 - StoreEnumeration.cpp
 - StoreOffer.cpp
-- StorePanel.cpp (X)
+- StorePanel.cpp (X) // Error	62	error C2039: 'data' : is not a member of 'stlpmtx_std::vector<_Tp>'	D:\Harmonix\Projects\dc3-decomp\src\system\utl\MemStream.h	25
 - StorePreviewMgr.cpp
 - StorePurchaser.cpp
 - StreamPlayer.cpp
@@ -255,7 +255,7 @@ Everything here is from single file compiles
 - PlatformMgr_Xbox.cpp (X)
 - SynchronizationEvent.cpp
 - System.cpp
-- System_Xbox.cpp (X)
+- System_Xbox.cpp (X) // Error	26	error C2664: 'DmCaptureStackBackTrace' : cannot convert parameter 2 from 'StackData *' to 'PVOID *'	D:\Harmonix\Projects\dc3-decomp\src\system\os\System_Xbox.cpp	308
 - ThreadCall_Win.cpp
 - Timer.cpp
 - UsbMidiGuitar.cpp
