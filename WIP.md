@@ -395,7 +395,7 @@ Everything here is from single file compiles
 - RenderState.cpp
 - Rnd.cpp
 - Rnd_Xbox.cpp
-- ShaderMgr.cpp (X)
+- ShaderMgr.cpp
 - Tex.cpp
 - TexMgr.cpp
 - Utl.cpp
