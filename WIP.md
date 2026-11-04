@@ -127,38 +127,38 @@ Everything here is from single file compiles
 - ArchiveSkeleton.cpp (X)
 - BaseSkeleton.cpp
 - CameraInput.cpp
-- CameraTilt.cpp (X)
-- DepthBuffer3D.cpp (X)
+- CameraTilt.cpp
+- DepthBuffer3D.cpp
 - DirectionGestureFilter.cpp (X)
-- DrawUtl.cpp (X)
+- DrawUtl.cpp
 - FitnessFilter.cpp (X)
 - FreestyleMotionFilter.cpp (X)
 - Gesture.cpp (X)
-- GestureMgr.cpp (X)
+- GestureMgr.cpp
 - HandHeightGestureFilter.cpp (X)
 - HandInvokeGestureFilter.cpp (X)
 - HandRaisedGestureFilter.cpp (X)
 - HandsUpGestureFilter.cpp (X)
 - HighFiveGestureFilter.cpp (X)
-- IdentityInfo.cpp (X)
+- IdentityInfo.cpp
 - JointUtl.cpp (X)
 - LiveCameraInput.cpp (X)
 - NavigationSkeletonDir.cpp (X)
 - Skeleton.cpp (X)
-- SkeletonClip.cpp (X)
+- SkeletonClip.cpp
 - SkeletonDir.cpp (X)
-- SkeletonExtentTracker.cpp (X)
+- SkeletonExtentTracker.cpp
 - SkeletonHistory.cpp (X)
 - SkeletonQualityFilter.cpp (X)
-- SkeletonRecoverer.cpp (X)
-- SkeletonUpdate.cpp (X)
+- SkeletonRecoverer.cpp
+- SkeletonUpdate.cpp
 - SkeletonViz.cpp
 - SpeechMgr.cpp (X)
 - StandingStillGestureFilter.cpp (X)
 - StreamRecorder.cpp
-- StreamRenderer.cpp (X)
+- StreamRenderer.cpp
 - StubCameraInput.cpp
-- WaveToTurnOnLight.cpp (X)
+- WaveToTurnOnLight.cpp
 
 ### hamobj/
 - BustAMoveData.cpp
