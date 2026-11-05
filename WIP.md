@@ -328,12 +328,12 @@ Everything here is from single file compiles
 - DingoSvr_Xbox.cpp (X)
 - HttpGet.cpp
 - HttpReq.cpp
-- HttpReqCurl.cpp (X)
+- HttpReqCurl.cpp
 - JsonMemory.cpp
 - JsonUtils.cpp
 - SessionJobs_Xbox.cpp (X)
 - WebSvcMgr.cpp
-- WebSvcMgrCurl.cpp (X)
+- WebSvcMgrCurl.cpp
 - WebSvcReq.cpp
 - XLSPConnection.cpp (X)
 

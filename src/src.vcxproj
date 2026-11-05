@@ -81,7 +81,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)..\build\$(Configuration)\</OutDir>
-    <IncludePath>$(ProjectDir)system/stlport;$(ProjectDir)binkxenon;$(ProjectDir)system;$(ProjectDir);$(ProjectDir)lazer;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)system/net/curl/include;$(ProjectDir)system/stlport;$(ProjectDir)binkxenon;$(ProjectDir)system;$(ProjectDir);$(ProjectDir)lazer;$(IncludePath)</IncludePath>
     <ImageXexOutput>$(OutDir)$(SolutionName).xex</ImageXexOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CodeAnalysis|Xbox 360'">
