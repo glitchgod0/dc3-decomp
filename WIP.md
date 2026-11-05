@@ -713,5 +713,27 @@ This folder is scary, it works but i am scared.
 - VarTimer.cpp
 - WaveFile.cpp
 
-
-
+### world/
+- BeatClock.cpp
+- CameraManager.cpp
+- CameraShot.cpp
+- ColorPalette.cpp
+- Crowd.cpp
+- Crowd3DCharHandle.cpp
+- DefaultPhysicsManager.cpp
+- Dir.cpp
+- FreeCamera.cpp
+- Instance.cpp
+- LightHue.cpp
+- LightPreset.cpp (X)
+- LightPresetManager.cpp
+- PhysicsManager.cpp
+- PhysicsVolume.cpp
+- PostProcer.cpp
+- Reflection.cpp
+- Spotlight.cpp
+- SpotlightDrawer.cpp
+- SpotlightDrawer_NG.cpp
+- SpotlightEnder.cpp
+- ThreeDSoundManager.cpp
+- World.cpp
