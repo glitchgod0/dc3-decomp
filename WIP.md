@@ -168,68 +168,68 @@ Everything here is from single file compiles
 - CharFeedback.cpp
 - ClipPlayer.cpp
 - CrazeHollaback.cpp
-- DanceRemixer.cpp (X)
+- DanceRemixer.cpp
 - DancerSequence.cpp
 - DancerSkeleton.cpp
 - DetectFrame.cpp
 - Difficulty.cpp
 - ErrorNode.cpp
-- FilterQueue.cpp (X)
+- FilterQueue.cpp
 - FilterVersion.cpp
 - FreestyleMove.cpp
-- FreestyleMoveRecorder.cpp (X)
-- Ham.cpp (X)
+- FreestyleMoveRecorder.cpp
+- Ham.cpp
 - HamAudio.cpp
 - HamBattleData.cpp
 - HamCamShot.cpp
 - HamCamTransform.cpp
 - HamCharacter.cpp
-- HamDirector.cpp (X)
+- HamDirector.cpp
 - HamDriver.cpp
-- HamGameData.cpp (X)
+- HamGameData.cpp
 - HamIconMan.cpp
 - HamIKEffector.cpp
 - HamIKSkeleton.cpp
 - HamLabel.cpp
 - HamList.cpp
-- HamListRibbon.cpp (X)
-- HamMaster.cpp (X)
+- HamListRibbon.cpp
+- HamMaster.cpp
 - HamMove.cpp
-- HamNavList.cpp (X)
-- HamNavProvider.cpp (X)
+- HamNavList.cpp
+- HamNavProvider.cpp
 - HamPartyJumpData.cpp
-- HamPhotoDisplay.cpp (X)
+- HamPhotoDisplay.cpp
 - HamPhraseMeter.cpp
-- HamPlayerData.cpp (X)
+- HamPlayerData.cpp
 - HamProviderPrinter.cpp
 - HamRegulate.cpp
 - HamRibbon.cpp
-- HamScrollBehavior.cpp (X)
+- HamScrollBehavior.cpp
 - HamScrollSpeedIndicator.cpp
 - HamSkeletonConverter.cpp
-- HamSong.cpp (X)
-- HamSongData.cpp (X)
+- HamSong.cpp
+- HamSongData.cpp
 - HamSupereasyData.cpp
-- HamVisDir.cpp (X)
+- HamVisDir.cpp
 - HamWardrobe.cpp
-- HollaBackMinigame.cpp (X)
+- HollaBackMinigame.cpp
 - MeterDisplay.cpp
 - MiniGameMgr.cpp
 - MiniLeaderboardDisplay.cpp
 - MocapSkeletonIterator.cpp
 - MoveAsyncDetector.cpp
-- MoveDir.cpp (X)
+- MoveDir.cpp
 - MoveGraph.cpp
 - MoveMgr.cpp
 - MoveParent.cpp
 - MoveVariant.cpp
 - OriginalChoreoRemixer.cpp
 - PhotoSpotlightPositioner.cpp
-- Pose.cpp (X)
-- PoseFatalities.cpp (X)
+- Pose.cpp
+- PoseFatalities.cpp
 - PracticeOptionsProvider.cpp
 - PracticeSection.cpp
-- RhythmBattle.cpp (X)
+- RhythmBattle.cpp
 - RhythmBattlePlayer.cpp
 - RhythmDetector.cpp
 - RhythmDetectorGroup.cpp
