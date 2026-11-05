@@ -22,7 +22,7 @@ public:
     int Size() const { return mBuffer.size(); }
     void Resize(int size) { mBuffer.resize(size); }
     void Reserve(int size) { mBuffer.reserve(size); }
-    const char *Buffer() const { return mBuffer.data(); }
+    const char *Buffer() const { return &mBuffer[0]; } // 360 port change
 
 private:
     virtual void ReadImpl(void *, int);

@@ -10,8 +10,9 @@ Everything here is from single file compiles
 - git pull
 
 ## root/
-- keygen_xbox.cpp
+- Main.cpp
 - ChecksumData_xbox.cpp
+- keygen_xbox.cpp
 
 ## system/
 
@@ -291,7 +292,7 @@ Everything here is from single file compiles
 - Sorting.cpp
 - StoreEnumeration.cpp
 - StoreOffer.cpp
-- StorePanel.cpp (X) // Error	62	error C2039: 'data' : is not a member of 'stlpmtx_std::vector<_Tp>'	D:\Harmonix\Projects\dc3-decomp\src\system\utl\MemStream.h	25
+- StorePanel.cpp
 - StorePreviewMgr.cpp
 - StorePurchaser.cpp
 - StreamPlayer.cpp
@@ -411,7 +412,6 @@ Everything here is from single file compiles
 - UserMgr.cpp
 - VirtualKeyboard.cpp
 - VirtualKeyboard_Xbox.cpp
-
 
 ### rnddx9/
 - Cam.cpp
@@ -573,6 +573,8 @@ This folder is scary, it works but i am scared.
 - WavMgr.cpp
 - WavReader.cpp
 
+#### tomcrypt/
+
 ### synth360/
 - EnvelopeGenerator.cpp (X)
 - ExternalMic.cpp (X)
@@ -600,6 +602,9 @@ This folder is scary, it works but i am scared.
 - Synth.cpp (X)
 - SynthSample.cpp (X)
 - Voice.cpp (X)
+
+#### soundtouch/
+#### synapse_apo/
 
 ### ui/
 - CheatProvider.cpp
@@ -681,7 +686,7 @@ This folder is scary, it works but i am scared.
 - MemMgr.cpp
 - MemPoint.cpp
 - MemStats.cpp
-- MemStream.cpp
+- MemStream.cpp (X)
 - MemTrack.cpp
 - MemTracker.cpp
 - MultiTempoTempoMap.cpp
@@ -737,3 +742,25 @@ This folder is scary, it works but i am scared.
 - SpotlightEnder.cpp
 - ThreeDSoundManager.cpp
 - World.cpp
+
+
+
+
+## lazer/
+
+### game/
+- BustAMovePanel.cpp (X)
+- Game.cpp (X)
+- GameMode.cpp (X)
+- GamePanel.cpp (X)
+- HamUser.cpp
+- HamUserMgr.cpp (X)
+- LiveInput.cpp (X)
+- PartyModeMgr.cpp (X)
+- PresenceMgr.cpp (X)
+- Shuttle.cpp
+- SongDB.cpp
+- SongSequence.cpp
+
+### meta_ham/
+### net_ham/
