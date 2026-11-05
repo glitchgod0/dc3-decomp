@@ -574,7 +574,32 @@ This folder is scary, it works but i am scared.
 - WavReader.cpp
 
 ### synth360/
-
+- EnvelopeGenerator.cpp (X)
+- ExternalMic.cpp (X)
+- FxSend.cpp (X)
+- FxSendBitCrush.cpp (X)
+- FxSendChorus.cpp (X)
+- FxSendCompress.cpp (X)
+- FxSendDelay.cpp (X)
+- FxSendDistortion.cpp (X)
+- FxSendEQ.cpp (X)
+- FxSendFlanger.cpp (X)
+- FxSendMeterEffect.cpp (X)
+- FxSendPitchShift.cpp (X)
+- FxSendReverb.cpp (X)
+- FxSendSynapse.cpp (X)
+- FxSendWah.cpp (X)
+- GainEffect.cpp (X)
+- HeadsetPlaybackEffect.cpp (X)
+- HeadsetXferEffect.cpp (X)
+- MeterEffect.cpp (X)
+- Mic.cpp (X)
+- PitchShiftEffect.cpp (X)
+- SampleInst.cpp (X)
+- StreamReceiver.cpp (X)
+- Synth.cpp (X)
+- SynthSample.cpp (X)
+- Voice.cpp (X)
 
 ### ui/
 - CheatProvider.cpp
