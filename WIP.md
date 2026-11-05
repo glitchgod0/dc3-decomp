@@ -124,38 +124,38 @@ Everything here is from single file compiles
 - PropertyEventProvider.cpp
 
 ### gesture
-- ArcDetector.cpp (X)
-- ArchiveSkeleton.cpp (X)
+- ArcDetector.cpp
+- ArchiveSkeleton.cpp
 - BaseSkeleton.cpp
 - CameraInput.cpp
 - CameraTilt.cpp
 - DepthBuffer3D.cpp
-- DirectionGestureFilter.cpp (X)
+- DirectionGestureFilter.cpp
 - DrawUtl.cpp
 - FitnessFilter.cpp (X)
-- FreestyleMotionFilter.cpp (X)
-- Gesture.cpp (X)
+- FreestyleMotionFilter.cpp
+- Gesture.cpp
 - GestureMgr.cpp
-- HandHeightGestureFilter.cpp (X)
-- HandInvokeGestureFilter.cpp (X)
-- HandRaisedGestureFilter.cpp (X)
-- HandsUpGestureFilter.cpp (X)
-- HighFiveGestureFilter.cpp (X)
+- HandHeightGestureFilter.cpp
+- HandInvokeGestureFilter.cpp
+- HandRaisedGestureFilter.cpp
+- HandsUpGestureFilter.cpp
+- HighFiveGestureFilter.cpp
 - IdentityInfo.cpp
-- JointUtl.cpp (X)
+- JointUtl.cpp
 - LiveCameraInput.cpp (X)
-- NavigationSkeletonDir.cpp (X)
+- NavigationSkeletonDir.cpp
 - Skeleton.cpp (X)
 - SkeletonClip.cpp
-- SkeletonDir.cpp (X)
+- SkeletonDir.cpp
 - SkeletonExtentTracker.cpp
-- SkeletonHistory.cpp (X)
-- SkeletonQualityFilter.cpp (X)
+- SkeletonHistory.cpp
+- SkeletonQualityFilter.cpp
 - SkeletonRecoverer.cpp
 - SkeletonUpdate.cpp
 - SkeletonViz.cpp
 - SpeechMgr.cpp (X)
-- StandingStillGestureFilter.cpp (X)
+- StandingStillGestureFilter.cpp
 - StreamRecorder.cpp
 - StreamRenderer.cpp
 - StubCameraInput.cpp

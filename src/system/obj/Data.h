@@ -255,21 +255,21 @@ public:
     bool operator==(const DataNode &n) const { return Equal(n); }
     bool operator!=(const DataNode &n) const;
     bool operator>(const DataNode &n) const;
-    FORCEINLINE bool operator>=(const DataNode &n) const {
+    bool operator>=(const DataNode &n) const {
         if ((Type() == kDataInt || Type() == kDataFloat)
             && (n.Type() == kDataInt || n.Type() == kDataFloat)) {
             return LiteralFloat() >= n.LiteralFloat();
         }
         return false;
     }
-    FORCEINLINE bool operator<(const DataNode &n) const {
+    bool operator<(const DataNode &n) const {
         if ((Type() == kDataInt || Type() == kDataFloat)
             && (n.Type() == kDataInt || n.Type() == kDataFloat)) {
             return LiteralFloat() < n.LiteralFloat();
         }
         return false;
     }
-    FORCEINLINE bool operator<=(const DataNode &n) const {
+    bool operator<=(const DataNode &n) const {
         if ((Type() == kDataInt || Type() == kDataFloat)
             && (n.Type() == kDataInt || n.Type() == kDataFloat)) {
             return LiteralFloat() <= n.LiteralFloat();
