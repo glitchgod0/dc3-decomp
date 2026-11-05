@@ -132,7 +132,7 @@ Everything here is from single file compiles
 - DepthBuffer3D.cpp
 - DirectionGestureFilter.cpp
 - DrawUtl.cpp
-- FitnessFilter.cpp (X)
+- FitnessFilter.cpp
 - FreestyleMotionFilter.cpp
 - Gesture.cpp
 - GestureMgr.cpp
@@ -143,9 +143,9 @@ Everything here is from single file compiles
 - HighFiveGestureFilter.cpp
 - IdentityInfo.cpp
 - JointUtl.cpp
-- LiveCameraInput.cpp (X)
+- LiveCameraInput.cpp
 - NavigationSkeletonDir.cpp
-- Skeleton.cpp (X)
+- Skeleton.cpp
 - SkeletonClip.cpp
 - SkeletonDir.cpp
 - SkeletonExtentTracker.cpp
@@ -154,7 +154,7 @@ Everything here is from single file compiles
 - SkeletonRecoverer.cpp
 - SkeletonUpdate.cpp
 - SkeletonViz.cpp
-- SpeechMgr.cpp (X)
+- SpeechMgr.cpp
 - StandingStillGestureFilter.cpp
 - StreamRecorder.cpp
 - StreamRenderer.cpp

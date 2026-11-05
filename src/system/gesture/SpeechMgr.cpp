@@ -318,7 +318,7 @@ void SpeechMgr::SetRecognizing(bool recognizing) {
             );
         } else {
             HRESULT res = NuiSpeechStopRecognition();
-            if (res == E_SPEECH_UNINITIALIZED) {
+            if (res == E_NUI_SPEECH_UNINITIALIZED) {
                 MILO_NOTIFY("Speech is not initialized");
             } else {
                 MILO_ASSERT_FMT(
