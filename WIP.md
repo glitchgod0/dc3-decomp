@@ -322,6 +322,20 @@ Everything here is from single file compiles
 
 
 ### net/
+- DingoAuthJob.cpp (X)
+- DingoJob.cpp (X)
+- DingoSvr.cpp (X)
+- DingoSvr_Xbox.cpp (X)
+- HttpGet.cpp
+- HttpReq.cpp
+- HttpReqCurl.cpp (X)
+- JsonMemory.cpp
+- JsonUtils.cpp
+- SessionJobs_Xbox.cpp (X)
+- WebSvcMgr.cpp
+- WebSvcMgrCurl.cpp (X)
+- WebSvcReq.cpp
+- XLSPConnection.cpp (X)
 
 ### obj/
 
