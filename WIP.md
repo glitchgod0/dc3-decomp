@@ -338,6 +338,23 @@ Everything here is from single file compiles
 - XLSPConnection.cpp (X)
 
 ### obj/
+- DataArray.cpp
+- DataFile.cpp
+- DataFlex.c (X)
+- DataFunc.cpp
+- DataNode.cpp
+- DataUtl.cpp
+- Dir.cpp
+- DirLoader.cpp
+- DirUnloader.cpp
+- MessageTimer.cpp
+- Msg.cpp
+- Object.cpp
+- PropSync.cpp (X)
+- Task.cpp
+- TextFile.cpp
+- TypeProps.cpp
+- Utl.cpp
 
 ### oggvorbis
 
@@ -502,6 +519,8 @@ Everything here is from single file compiles
 - wordwrap.cpp
 
 ### stlport/
+This folder is scary, it works but i am scared.
+
 ### synth/
 ### synth360/
 ### ui/
